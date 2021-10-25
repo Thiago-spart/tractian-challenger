@@ -6,6 +6,7 @@ lib/
 es/
 dist/
 .next/
+.github/
 coverage/
 LICENSE
 yarn.lock
