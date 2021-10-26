@@ -1,14 +1,13 @@
-import React, { FC } from 'react'
-import ArticleList from 'src/components/Article'
+import React, { FC } from "react";
+
+import { ArticleList } from "src/components/Article";
 
 interface Props {
-  articles: ArticleGlobal.Article[]
+	articles: Array<ArticleGlobal.Article>;
 }
 
-const ArticleContainer: FC<Props> = ({ articles }) => (
-  <>
-    <ArticleList articles={articles} />
-  </>
-)
-
-export default ArticleContainer
+export const ArticleContainer: FC<Props> = ({ articles }) => (
+	<>
+		<ArticleList articles={articles} />
+	</>
+);

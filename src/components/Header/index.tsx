@@ -1,19 +1,18 @@
-import React, { FC } from 'react'
-import styled from 'styled-components'
-import NavMenu from './NavMenu'
+import React, { FC } from "react";
 
-interface Props {
-  menuItems: MenuGlobal.MenuItem[]
+import { Container, ImgContainer } from "./styles";
+
+import { NavMenu } from "./NavMenu";
+
+interface HeaderProps {
+	menuItems: Array<MenuGlobal.MenuItem>;
 }
 
-const HeaderWrapper = styled.header`
-  padding: 0 15px;
-`
-
-const Header: FC<Props> = ({ menuItems }) => (
-  <HeaderWrapper>
-    <NavMenu menuItems={menuItems} />
-  </HeaderWrapper>
-)
-
-export default Header
+export const Header: FC<HeaderProps> = ({ menuItems }) => (
+	<Container>
+		{/* <ImgContainer>
+      <img src="" alt="company logo" />
+    </ImgContainer> */}
+		<NavMenu menuItems={menuItems} />
+	</Container>
+);
