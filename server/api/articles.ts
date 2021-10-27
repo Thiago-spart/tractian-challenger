@@ -1,5 +1,6 @@
-import { AxiosResponse } from 'axios'
-import request from 'src/utils/request'
+import { AxiosResponse } from "axios";
 
-export const getArticles = (): Promise<AxiosResponse<ArticleGlobal.Article[]>> =>
-  request.get(`/posts`)
+import request from "src/utils/request";
+
+export const getArticles = (): Promise<AxiosResponse<Array<ArticleGlobal.Article>>> =>
+	request.get("/posts");

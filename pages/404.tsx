@@ -1,7 +1,9 @@
-import React from 'react'
-import { NextPage } from 'next'
-import Error from 'src/components/Error'
+import { NextPage } from "next";
 
-const Error404Page: NextPage = () => <Error statusCode={404} message="Not Found" />
+import React from "react";
 
-export default Error404Page
+import { Error } from "src/components/Error";
+
+const Error404Page: NextPage = () => <Error statusCode={404} message="Not Found" />;
+
+export default Error404Page;

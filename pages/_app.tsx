@@ -1,18 +1,19 @@
-import React, { FC } from 'react'
-import { AppProps } from 'next/app'
-import { wrapper } from 'src/redux'
-import Layout from 'src/components/Layout'
-import GlobalBaseStyle from 'src/styles/GlobalBaseStyle'
+import { AppProps } from "next/app";
 
-import 'src/i18n'
+import React, { FC } from "react";
 
-import 'antd/dist/antd.css'
+import { Layout } from "src/components/Layout";
 
-const WrappedApp: FC<AppProps> = ({ Component, pageProps }) => (
-  <Layout>
-    <GlobalBaseStyle />
-    <Component {...pageProps} />
-  </Layout>
-)
+import { GlobalBaseStyle } from "src/styles/GlobalBaseStyle";
 
-export default wrapper.withRedux(WrappedApp)
+import "src/i18n";
+
+import "antd/dist/antd.css";
+
+const App: FC<AppProps> = ({ Component, pageProps }) => (
+	<Layout>
+		<GlobalBaseStyle />
+		<Component {...pageProps} />
+	</Layout>
+);
+export default App;

@@ -1,7 +1,8 @@
-import { createGlobalStyle } from 'styled-components'
-import { normalize } from 'styled-normalize'
+import { createGlobalStyle } from "styled-components";
 
-const GlobalBaseStyle = createGlobalStyle`
+import { normalize } from "styled-normalize";
+
+export const GlobalBaseStyle = createGlobalStyle`
   ${normalize};
 
   body, #__next {
@@ -9,7 +10,6 @@ const GlobalBaseStyle = createGlobalStyle`
     min-height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
   }
-`
-
-export default GlobalBaseStyle
+`;
