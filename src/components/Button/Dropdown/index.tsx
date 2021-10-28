@@ -1,4 +1,5 @@
 import { ReactNode, useState } from "react";
+import ClickAwayListener from "react-click-away-listener";
 import { AiOutlineDown } from "react-icons/ai";
 
 import { Container, Title, Wrapper } from "./styles";
@@ -22,23 +23,28 @@ interface OutlinedProps {
 export const Dropdown = ({ width, actions, placeholder, disabled = false }: OutlinedProps) => {
 	const [open, setOpen] = useState(false);
 
+	const toggleOpen = () => {
+		setOpen(!open);
+	};
+
 	return (
-		<Container open={open} onClick={() => setOpen(!open)} disabled={disabled} width={width}>
+		<Container open={open} disabled={disabled} width={width}>
 			<Title>{placeholder}</Title>
 
 			<AiOutlineDown />
-
-			<Wrapper open={open} width={width}>
-				{actions.map(action => (
-					<DropdownItem
-						key={action.title}
-						handleSelect={action.handleSelect}
-						title={action.title}
-						subTitle={action.subTitle}
-						icon={action.icon}
-					/>
-				))}
-			</Wrapper>
+			<ClickAwayListener onClickAway={toggleOpen}>
+				<Wrapper open={open} width={width}>
+					{actions.map(action => (
+						<DropdownItem
+							key={action.title}
+							handleSelect={action.handleSelect}
+							title={action.title}
+							subTitle={action.subTitle}
+							icon={action.icon}
+						/>
+					))}
+				</Wrapper>
+			</ClickAwayListener>
 		</Container>
 	);
 };
