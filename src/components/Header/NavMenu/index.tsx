@@ -41,6 +41,17 @@ export const NavMenu: FC<Props> = ({ menuItems }) => {
 							handleSelect: () => {},
 						},
 					]}
+					footer={[
+						{
+							message: "testando 123",
+							handleSelect: () => {},
+							icon: <DiAndroid />,
+						},
+						{
+							message: "testando 1823",
+							handleSelect: () => {},
+						},
+					]}
 					placeholder="Gerar"
 				/>
 

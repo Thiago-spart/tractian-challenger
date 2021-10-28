@@ -12,9 +12,12 @@ export const Container = styled.div`
 	justify-content: flex-start;
 	gap: 10px;
 
-	& > svg {
-		color: #2563eb;
-		font-size: 20px;
+	svg {
+		margin-right: 10px;
+	}
+
+	p {
+		margin-bottom: 0;
 	}
 
 	&:hover {
@@ -29,18 +32,5 @@ export const Container = styled.div`
 	&:last-child:hover,
 	&:last-child {
 		border-radius: 0 0 8px 8px;
-	}
-`;
-
-export const TextContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	gap: 6px;
-
-	p {
-		font-size: 13px;
-		margin-bottom: 0;
 	}
 `;

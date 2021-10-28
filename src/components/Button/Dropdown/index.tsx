@@ -4,6 +4,7 @@ import { AiOutlineDown } from "react-icons/ai";
 
 import { Container, Title, Wrapper } from "./styles";
 
+import { DropdownFooter } from "./DropdownFooter";
 import { DropdownItem } from "./DropdownItem";
 
 interface ActionProps {
@@ -13,14 +14,27 @@ interface ActionProps {
 	handleSelect: () => void;
 }
 
+interface DropdownFooterProps {
+	message: string;
+	icon?: ReactNode;
+	handleSelect: () => void;
+}
+
 interface OutlinedProps {
 	actions: Array<ActionProps>;
+	footer?: Array<DropdownFooterProps>;
 	placeholder: string;
 	width?: number;
 	disabled?: boolean;
 }
 
-export const Dropdown = ({ width, actions, placeholder, disabled = false }: OutlinedProps) => {
+export const Dropdown = ({
+	width,
+	actions,
+	footer,
+	placeholder,
+	disabled = false,
+}: OutlinedProps) => {
 	const [open, setOpen] = useState(false);
 
 	const toggleOpen = () => {
@@ -41,6 +55,14 @@ export const Dropdown = ({ width, actions, placeholder, disabled = false }: Outl
 							title={action.title}
 							subTitle={action.subTitle}
 							icon={action.icon}
+						/>
+					))}
+					{footer?.map(item => (
+						<DropdownFooter
+							key={item.message}
+							message={item.message}
+							handleSelect={item.handleSelect}
+							icon={item?.icon}
 						/>
 					))}
 				</Wrapper>
