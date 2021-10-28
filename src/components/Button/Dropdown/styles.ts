@@ -24,6 +24,7 @@ export const Container = styled.button<Props>`
 	margin: 0;
 
 	color: #ffffff;
+	background-color: transparent;
 
 	transition: 0.6s;
 
@@ -58,7 +59,7 @@ export const Wrapper = styled.div<Props>`
 	border-radius: 8px;
 
 	min-width: 448px;
-	min-height: 412px;
+	min-height: fit-content;
 	overflow-y: none;
 `;
 
