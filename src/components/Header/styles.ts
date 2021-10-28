@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.header`
 	display: flex;
 	align-items: center;
-	width: 100vh;
+	justify-content: center;
+	margin: 1.5rem 0;
 `;
 
 export const ImgContainer = styled.div`
