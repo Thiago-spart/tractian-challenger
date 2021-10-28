@@ -13391,6 +13391,11 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-click-away-listener@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/react-click-away-listener/-/react-click-away-listener-2.0.5.tgz#451193f5957cebeb02face700391dd99951f2526"
+  integrity sha512-sFFuuQ52ABwkrKxnYE5FbpA1zBjvJsOYmKXNg9XCTRU+iWc9bk/vpWBJQN0qEohlnmQpDQZk14ygPMTnXAnlEA==
+
 react-color@^2.17.0:
   version "2.19.3"
   resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.19.3.tgz#ec6c6b4568312a3c6a18420ab0472e146aa5683d"
