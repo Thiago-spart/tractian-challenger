@@ -23,7 +23,7 @@ export const SwitchLanguageButton = ({ selectedLanguage, options }: SwitchLangua
 	return (
 		<SwitchButton isOpen={openOptions} onClick={toggleOpenOptions}>
 			{selectedLanguage} <AiOutlineDown />
-			<ClickAwayListener onClickAway={toggleOpenOptions}>
+			<ClickAwayListener onClickAway={() => setOpenOptions(false)}>
 				<SwitchContainer isOpen={openOptions}>
 					{options.map(option => {
 						return <SwitchOption key={option.language}>{option.language}</SwitchOption>;

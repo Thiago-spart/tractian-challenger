@@ -42,11 +42,11 @@ export const Dropdown = ({
 	};
 
 	return (
-		<Container open={open} disabled={disabled} width={width}>
+		<Container open={open} disabled={disabled} width={width} onClick={toggleOpen}>
 			<Title>{placeholder}</Title>
 
 			<AiOutlineDown />
-			<ClickAwayListener onClickAway={toggleOpen}>
+			<ClickAwayListener onClickAway={() => setOpen(false)}>
 				<Wrapper open={open} width={width}>
 					{actions.map(action => (
 						<DropdownItem
