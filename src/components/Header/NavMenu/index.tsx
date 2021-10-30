@@ -4,7 +4,8 @@ import React, { FC, useEffect, useState } from "react";
 
 import { DownOutlined } from "@ant-design/icons";
 
-import { SwitchLanguageButton } from "src/components/Button/SwitchLanguageButton";
+// Import { SwitchLanguageButton } from "src/components/Button/SwitchLanguageButton";
+import { Primary } from "src/components/Button/Primary";
 import { NextLink } from "src/components/Link";
 
 import { NavContainer, Menu, MenuItem } from "./styles";
@@ -23,6 +24,7 @@ export const NavMenu: FC<Props> = ({ menuItems }) => {
 
 	return (
 		<NavContainer>
+			<Primary message="testehuehue" noBackground />
 			<Menu>
 				{menuItems?.map(item => (
 					<MenuItem key={item.key} active={selectedLink === item.pathname && true}>
