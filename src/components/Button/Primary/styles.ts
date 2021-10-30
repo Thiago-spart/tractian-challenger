@@ -14,6 +14,10 @@ export const Button = styled.button`
 	background-color: #22c55e;
 	transition: 0.8s filter ease-out;
 
+	span {
+		margin: auto 10px;
+	}
+
 	&:hover {
 		filter: opacity(0.8);
 	}
