@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+interface ButtonProps {
+	noBackground?: boolean;
+}
+
+export const Button = styled.button<ButtonProps>`
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -11,14 +15,15 @@ export const Button = styled.button`
 	cursor: pointer;
 	height: 40px;
 	width: fit-content;
-	background-color: #22c55e;
-	transition: 0.8s filter ease-out;
+	background-color: ${({ noBackground }) => (noBackground ? "transparent" : "#22c55e")};
+	transition: 0.8s all ease-out;
 
 	span {
 		margin: auto 10px;
 	}
 
 	&:hover {
-		filter: opacity(0.8);
+		filter: ${({ noBackground }) => (noBackground ? "none" : "contrast(0.8)")};
+		color: ${({ noBackground }) => noBackground && "#22c55e"};
 	}
 `;
