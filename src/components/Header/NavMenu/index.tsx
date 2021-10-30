@@ -24,11 +24,6 @@ export const NavMenu: FC<Props> = ({ menuItems }) => {
 	return (
 		<NavContainer>
 			<Menu>
-				<SwitchLanguageButton
-					selectedLanguage="pt-BR"
-					options={[{ language: "pt-BR" }, { language: "en-US" }]}
-				/>
-
 				{menuItems?.map(item => (
 					<MenuItem key={item.key} active={selectedLink === item.pathname && true}>
 						<NextLink href={item.pathname}>
