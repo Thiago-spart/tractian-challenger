@@ -5,5 +5,9 @@ interface PrimaryProps {
 }
 
 export const Primary = ({ message }: PrimaryProps) => {
-	return <Button type="button">{message}</Button>;
+	return (
+		<Button type="button">
+			<span>{message}</span>
+		</Button>
+	);
 };
