@@ -5,11 +5,9 @@ import { Header } from "src/components/Header";
 
 import { MainWrapper } from "./styles";
 
-import menuItems from "./menuItems.json";
-
 export const Layout: FC = ({ children }) => (
 	<>
-		<Header menuItems={menuItems.items} />
+		<Header />
 		<MainWrapper>{children}</MainWrapper>
 		<Footer />
 	</>

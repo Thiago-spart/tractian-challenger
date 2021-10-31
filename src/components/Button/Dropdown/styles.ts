@@ -33,7 +33,6 @@ export const Container = styled.button<Props>`
 	}
 
 	& > svg {
-		transform: ${({ open }) => (open ? "rotate(-180deg)" : "unset")};
 		transform: ${({ open }) => (open ? "rotate(180deg)" : "rotate(360deg)")};
 		transition: transform 0.25s;
 	}
@@ -61,6 +60,7 @@ export const Wrapper = styled.div<Props>`
 	min-width: 448px;
 	min-height: fit-content;
 	overflow-y: none;
+	z-index: 500;
 `;
 
 export const Title = styled.div`
