@@ -1,5 +1,5 @@
-import { ReactNode, useState } from "react";
-import ClickAwayListener from "react-click-away-listener";
+import { ReactNode, useEffect, useState } from "react";
+// Import ClickAwayListener from "react-click-away-listener";
 import { AiOutlineDown } from "react-icons/ai";
 
 import { Container, Title, Wrapper } from "./styles";
@@ -21,7 +21,7 @@ interface DropdownFooterProps {
 }
 
 interface OutlinedProps {
-	actions: Array<ActionProps>;
+	actions?: Array<ActionProps>;
 	footer?: Array<DropdownFooterProps>;
 	placeholder: string;
 	width?: number;
@@ -46,27 +46,27 @@ export const Dropdown = ({
 			<Title>{placeholder}</Title>
 
 			<AiOutlineDown />
-			<ClickAwayListener onClickAway={() => setOpen(false)}>
-				<Wrapper open={open} width={width}>
-					{actions.map(action => (
-						<DropdownItem
-							key={action.title}
-							handleSelect={action.handleSelect}
-							title={action.title}
-							subTitle={action.subTitle}
-							icon={action.icon}
-						/>
-					))}
-					{footer?.map(item => (
-						<DropdownFooter
-							key={item.message}
-							message={item.message}
-							handleSelect={item.handleSelect}
-							icon={item?.icon}
-						/>
-					))}
-				</Wrapper>
-			</ClickAwayListener>
+			{/* <ClickAwayListener onClickAway={() => setOpen(false)}> */}
+			<Wrapper open={open} width={width}>
+				{actions?.map(action => (
+					<DropdownItem
+						key={action.title}
+						handleSelect={action.handleSelect}
+						title={action.title}
+						subTitle={action.subTitle}
+						icon={action.icon}
+					/>
+				))}
+				{footer?.map(item => (
+					<DropdownFooter
+						key={item.message}
+						message={item.message}
+						handleSelect={item.handleSelect}
+						icon={item?.icon}
+					/>
+				))}
+			</Wrapper>
+			{/* </ClickAwayListener> */}
 		</Container>
 	);
 };
