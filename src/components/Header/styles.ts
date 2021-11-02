@@ -11,6 +11,35 @@ export const Container = styled.header`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@media (max-width: 1023px) {
+		& > button,
+		& > nav {
+			display: none;
+		}
+
+		div {
+			display: flex;
+		}
+	}
+`;
+
+export const MobileMenu = styled.div`
+	display: none;
+	align-items: center;
+	justify-content: center;
+	color: #a1a1aa;
+	background: #ffffff;
+	height: 25px;
+	width: 30px;
+	border-radius: 8px;
+	border: none;
+
+	transition: 0.6s all ease-out;
+
+	&:hover {
+		filter: brightness(0.8);
+	}
 `;
 
 export const ImgContainer = styled.div`

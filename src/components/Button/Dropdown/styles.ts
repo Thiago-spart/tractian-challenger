@@ -7,7 +7,6 @@ interface Props {
 
 export const Container = styled.button<Props>`
 	position: relative;
-	z-index: 3;
 
 	height: 42px;
 	min-width: ${({ width }) => (width ? `${width}px` : "fit-content")};
@@ -22,8 +21,8 @@ export const Container = styled.button<Props>`
 	cursor: pointer;
 	text-align: left;
 	margin: 0;
-
 	color: #ffffff;
+
 	background-color: transparent;
 
 	transition: 0.6s;
@@ -43,11 +42,17 @@ export const Container = styled.button<Props>`
 		font-weight: 700;
 		cursor: auto;
 	}
+
+	@media (max-width: 1023px) {
+		justify-content: flex-start;
+		margin-left: 10px;
+		color: #212121;
+	}
 `;
 
 export const Wrapper = styled.div<Props>`
 	position: absolute;
-	display: ${({ open }) => (open ? "block" : "none")};
+	display: ${({ open }) => (open ? "flex" : "none")};
 	left: -160px;
 	top: 43.4px;
 
@@ -60,7 +65,12 @@ export const Wrapper = styled.div<Props>`
 	min-width: 448px;
 	min-height: fit-content;
 	overflow-y: none;
-	z-index: 500;
+	z-index: 3;
+
+	@media (max-width: 1023px) {
+		left: -5px;
+		top: 43.4px;
+	}
 `;
 
 export const Title = styled.div`
