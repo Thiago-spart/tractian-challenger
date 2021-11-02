@@ -1,6 +1,5 @@
 import React, { FC, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { getProfileRequest } from 'src/redux/user/actions'
 import { Profile } from './Profile'
 
 const User: FC = () => {
