@@ -5,6 +5,7 @@ import Modal from "react-modal";
 
 import { Container, ImgContainer, InviteBlock, SeparatorLine } from "./styles";
 
+import { Secondary } from "../Button/Secondary";
 import { NavMenu } from "../Header/NavMenu";
 
 interface MobileMenuProps {
@@ -29,6 +30,8 @@ export const MobileMenu = ({ isOpen, onRequestClose }: MobileMenuProps) => {
 				</ImgContainer>
 				<NavMenu />
 				<SeparatorLine />
+
+				<Secondary message="Demonstração" allWidth />
 
 				<InviteBlock>
 					<p>
