@@ -6,6 +6,10 @@ export const Container = styled.div`
 	justify-content: flex-start;
 	flex-direction: column;
 	gap: 0.25rem;
+
+	& > button {
+		margin: 1rem 0;
+	}
 `;
 
 export const ImgContainer = styled.div`
