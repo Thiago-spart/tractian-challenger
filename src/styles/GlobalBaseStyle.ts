@@ -18,6 +18,7 @@ export const GlobalBaseStyle = createGlobalStyle`
   }
 
   .react-modal-overlay {
+    z-index: 2;
 		background: #ffffff;
 
 		position: fixed;
