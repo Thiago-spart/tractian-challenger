@@ -13,6 +13,8 @@ export const Container = styled.header`
 	justify-content: space-between;
 
 	@media (max-width: 1023px) {
+		z-index: 1;
+
 		& > button,
 		& > nav {
 			display: none;

@@ -21,6 +21,17 @@ export const Card = styled.div`
 			}
 		}
 	}
+
+	@media (max-width: 1023px) {
+		align-items: center;
+		justify-content: center;
+		gap: 0.7rem;
+
+		.img-container {
+			justify-content: center;
+			gap: 0.7rem;
+		}
+	}
 `;
 
 export const Title = styled.h3`
@@ -47,6 +58,11 @@ export const LinkContainer = styled.div`
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+
+	@media (max-width: 1023px) {
+		align-items: center;
+		justify-content: center;
 	}
 `;
 
