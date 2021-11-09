@@ -8,6 +8,7 @@ import styled from "styled-components";
 import { Button } from "antd";
 
 import { Title } from "src/components/common";
+import { HeadTitle } from "src/components/HeadTitle";
 import { NextLink } from "src/components/Link";
 
 const CoreTitle = styled(Title)`
@@ -27,7 +28,8 @@ const Home: NextPage = () => {
 	};
 
 	return (
-		<div>
+		<>
+			<HeadTitle title="Home" />
 			<CoreTitle>Nextjs-TS-Antd-Redux-Storybook-Jest-Starter</CoreTitle>
 			<LinkButton>
 				<NextLink href="/user">{t("home.user")}</NextLink>
@@ -36,7 +38,7 @@ const Home: NextPage = () => {
 				<NextLink href="/articles">{t("home.articles")}</NextLink>
 			</LinkButton>
 			<Button onClick={changeLanguage}>{t("home.change_lang")}</Button>
-		</div>
+		</>
 	);
 };
 export default Home;

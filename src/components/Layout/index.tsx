@@ -3,7 +3,7 @@ import React, { FC, useState } from "react";
 import { Footer } from "src/components/Footer";
 import { Header } from "src/components/Header";
 
-import { MainWrapper } from "./styles";
+import { Main } from "./styles";
 
 import { MobileMenu } from "../MobileMenu";
 
@@ -22,7 +22,7 @@ export const Layout: FC = ({ children }) => {
 		<>
 			<Header isModalOpen={openModal} />
 			<MobileMenu isOpen={isOpenModal} onRequestClose={closeModal} />
-			<MainWrapper>{children}</MainWrapper>
+			<Main>{children}</Main>
 			<Footer />
 		</>
 	);
