@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { MdMenu } from "react-icons/md";
 
 import { Container, ImgContainer, MobileMenu } from "./styles";
@@ -14,8 +14,19 @@ interface HeaderProps {
 }
 
 export const Header: FC<HeaderProps> = ({ isModalOpen }) => {
+	const [scroll, setScroll] = useState(false);
+	const scrollDown = 50;
+
+	if (typeof window !== "undefined") {
+		window.onscroll = () => {
+			setScroll(
+				document.body.scrollTop > scrollDown || document.documentElement.scrollTop > scrollDown,
+			);
+		};
+	}
+
 	return (
-		<Container>
+		<Container scroll={scroll}>
 			<NextLink href="/">
 				<ImgContainer>
 					<Image src="/Logo-Tractian.svg" alt="company logo" width="200" height="40" />
