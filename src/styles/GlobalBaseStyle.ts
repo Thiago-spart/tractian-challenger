@@ -14,7 +14,7 @@ export const GlobalBaseStyle = createGlobalStyle`
   body, #__next {
     position: relative;
     min-height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   .react-modal-overlay {

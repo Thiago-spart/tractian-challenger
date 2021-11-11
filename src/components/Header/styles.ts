@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.header`
+export const Container = styled.header<{ scroll: boolean }>`
 	position: fixed;
 	padding: 0.7rem;
-	left: 0;
-	top: 0;
 	width: 100%;
-	background-color: #1e3a8a;
+	background-color: ${({ scroll }) => (scroll ? "#1e3a8a" : "transparent")};
+	z-index: 5;
 	color: #ffffff;
 	display: flex;
 	align-items: center;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const Main = styled.div`
-	text-align: center;
+export const Main = styled.main`
+	width: 100%;
+	height: 100%;
 	padding-bottom: 70px;
 `;
