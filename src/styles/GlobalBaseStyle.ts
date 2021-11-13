@@ -17,6 +17,10 @@ export const GlobalBaseStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
 
+  p {
+    margin: 0;
+  }
+
   .react-modal-overlay {
     z-index: 2;
 		background: #ffffff;
