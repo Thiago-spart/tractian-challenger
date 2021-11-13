@@ -8,6 +8,10 @@ export const Container = styled.div`
 	gap: 1rem;
 	width: 50%;
 	height: 30rem;
+
+	@media (max-width: 1023px) {
+		width: 100%;
+	}
 `;
 
 export const Title = styled.h4`
