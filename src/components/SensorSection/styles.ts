@@ -10,6 +10,12 @@ export const Container = styled.section`
 	justify-content: space-between;
 	gap: 1rem;
 	background: #fafafa;
+
+	@media (max-width: 1023px) {
+		flex-direction: column;
+		justify-content: center;
+		gap: 1.5rem;
+	}
 `;
 
 export const ContentContainer = styled.div`
@@ -19,6 +25,10 @@ export const ContentContainer = styled.div`
 	justify-content: flex-start;
 	flex-direction: column;
 	gap: 0.5rem;
+
+	@media (max-width: 1023px) {
+		width: 100%;
+	}
 `;
 
 export const Title = styled.h3`
