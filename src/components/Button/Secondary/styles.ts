@@ -16,6 +16,7 @@ export const Button = styled.button<ButtonProps>`
 	cursor: pointer;
 	height: 40px;
 	font-weight: 700;
+	font-size: 1rem;
 	width: ${({ allWidth }) => (allWidth ? "100%" : "fit-content")};
 	background-color: ${({ noBackground }) => (noBackground ? "transparent" : "#1d4ed8")};
 	transition: 0.8s all ease-out;

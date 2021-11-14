@@ -2,6 +2,7 @@ import { NextPage } from "next";
 
 import React from "react";
 
+import { PlanSection } from "src/components/PlanSection";
 import { SensorSection } from "src/components/SensorSection";
 import { UsedBySection } from "src/components/UsedBySection";
 import { WelcomeSection } from "src/components/WelcomeSection";
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
 			<UsedBySection />
 			<WhyChoose />
 			<SensorSection />
+			<PlanSection />
 		</>
 	);
 };
