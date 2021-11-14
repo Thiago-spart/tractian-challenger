@@ -15,6 +15,7 @@ export const Button = styled.button<ButtonProps>`
 	cursor: pointer;
 	height: 40px;
 	font-weight: 700;
+	font-size: 1rem;
 	width: fit-content;
 	background-color: ${({ noBackground }) => (noBackground ? "transparent" : "#22c55e")};
 	transition: 0.8s all ease-out;
@@ -29,8 +30,8 @@ export const Button = styled.button<ButtonProps>`
 	}
 
 	@media (max-width: 1023px) {
-		color: #212121;
-		justify-content: flex-start;
-		align-items: flex-start;
+		color: ${({ noBackground }) => noBackground && "#212121"};
+		justify-content: ${({ noBackground }) => noBackground && "flex-start"};
+		align-items: ${({ noBackground }) => noBackground && "flex-start"};
 	}
 `;
