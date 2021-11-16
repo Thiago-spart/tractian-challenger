@@ -64,6 +64,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
+    "@trendyol-js/react-carousel": "^2.0.0",
     "antd": "^4.9.3",
     "axios": "^0.21.0",
     "i18next": "^19.8.4",
