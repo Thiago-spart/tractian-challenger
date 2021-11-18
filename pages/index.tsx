@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import React from "react";
 
 import { HowWorksSection } from "src/components/HowWorksSection";
+import { InviteSection } from "src/components/InviteSection";
 import { OpinionSection } from "src/components/OpinionSection";
 import { Percentage } from "src/components/Percentage";
 import { PlanSection } from "src/components/PlanSection";
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
 			<HowWorksSection />
 			<Percentage />
 			<OpinionSection />
+			<InviteSection />
 		</>
 	);
 };
