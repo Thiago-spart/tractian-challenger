@@ -2,6 +2,7 @@ import { NextPage } from "next";
 
 import React from "react";
 
+import { HomeForm } from "src/components/HomeForm";
 import { HowWorksSection } from "src/components/HowWorksSection";
 import { InviteSection } from "src/components/InviteSection";
 import { OpinionSection } from "src/components/OpinionSection";
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
 			<Percentage />
 			<OpinionSection />
 			<InviteSection />
+			<HomeForm />
 		</>
 	);
 };
