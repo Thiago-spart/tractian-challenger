@@ -8,6 +8,7 @@ import { InviteSection } from "src/components/InviteSection";
 import { OpinionSection } from "src/components/OpinionSection";
 import { Percentage } from "src/components/Percentage";
 import { PlanSection } from "src/components/PlanSection";
+import { QualitySection } from "src/components/QualitySection";
 import { SensorSection } from "src/components/SensorSection";
 import { UsedBySection } from "src/components/UsedBySection";
 import { WelcomeSection } from "src/components/WelcomeSection";
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
 			<OpinionSection />
 			<InviteSection />
 			<HomeForm />
+			<QualitySection />
 		</>
 	);
 };
