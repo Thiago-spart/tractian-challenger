@@ -20,6 +20,9 @@ const languages = [
 	{
 		lang: "en-US",
 	},
+	{
+		lang: "es-ES",
+	},
 ];
 
 export const SwitchLanguageButton: React.FC = () => {

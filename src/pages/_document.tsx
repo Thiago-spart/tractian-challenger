@@ -6,6 +6,7 @@ import { ServerStyleSheet } from "styled-components";
 import { HeadContent } from "../web/components/HeadContent";
 
 import enUSSystem from "../assets/locales/en-US/common.json";
+import esESSystem from "../assets/locales/es-ES/common.json";
 import ptBRSystem from "../assets/locales/pt-BR/common.json";
 
 import { i18n } from "../configs/i18n";
@@ -16,6 +17,8 @@ const getSystemInformation = (locale: string): GetSystemInformationResult => {
 	switch (locale) {
 		case "pt-BR":
 			return ptBRSystem as GetSystemInformationResult;
+		case "es-ES":
+			return esESSystem as GetSystemInformationResult;
 		case "en-US":
 		default:
 			return enUSSystem as GetSystemInformationResult;
