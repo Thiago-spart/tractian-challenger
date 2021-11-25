@@ -1,9 +1,14 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
+module.exports = {
+	assetPrefix: "/",
+	future: {
+		webpack5: true,
+	},
+	webpack: config => {
+		config.module.rules.push({
+			test: /\.svg$/,
+			use: ["@svgr/webpack"],
+		});
 
-const nextConfig = {
-  // any configs you need
-}
-
-module.exports = withBundleAnalyzer(nextConfig)
+		return config;
+	},
+};
