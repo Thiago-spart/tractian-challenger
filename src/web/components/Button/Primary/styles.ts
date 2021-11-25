@@ -25,7 +25,7 @@ export const Button = styled.button<ButtonProps>`
 	}
 
 	&:hover {
-		filter: ${({ noBackground }) => (noBackground ? "none" : "contrast(0.8)")};
+		filter: ${({ noBackground }) => (noBackground ? "none" : "contrast(1.4)")};
 		color: ${({ noBackground }) => noBackground && "#22c55e"};
 	}
 
