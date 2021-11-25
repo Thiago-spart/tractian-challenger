@@ -1,4 +1,4 @@
 export const SITE = {
-	name: "Base Project Front",
+	name: "Tractian",
 	url: "https://example.com",
 };

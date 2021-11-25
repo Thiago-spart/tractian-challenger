@@ -1,6 +1,12 @@
 {
-	"system": {
-		"lang": "pt-BR",
-		"ogLocale": "pt_BR"
-	}
+  "system": {
+    "lang": "pt-BR",
+    "ogLocale": "pt_BR"
+  },
+  "head": {
+    "metas": {
+      "description": "Techmmunity é uma comunidade de pessoas que se ajudam a aprender e espalhar conhecimento sobre programação, design gráfico, sonoplastia, engenharia robótica e gestão.",
+      "ogLocale": "pt_BR"
+    }
+  }
 }
