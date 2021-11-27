@@ -15,8 +15,9 @@ interface ActionProps {
 }
 
 interface DropdownFooterProps {
-	message: string;
+	message?: string;
 	icon?: ReactNode;
+	type?: string;
 	handleSelect: () => void;
 }
 
@@ -60,9 +61,10 @@ export const Dropdown = ({
 				{footer?.map(item => (
 					<DropdownFooter
 						key={item.message}
-						message={item.message}
+						message={String(item.message)}
 						handleSelect={item.handleSelect}
 						icon={item?.icon}
+						type={item.type}
 					/>
 				))}
 			</Wrapper>

@@ -6,9 +6,10 @@ interface DropdownFooterProps {
 	message: string;
 	icon?: ReactNode;
 	handleSelect: () => void;
+	type?: string;
 }
 
-export const DropdownFooter = ({ handleSelect, message, icon }: DropdownFooterProps) => {
+export const DropdownFooter = ({ handleSelect, message, icon, type }: DropdownFooterProps) => {
 	return (
 		<Container onClick={handleSelect}>
 			<p>

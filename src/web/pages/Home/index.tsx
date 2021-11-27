@@ -1,6 +1,8 @@
-import { NextPage } from "next";
+import React, { useState } from "react";
 
-import React from "react";
+import { Footer } from "web/components/Footer";
+import { Header } from "web/components/Header";
+import { MobileMenu } from "web/components/MobileMenu";
 
 import { HomeForm } from "./components/HomeForm";
 import { HowWorksSection } from "./components/HowWorksSection";
@@ -14,9 +16,23 @@ import { UsedBySection } from "./components/UsedBySection";
 import { WelcomeSection } from "./components/WelcomeSection";
 import { WhyChoose } from "./components/WhyChoose";
 
-export const Home: NextPage = () => {
+import { FCWithLayout } from "types/layout";
+
+export const Home: FCWithLayout = () => {
+	const [isOpenModal, setIsOpenModal] = useState(false);
+
+	const openModal = () => {
+		setIsOpenModal(true);
+	};
+
+	const closeModal = () => {
+		setIsOpenModal(false);
+	};
+
 	return (
 		<>
+			<Header isModalOpen={openModal} />
+			<MobileMenu isOpen={isOpenModal} onRequestClose={closeModal} />
 			<WelcomeSection />
 			<UsedBySection />
 			<WhyChoose />
@@ -28,6 +44,7 @@ export const Home: NextPage = () => {
 			<InviteSection />
 			<HomeForm />
 			<QualitySection />
+			<Footer />
 		</>
 	);
 };

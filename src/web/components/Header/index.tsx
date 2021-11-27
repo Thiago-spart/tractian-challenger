@@ -1,7 +1,8 @@
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-import React, { FC, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MdMenu } from "react-icons/md";
 
 import { Container, ImgContainer, MobileMenu } from "./styles";
@@ -14,7 +15,8 @@ interface HeaderProps {
 	isModalOpen: () => void;
 }
 
-export const Header: FC<HeaderProps> = ({ isModalOpen }) => {
+export const Header: React.FC<HeaderProps> = ({ isModalOpen }) => {
+	const { t } = useTranslation("header");
 	const [scroll, setScroll] = useState(false);
 	const scrollDown = 50;
 	const { push } = useRouter();
@@ -36,7 +38,7 @@ export const Header: FC<HeaderProps> = ({ isModalOpen }) => {
 			</NextLink>
 			<NavMenu />
 
-			<Primary message="Demonstração" />
+			<Primary message={t("buttonMessage")} />
 
 			<MobileMenu onClick={isModalOpen}>
 				<MdMenu />

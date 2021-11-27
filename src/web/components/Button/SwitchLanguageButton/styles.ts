@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
-export const SwitchButton = styled.button<{ isOpen: boolean }>`
+export const SwitchButton = styled.div<{ isOpen: boolean }>`
 	position: relative;
 	border: none;
 	border-radius: 8px;
 	height: 30px;
 	width: 70px;
 	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: #2551b5;
 	color: #ffffff;
 
