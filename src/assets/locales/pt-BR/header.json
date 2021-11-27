@@ -1,0 +1,83 @@
+{
+  "buttonMessage": "Demonstração",
+  "navbar": {
+    "product": {
+      "name": "Conheça o Produto",
+      "sensorPage": {
+        "title": "Sensor Tractian",
+        "subTitle": "Análise de Vibração e Temperatura em tempo real."
+      },
+      "Platform": {
+        "title": "Plataforma",
+        "subTitle": "Monitore a condição das suas máquinas de qualquer lugar."
+      },
+      "functionality": {
+        "title": "Funcionalidade",
+        "subTitle": "Saúde do Ativo, Ordens de Serviço, Insights Automáticos e muito mais."
+      },
+      "plans": {
+        "title": "Planos",
+        "subTitle": "Saiba como obter nossa solução."
+      },
+      "scheduleADemo": {
+        "title": "Agende uma Demonstração"
+      }
+    },
+    "aboutUs": {
+      "name": "Sobre nós",
+      "meetTractian": {
+        "title": "Conheça a Tractian",
+        "subTitle": "Conheça mais sobre a equipe que faz acontecer o produto, nossa história e vagas abertas."
+      },
+      "successHistories": {
+        "title": "Histórias de Sucesso",
+        "subTitle": "Saiba como nossa solução melhora o dia a dia dos profissionais da manutenção."
+      },
+      "contact": {
+        "title": "Contato",
+        "subTitle": "Entre em contato para tirar dúvidas, conhecer de perto nossa solução e enviar sugestões."
+      },
+      "workForUs": {
+        "title": "Trabalhe Conosco",
+        "subTitle": "Venha participar da Startup para Indústria mais promissora do Brasil."
+      },
+      "media": {
+        "title": "Imprensa",
+        "subTitle": "Veja o que os principais veículos de informação falam sobre a Tractian."
+      }
+    },
+    "freeMaterial": {
+      "name": "Material gratuito",
+      "guides": {
+        "title": "Guias",
+        "subTitle": "Obtenha os melhores guias para manutenção gratuitamente."
+      },
+      "checkList": {
+        "title": "Checklists",
+        "subTitle": "Baixe nossos checklists gratuitos e evite problemas no seu time de manutenção."
+      },
+      "roiCalculator": {
+        "title": "Calculadora ROI",
+        "subTitle": "Qual o peso da sua máquina no seu bolso? Veja se vale a pena trocar para a solução da Tractian."
+      },
+      "recentMaterial": {
+        "title": "Últimos materiais"
+      },
+      "lookingForZeroDowntime": {
+        "title": "Em busca do downtime zero."
+      },
+      "completeGuide": {
+        "title": "Guia Completo Indicadores da Manutenção."
+      },
+      "seeAll": {
+        "title": "Ver todos"
+      }
+    },
+    "blog": {
+      "name": "Blog"
+    },
+    "clientArea": {
+      "name": "Área do cliente"
+    }
+  }
+}

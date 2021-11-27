@@ -4,13 +4,6 @@ import { useState } from "react";
 import ClickAwayListener from "react-click-away-listener";
 import { AiOutlineDown } from "react-icons/ai";
 
-import { NextLink } from "web/components/Link";
-
-/*
- * Import { system } from "../../../assets/locales/en-US/common.json";
- * import { system } from "../../../assets/locales/pt-BR/common.json";
- */
-
 import { SwitchButton, SwitchContainer, SwitchOption } from "./styles";
 
 const languages = [
@@ -26,19 +19,22 @@ const languages = [
 ];
 
 export const SwitchLanguageButton: React.FC = () => {
-	const { query } = useRouter();
+	const { push, locale } = useRouter();
 	const [openOptions, setOpenOptions] = useState(false);
-	const [selectedLanguage, setSelectedLanguage] = useState(query.language);
+	const langLength = -5;
+	const [selectedLanguage, setSelectedLanguage] = useState(String(locale?.slice(langLength)));
 
 	const toggleOpenOptions = () => {
 		setOpenOptions(!openOptions);
 	};
 
 	const setLanguage = (currentLanguage: string) => {
-		setSelectedLanguage(currentLanguage);
-	};
+		const oldLanguage = currentLanguage;
 
-	// Console.log(languages.filter(item => item.lang !== selectedLanguage).map(item => item));
+		setSelectedLanguage(currentLanguage);
+
+		push(String(locale?.replace(selectedLanguage, oldLanguage)));
+	};
 
 	return (
 		<ClickAwayListener onClickAway={() => setOpenOptions(false)}>
@@ -49,11 +45,9 @@ export const SwitchLanguageButton: React.FC = () => {
 						.filter(item => item.lang !== selectedLanguage)
 						.map(option => {
 							return (
-								<NextLink key={option.lang} href={option.lang}>
-									<SwitchOption onClick={() => setLanguage(option.lang)}>
-										{option.lang}
-									</SwitchOption>
-								</NextLink>
+								<SwitchOption key={option.lang} onClick={() => setLanguage(option.lang)}>
+									{option.lang}
+								</SwitchOption>
 							);
 						})}
 				</SwitchContainer>
