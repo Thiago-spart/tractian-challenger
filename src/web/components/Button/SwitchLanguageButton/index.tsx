@@ -22,18 +22,15 @@ export const SwitchLanguageButton: React.FC = () => {
 	const { push, locale } = useRouter();
 	const [openOptions, setOpenOptions] = useState(false);
 	const langLength = -5;
-	const [selectedLanguage, setSelectedLanguage] = useState(String(locale?.slice(langLength)));
+	const selectedLanguage = String(locale?.slice(langLength));
 
 	const toggleOpenOptions = () => {
 		setOpenOptions(!openOptions);
 	};
 
 	const setLanguage = (currentLanguage: string) => {
-		const oldLanguage = currentLanguage;
-
-		setSelectedLanguage(currentLanguage);
-
-		push(String(locale?.replace(selectedLanguage, oldLanguage)));
+		const newPath = String(locale).replace(selectedLanguage, currentLanguage);
+		push(newPath);
 	};
 
 	return (
