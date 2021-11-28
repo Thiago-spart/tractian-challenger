@@ -1,83 +1,83 @@
 {
-  "buttonMessage": "Demonstração",
+  "buttonMessage": "Demostración",
   "navbar": {
     "product": {
-      "name": "Conheça o Produto",
+      "name": "Producto",
       "sensorPage": {
         "title": "Sensor Tractian",
-        "subTitle": "Análise de Vibração e Temperatura em tempo real."
+        "subTitle": "Análisis de la Vibración y la Temperatura en tiempo real."
       },
       "Platform": {
         "title": "Plataforma",
-        "subTitle": "Monitore a condição das suas máquinas de qualquer lugar."
+        "subTitle": "Monitoree el estado de sus máquinas desde cualquier lugar."
       },
       "functionality": {
         "title": "Funcionalidade",
-        "subTitle": "Saúde do Ativo, Ordens de Serviço, Insights Automáticos e muito mais."
+        "subTitle": "Estado del Activo, Ordenes de Servicio, Insights Automáticos y mucho más."
       },
       "plans": {
-        "title": "Planos",
-        "subTitle": "Saiba como obter nossa solução."
+        "title": "Planes",
+        "subTitle": "Sepa cómo obtener nuestra solución."
       },
       "scheduleADemo": {
-        "title": "Agende uma Demonstração"
+        "title": "Agende una Demostración"
       }
     },
     "aboutUs": {
-      "name": "Sobre nós",
+      "name": "Acerca de",
       "meetTractian": {
-        "title": "Conheça a Tractian",
-        "subTitle": "Conheça mais sobre a equipe que faz acontecer o produto, nossa história e vagas abertas."
+        "title": "Conozca la Tractian",
+        "subTitle": "Conozca más sobre el equipo que realiza todos nuestros productos, nuestra historia y las oportunidades de empleo actuales con nosotros."
       },
       "successHistories": {
-        "title": "Histórias de Sucesso",
-        "subTitle": "Saiba como nossa solução melhora o dia a dia dos profissionais da manutenção."
+        "title": "Historias de éxito",
+        "subTitle": "Descubra cómo nuestra solución mejora el día a día de los profesionales del mantenimiento."
       },
       "contact": {
-        "title": "Contato",
-        "subTitle": "Entre em contato para tirar dúvidas, conhecer de perto nossa solução e enviar sugestões."
+        "title": "Contacto",
+        "subTitle": "Contáctenos si tiene cualquier duda, conocer nuestra solución o para enviar alguna sugerencia."
       },
       "workForUs": {
-        "title": "Trabalhe Conosco",
-        "subTitle": "Venha participar da Startup para Indústria mais promissora do Brasil."
+        "title": "Trabaje con nosotros",
+        "subTitle": "No dude en participar de la Startup más prometedora de Brasil en el sector industrial."
       },
       "media": {
-        "title": "Imprensa",
-        "subTitle": "Veja o que os principais veículos de informação falam sobre a Tractian."
+        "title": "Prensa",
+        "subTitle": "Vea lo que dicen los principales periódicos sobre Tractian."
       }
     },
     "freeMaterial": {
-      "name": "Material gratuito",
+      "name": "Recursos",
       "guides": {
-        "title": "Guias",
-        "subTitle": "Obtenha os melhores guias para manutenção gratuitamente."
+        "title": "Manuales",
+        "subTitle": "Obtenga los mejores manuales de mantenimiento gratuitamente."
       },
       "checkList": {
-        "title": "Checklists",
-        "subTitle": "Baixe nossos checklists gratuitos e evite problemas no seu time de manutenção."
+        "title": "Listas de comprobación",
+        "subTitle": "Descargue nuestras listas de comprobación gratuitas y evite problemas con su equipo de mantenimiento."
       },
       "roiCalculator": {
         "title": "Calculadora ROI",
-        "subTitle": "Qual o peso da sua máquina no seu bolso? Veja se vale a pena trocar para a solução da Tractian."
+        "subTitle": "¿En cuánto está valorada su máquina? Vea si vale la pena instalar la solución Tractian."
       },
       "recentMaterial": {
-        "title": "Últimos materiais"
+        "title": "Últimos Materiales"
       },
       "lookingForZeroDowntime": {
-        "title": "Em busca do downtime zero."
+        "title": "En busca del tiempo de parada cero."
       },
       "completeGuide": {
-        "title": "Guia Completo Indicadores da Manutenção."
+        "title": "Manual Completo Indicadores del matenimiento."
       },
       "seeAll": {
-        "title": "Ver todos"
+        "title": "Verlos todos"
       }
     },
     "blog": {
       "name": "Blog"
     },
     "clientArea": {
-      "name": "Área do cliente"
+      "name": "Área del Cliente"
     }
   }
 }

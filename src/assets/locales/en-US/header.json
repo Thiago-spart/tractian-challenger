@@ -1,83 +1,83 @@
 {
-  "buttonMessage": "Demonstração",
+  "buttonMessage": "Schedule a demo",
   "navbar": {
     "product": {
-      "name": "Conheça o Produto",
+      "name": "Product",
       "sensorPage": {
-        "title": "Sensor Tractian",
-        "subTitle": "Análise de Vibração e Temperatura em tempo real."
+        "title": "Sensor",
+        "subTitle": "Vibration and Temperature analysis in real time"
       },
       "Platform": {
-        "title": "Plataforma",
-        "subTitle": "Monitore a condição das suas máquinas de qualquer lugar."
+        "title": "Platform",
+        "subTitle": "Monitor the condition of your machines from anywhere."
       },
       "functionality": {
-        "title": "Funcionalidade",
-        "subTitle": "Saúde do Ativo, Ordens de Serviço, Insights Automáticos e muito mais."
+        "title": "Features",
+        "subTitle": "Asset health score, Work Orders Automation, Alerts, Insights and more"
       },
       "plans": {
-        "title": "Planos",
-        "subTitle": "Saiba como obter nossa solução."
+        "title": "Pricing",
+        "subTitle": "Check out how to get our solution"
       },
       "scheduleADemo": {
-        "title": "Agende uma Demonstração"
+        "title": "Schedule a demo"
       }
     },
     "aboutUs": {
-      "name": "Sobre nós",
+      "name": "About us",
       "meetTractian": {
-        "title": "Conheça a Tractian",
-        "subTitle": "Conheça mais sobre a equipe que faz acontecer o produto, nossa história e vagas abertas."
+        "title": "Get to know us",
+        "subTitle": "Find out more about the team behind Tractian, our history and open positions."
       },
       "successHistories": {
-        "title": "Histórias de Sucesso",
-        "subTitle": "Saiba como nossa solução melhora o dia a dia dos profissionais da manutenção."
+        "title": "Success Cases",
+        "subTitle": "Learn how our solution improves the day-to-day maintenance professionals life."
       },
       "contact": {
-        "title": "Contato",
-        "subTitle": "Entre em contato para tirar dúvidas, conhecer de perto nossa solução e enviar sugestões."
+        "title": "Contact us",
+        "subTitle": "Ask questions, understand more about our solution and give us suggestions."
       },
       "workForUs": {
-        "title": "Trabalhe Conosco",
-        "subTitle": "Venha participar da Startup para Indústria mais promissora do Brasil."
+        "title": "Careers",
+        "subTitle": "Work in the fastest growing Indtech in Brazil."
       },
       "media": {
-        "title": "Imprensa",
-        "subTitle": "Veja o que os principais veículos de informação falam sobre a Tractian."
+        "title": "Press",
+        "subTitle": "See what the major newspapers say about Tractian."
       }
     },
     "freeMaterial": {
-      "name": "Material gratuito",
+      "name": "Resources",
       "guides": {
-        "title": "Guias",
-        "subTitle": "Obtenha os melhores guias para manutenção gratuitamente."
+        "title": "Guides",
+        "subTitle": "Download the best maintenance guides for free."
       },
       "checkList": {
         "title": "Checklists",
-        "subTitle": "Baixe nossos checklists gratuitos e evite problemas no seu time de manutenção."
+        "subTitle": "Download our free checklists and avoid problems with your maintenance team."
       },
       "roiCalculator": {
-        "title": "Calculadora ROI",
-        "subTitle": "Qual o peso da sua máquina no seu bolso? Veja se vale a pena trocar para a solução da Tractian."
+        "title": "ROI Calculator",
+        "subTitle": "What is the cost of your machine in your budget? See if Tractian's solution is worth using."
       },
       "recentMaterial": {
-        "title": "Últimos materiais"
+        "title": "Latest Content"
       },
       "lookingForZeroDowntime": {
-        "title": "Em busca do downtime zero."
+        "title": "Unlimited Machine Uptime"
       },
       "completeGuide": {
-        "title": "Guia Completo Indicadores da Manutenção."
+        "title": "Complete Guide to Maintenance KPIs"
       },
       "seeAll": {
-        "title": "Ver todos"
+        "title": "See all"
       }
     },
     "blog": {
       "name": "Blog"
     },
     "clientArea": {
-      "name": "Área do cliente"
+      "name": "Customer Area"
     }
   }
 }
