@@ -5,13 +5,13 @@ export const Card = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	gap: 0.5rem;
+	gap: 0.8rem;
 
 	.img-container {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		gap: 0.5rem;
+		gap: 0.8rem;
 
 		a {
 			transition: filter 0.4s ease-out;
@@ -35,9 +35,9 @@ export const Card = styled.div`
 `;
 
 export const Title = styled.h3`
-	color: #7ce7f2;
+	color: var(--light-blue-500);
 	font-weight: 600;
-	font-size: 0.95rem;
+	font-size: 1.5rem;
 	cursor: default;
 `;
 
@@ -48,12 +48,12 @@ export const LinkContainer = styled.div`
 	justify-content: flex-start;
 	width: 100%;
 	white-space: nowrap;
-	gap: 0.25rem;
+	gap: 0.5rem;
 
 	a {
-		color: #ffffff;
+		color: var(--white);
+		font-size: 1.2rem;
 		transition: 0.4s all ease-out;
-		font-size: 0.9rem;
 
 		&:hover {
 			text-decoration: underline;
@@ -73,9 +73,9 @@ export const SocialContainer = styled.div`
 	gap: 0.5rem;
 
 	a {
-		width: 2.1rem;
-		height: 2.1rem;
-		color: #ffffff;
+		width: 3rem;
+		height: 3rem;
+		color: var(--white);
 
 		svg {
 			width: 100%;
@@ -91,7 +91,9 @@ export const SocialContainer = styled.div`
 `;
 
 export const CompanyInfo = styled.div`
-	span {
+	span,
+	p {
+		color: var(--white);
 		font-weight: 600;
 	}
 `;

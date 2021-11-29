@@ -123,6 +123,13 @@ export const FooterContent = [
 				width: 60,
 				height: 60,
 			},
+			{
+				urlPath: "/capterra-badge.png",
+				alt: "Capterra",
+				linkPath: "#",
+				width: 60,
+				height: 60,
+			},
 		],
 	},
 	{

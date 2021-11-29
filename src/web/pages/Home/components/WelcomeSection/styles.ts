@@ -7,15 +7,20 @@ export const Container = styled.section`
 	align-items: center;
 	justify-content: space-between;
 	padding: 9rem;
-	padding-top: 11rem;
+	padding-bottom: 11rem;
+	font-size: 1.6rem;
 	background: linear-gradient(to left, #2663eb, #1f3b8b);
 	position: relative;
 
 	@media (max-width: 1023px) {
 		flex-direction: column;
 		justify-content: center;
-		gap: 1.5rem;
-		padding: 6rem 2rem;
+		gap: 2rem;
+		padding: 8rem 2rem;
+
+		&:last-child {
+			padding-bottom: 11rem;
+		}
 	}
 `;
 
@@ -25,40 +30,36 @@ export const ContentContainer = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	gap: 0.4rem;
-	color: #ffffff;
+	gap: 0.8rem;
+	color: var(--white);
 
 	@media (max-width: 1023px) {
-		width: 100%;
+		width: 95%;
 	}
 
 	h1 {
-		color: #ffffff;
-		font-size: 2rem;
+		color: var(--white);
+		font-size: 2.4rem;
 		font-weight: 600;
-		margin: 0;
 	}
 
 	h4 {
-		color: #ffffff;
-		font-size: 1.05rem;
+		color: var(--white);
+		font-size: 1.8rem;
+		font-weight: 500;
 	}
 
 	div {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		gap: 0.5rem;
-
-		p {
-			margin-top: 0.5rem;
-		}
+		gap: 0.8rem;
 	}
 
 	a {
 		font-weight: 600;
-		font-size: 0.9rem;
-		color: #ffffff;
+		font-size: 1.6rem;
+		color: var(--white);
 		transition: all 0.4s ease-out;
 
 		&:hover {
@@ -68,12 +69,16 @@ export const ContentContainer = styled.div`
 `;
 
 export const GifContainer = styled.div`
-	height: 312px;
+	height: 31.2rem;
 	width: 50%;
-	border: 1px solid black;
+	border: 1px solid var(--black);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@media (max-width: 1023px) {
+		width: 80%;
+	}
 `;
 
 export const WaveContainer = styled.div`

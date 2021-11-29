@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-	padding: 8px 16px;
+	padding: 0.8rem 1.6rem;
 	width: 100%;
 	height: 100%;
 	color: #575757;
@@ -10,10 +10,10 @@ export const Container = styled.div`
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
-	gap: 10px;
+	gap: 1rem;
 
 	svg {
-		margin-right: 10px;
+		margin-right: 1rem;
 	}
 
 	p {
@@ -26,11 +26,11 @@ export const Container = styled.div`
 	}
 
 	&:first-child:hover {
-		border-radius: 8px 8px 0 0;
+		border-radius: 0.8rem 0.8rem 0 0;
 	}
 
 	&:last-child:hover,
 	&:last-child {
-		border-radius: 0 0 8px 8px;
+		border-radius: 0 0 0.8rem 0.8rem;
 	}
 `;
