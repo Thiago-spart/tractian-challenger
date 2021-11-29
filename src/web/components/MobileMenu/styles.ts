@@ -5,24 +5,24 @@ export const Container = styled.div`
 	align-items: flex-start;
 	justify-content: flex-start;
 	flex-direction: column;
-	gap: 0.25rem;
+	gap: 0.5rem;
 
 	& > button {
-		margin: 1rem 0;
+		margin: 1.6rem 0;
 	}
 `;
 
 export const ImgContainer = styled.div`
 	width: fit-content;
 	height: auto;
-	margin-left: 10px;
+	margin-left: 1rem;
 `;
 
 export const SeparatorLine = styled.div`
 	width: 100%;
-	height: 2px;
-	margin: 0.25rem 0;
-	background: #b5b5b5;
+	height: 0.2rem;
+	margin: 0.5rem 0;
+	background: var(--gray-800);
 `;
 
 export const InviteBlock = styled.div`
@@ -36,7 +36,7 @@ export const InviteBlock = styled.div`
 		font-weight: 700;
 
 		span {
-			color: #1d4ed8;
+			color: var(--blue-750);
 			transition: 0.6s all ease-out;
 
 			&:hover {

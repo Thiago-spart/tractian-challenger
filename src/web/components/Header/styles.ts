@@ -4,12 +4,17 @@ export const Container = styled.header<{ scroll: boolean }>`
 	position: fixed;
 	padding: 0.7rem;
 	width: 100%;
-	background-color: ${({ scroll }) => (scroll ? "#1e3a8a" : "transparent")};
+	background-color: ${({ scroll }) => (scroll ? "var(--blue-800)" : "transparent")};
 	z-index: 5;
-	color: #ffffff;
+	color: var(--white);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	font-size: 1.6rem;
+
+	button {
+		font-size: 1.6rem;
+	}
 
 	@media (max-width: 1023px) {
 		z-index: 1;
@@ -29,11 +34,11 @@ export const MobileMenu = styled.div`
 	display: none;
 	align-items: center;
 	justify-content: center;
-	color: #a1a1aa;
-	background: #ffffff;
-	height: 25px;
-	width: 30px;
-	border-radius: 8px;
+	color: var(--gray-600);
+	background: var(--white);
+	height: 2.5rem;
+	width: 3rem;
+	border-radius: 0.8rem;
 	border: none;
 
 	transition: 0.6s all ease-out;
@@ -46,7 +51,7 @@ export const MobileMenu = styled.div`
 export const ImgContainer = styled.div`
 	width: 100%;
 	height: 100%;
-	width: 9rem;
+	width: 10rem;
 	transition: 0.6s filter ease-out;
 
 	&:hover {

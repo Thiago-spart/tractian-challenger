@@ -33,7 +33,13 @@ export const Header: React.FC<HeaderProps> = ({ isModalOpen }) => {
 		<Container scroll={scroll}>
 			<NextLink href="/">
 				<ImgContainer>
-					<Image src="/Logo-Tractian.svg" alt="company logo" width="200" height="40" />
+					<Image
+						src="/Logo-Tractian.svg"
+						alt="company logo"
+						width="170"
+						height="60"
+						objectFit="fill"
+					/>
 				</ImgContainer>
 			</NextLink>
 			<NavMenu />
