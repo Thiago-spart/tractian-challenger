@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.section`
 	position: relative;
-	margin: 2rem auto;
+	margin: 3rem auto;
 	width: 80%;
-	height: 8rem;
+	height: 10rem;
 	position: relative;
 	overflow: hidden;
 

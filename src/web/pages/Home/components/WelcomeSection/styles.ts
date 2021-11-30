@@ -6,8 +6,7 @@ export const Container = styled.section`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 9rem;
-	padding-bottom: 11rem;
+	padding: 11rem 2rem;
 	font-size: 1.6rem;
 	background: linear-gradient(to left, #2663eb, #1f3b8b);
 	position: relative;
@@ -16,11 +15,7 @@ export const Container = styled.section`
 		flex-direction: column;
 		justify-content: center;
 		gap: 2rem;
-		padding: 8rem 2rem;
-
-		&:last-child {
-			padding-bottom: 11rem;
-		}
+		padding: 11rem 2rem;
 	}
 `;
 
@@ -30,7 +25,7 @@ export const ContentContainer = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	gap: 0.8rem;
+	gap: 2rem;
 	color: var(--white);
 
 	@media (max-width: 1023px) {
@@ -39,14 +34,14 @@ export const ContentContainer = styled.div`
 
 	h1 {
 		color: var(--white);
-		font-size: 2.4rem;
+		font-size: 3.6rem;
 		font-weight: 600;
 	}
 
 	h4 {
 		color: var(--white);
 		font-size: 1.8rem;
-		font-weight: 500;
+		font-weight: 400;
 	}
 
 	div {
