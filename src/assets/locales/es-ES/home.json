@@ -28,5 +28,30 @@
         "text": "Automatice los procesos, las órdenes de trabajo y tenga un control total sobre sus activos y su personal."
       }
     }
+  },
+  "sensorSection": {
+    "title": "MANTENIMIENTO PREDICTIVO SIN COMPLICACIONES",
+    "subTitle": "Mantenga a su equipo y a sus activos en su",
+    "subTitleHighlight": "mejor momento.",
+    "buttonMessage": "Programe una demo",
+    "options": {
+      "plugPlay": "Sensor Plug & Play",
+      "onlineMonitoring": "Monitorización Online",
+      "assetManagement": "Gestión de Activos"
+    },
+    "sections": {
+      "plugPlaySensor": {
+        "title": "Tecnología IoT avanzada para conectar sus activos",
+        "text": "Nuestros sensores envían los datos de su equipo a través de la red 3g/4g. Sólo tiene que fijar el sensor en el lugar a vigilar y ya está: siga el estado de su máquina en tiempo real."
+      },
+      "onlineMonitoring": {
+        "title": "La Plataforma que trabaja por usted",
+        "text": "La plataforma ofrece una visión amplia de la condición de su máquina. Insights automáticos, detección de holguras mecánicas, desalineamiento, desacoplamiento y modelos de IA exclusivos de Tractian para cada tipo de máquina."
+      },
+      "assetManagement": {
+        "title": "El software de mantenimiento de sus sueños",
+        "text": "Utilice los procedimientos en línea para organizar las listas de comprobación y las inspecciones. Centralice la rutina de su equipo y mejore las actividades de cada empleado mediante la automatización y las métricas."
+      }
+    }
   }
 }

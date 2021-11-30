@@ -4,6 +4,7 @@ export const GlobalBaseStyle = createGlobalStyle`
 
   :root {
     --white: #ffffff;
+    --gray-50: #fafafa;
     --gray-200: #d9d9d9;
     --gray-400: #c1c4ca;
     --gray-600: #a1a1aa;
@@ -24,6 +25,7 @@ export const GlobalBaseStyle = createGlobalStyle`
 
   * {
     margin: 0;
+    padding: 0;
     line-height: calc(1em + 0.5rem);
   }
 
