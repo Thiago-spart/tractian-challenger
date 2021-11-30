@@ -5,28 +5,30 @@ export const Container = styled.div`
 	align-items: flex-start;
 	justify-content: flex-start;
 	flex-direction: column;
-	gap: 0.5rem;
-	height: 280px;
+	gap: 0.8rem;
+	height: 28rem;
 	width: 100%;
-	border-radius: 8px;
+	border-radius: 0.8rem;
 	border: 1px solid #60a5fa;
-	padding: 20px 25px;
+	padding: 2rem 2.5rem;
 	transform: scale(1);
 	transition: all 0.5s ease-in-out;
+	cursor: default;
+	font-size: 1.4rem;
 
 	&:hover {
 		transform: scale(1.05);
 		transition: all 0.5s ease-in-out;
-		box-shadow: 0 3px 32px 0 rgba(0, 0, 0, 0.15);
+		box-shadow: 0 0.3rem 3.2rem 0 rgba(0, 0, 0, 0.15);
 	}
 `;
 
 export const ImgContainer = styled.div`
-	width: 70px;
-	height: 80px;
+	width: 7rem;
+	height: 8rem;
 `;
 
 export const Title = styled.h2`
 	font-weight: 600;
-	font-size: 1.1rem;
+	font-size: 1.8rem;
 `;
