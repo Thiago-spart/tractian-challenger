@@ -1,23 +1,25 @@
+import { useTranslation } from "next-i18next";
+
 import { Primary } from "web/components/Button/Primary";
 import { NextLink } from "web/components/Link";
 
 import { Container, GifContainer, ContentContainer, WaveContainer } from "./styles";
 
-export const WelcomeSection = () => {
+export const WelcomeSection: React.FC = () => {
+	const { t } = useTranslation("home");
+
 	return (
 		<Container>
 			<ContentContainer>
-				<h1>Monitoramento Online e Gestão de Ativos em um só lugar</h1>
-				<h4>
-					Evite falhas nas suas máquinas e torne o tempo de inatividade uma coisa do passado com
-					sistema preditivo da TRACTIAN.
-				</h4>
+				<h1>{t("welcomeSection.title")}</h1>
 				<div>
-					<Primary message="Demonstração" />
 					<p>google and capterra</p>
 				</div>
+				<h4>{t("welcomeSection.subTitle")}</h4>
+				<Primary message={t("welcomeSection.buttonMessage")} />
 				<p>
-					Já é cliente? <NextLink href="https://app.tractian.com">Acesse aqui.</NextLink>
+					{t("welcomeSection.clienteInvite")}
+					<NextLink href="https://app.tractian.com">{t("welcomeSection.paragraphLink")}</NextLink>
 				</p>
 			</ContentContainer>
 
