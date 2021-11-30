@@ -5,5 +5,28 @@
     "clienteInvite": "¿Ya es cliente?",
     "paragraphLink": "Acceso clientes",
     "buttonMessage": "Demostración"
+  },
+  "whyChoose": {
+    "title": "¿Por qué escoger",
+    "companyName": "Tractian",
+    "buttonMessage": "¡Comience ahora!",
+    "cards": {
+      "predictiveMaintenance": {
+        "title": "Mantenimiento Predictivo",
+        "text": "Detección automático de fallos, estado de salud del activo en tiempo real, confiabilidad e insights automaticos."
+      },
+      "onlineMonitoring": {
+        "title": "Monitoreo On-line",
+        "text": "El Sensor Tractian recopila datos de la Vibración, la Temperatura, el Horómetro y el consumo de enería en tiempo real."
+      },
+      "instantSetup": {
+        "title": "Setup Instantáneo",
+        "text": "Solución Plug & Play, sin necesidad de gateways o modens, comunicación por 2g/3g de forma independiente."
+      },
+      "integratedCMMS": {
+        "title": "CMMS Integrado",
+        "text": "Automatice los procesos, las órdenes de trabajo y tenga un control total sobre sus activos y su personal."
+      }
+    }
   }
 }

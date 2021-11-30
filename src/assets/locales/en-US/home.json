@@ -5,5 +5,28 @@
     "clienteInvite": "Already a customer?",
     "paragraphLink": "Access here.",
     "buttonMessage": "Schedule a demo"
+  },
+  "whyChoose": {
+    "title": "Why",
+    "companyName": "Tractian",
+    "buttonMessage": "Get started!",
+    "cards": {
+      "predictiveMaintenance": {
+        "title": "Predictive Maintenance",
+        "text": "Automatic fault detection, real-time asset health, reliability percentage and automatic insights."
+      },
+      "onlineMonitoring": {
+        "title": "Online Monitoring",
+        "text": "Tractian sensor collects vibration, temperature, hour meter and energy consumption data in real time."
+      },
+      "instantSetup": {
+        "title": "Instant Setup",
+        "text": "Plug & Play solution, forget about gateways or routers, communication via independent 2G / 3G network."
+      },
+      "integratedCMMS": {
+        "title": "Integrated CMMS",
+        "text": "Automate processes, work orders, and have total control over your assets and staff."
+      }
+    }
   }
 }
