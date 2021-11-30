@@ -53,5 +53,37 @@
         "text": "Use procedimentos online para organizar checklists e inspeções. Centralize a rotina do seu time e potencialize as atividades de cada colaborador através das automações e métricas."
       }
     }
+  },
+  "howItWorksSection": {
+    "title": "Como funciona?",
+    "subTitle": "Combine monitoramento e gestão, escolha:",
+    "onlineMonitoring": "Monitoramento online",
+    "assetManagement": "Gestão de ativos",
+    "sections": {
+      "shipSensors": {
+        "title": "Nós enviamos os sensores",
+        "text": "Fazemos a entrega pelos Correios para o Brasil todo. Você recebe o sensor na sua empresa. Não necessita passar pelo Wi-Fi industrial e nem falar com a TI."
+      },
+      "attachMachine": {
+        "title": "Cole em suas máquinas",
+        "text": "Nosso sensor é colado na máquina como um bandaid. Ele é responsável por transmitir os dados de vibração e temperatura do equipamento para a plataforma."
+      },
+      "getInsights": {
+        "title": "Receba Insights valiosos",
+        "text": "Nosso sistema centraliza informações precisas sobre suas máquinas, com insights e análises, como saúde do equipamento, detecção de anomalias e variação de espectros."
+      },
+      "sendAssets": {
+        "title": "Nos envie sua lista Ativos, Locais e Usuários",
+        "text": "Deixamos a plataforma pronta e organizada para você, preparando sua planta e seus ativos seguindo a disposição enviada para nós, bem como seus mantenedores cadastrados na plataforma."
+      },
+      "automateWorkPlans": {
+        "title": "Automatize seus Planos e Ordens de Serviço",
+        "text": "Use procedimentos online para organizar checklists e inspeções. Sequenciar e planejar Ordens de Serviço preventivamente nunca foi tão fácil."
+      },
+      "replaceExcel": {
+        "title": "Substitua o Excel por completo",
+        "text": "A plataforma vai abrir as Ordens de serviços e distribui-las conforme as automações configuradas, permitindo que toda a equipe de manutenção se preocupe apenas em executar suas atividades de rotina."
+      }
+    }
   }
 }

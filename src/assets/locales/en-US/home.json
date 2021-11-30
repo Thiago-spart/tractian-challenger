@@ -53,5 +53,37 @@
         "text": "Use online procedures to organize checklists and inspections. Centralize your team's routine and leverage the activities of each employee through automation and metrics."
       }
     }
+  },
+  "howItWorksSection": {
+    "title": "How it works?",
+    "subTitle": "Combine monitoring and management, take your pick:",
+    "onlineMonitoring": "Online Monitoring",
+    "assetManagement": "Asset Management",
+    "sections": {
+      "shipSensors": {
+        "title": "We ship the sensors",
+        "text": "The sensors are delivered in your site and you don`t need to go throught industrial Wi-fi or talk to IT departments."
+      },
+      "attachMachine": {
+        "title": "Attach to your machine",
+        "text": "Our sensors is attached in the machine with a bandaid. It's response for send data of vibration and the equipment temperature in the platform."
+      },
+      "getInsights": {
+        "title": "Get valuable Insights",
+        "text": "Our system centralizes accurate information about your machines, with insights and analyzes, such as equipment health, anomaly detection and machine spectrum degradation."
+      },
+      "sendAssets": {
+        "title": "Send us your list of Assets, Places and Users",
+        "text": "We make the platform ready and organized for you, preparing your plant and assets following the layout sent to us, as well as your registered maintainers on the platform."
+      },
+      "automateWorkPlans": {
+        "title": "Automate your Work Plans and Work Orders",
+        "text": "Use online procedures to organize checklists and inspections. Sequencing and planning Work Orders preemptively has never been easier."
+      },
+      "replaceExcel": {
+        "title": "Replace Excel completely",
+        "text": "The platform will open the Work Orders and distribute them according to the configured automations, allowing the entire maintenance team to worry only about performing their routine activities."
+      }
+    }
   }
 }
