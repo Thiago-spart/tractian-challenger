@@ -7,12 +7,13 @@ export const Container = styled.div<{ isBlack: boolean }>`
 	background-color: ${({ isBlack }) => (isBlack ? "#1c1c1c" : "#224eba")};
 	color: ${({ isBlack }) => (isBlack ? "#51e602" : "#22d3ee")};
 	width: 100%;
-	height: 40rem;
+	height: 100%;
+	padding: 6rem 0;
 
 	@media (max-width: 1023px) {
 		flex-direction: column;
 		justify-content: center;
-		gap: 1.5rem;
+		gap: 2rem;
 
 		&:last-child {
 			height: 100%;
@@ -26,26 +27,26 @@ export const DetailList = styled.ul`
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	gap: 1rem;
+	gap: 2rem;
 	width: 48%;
-	padding: 0 1rem;
+	padding: 0 1.5rem;
 
 	@media (max-width: 1023px) {
-		margin-top: 2rem;
+		margin-top: 2.5rem;
 		width: 100%;
 	}
 `;
 
 export const DetailItem = styled.li<{ active: boolean; isBlack: boolean }>`
 	width: 100%;
-	height: 9rem; //160px
+	height: 12rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 1.5rem;
+	gap: 2rem;
 	background-color: ${({ active }) => (active ? "rgba(255, 255, 255, 0.1)" : "transparent")};
-	border-radius: 0.5rem;
-	padding: 1rem;
+	border-radius: 0.8rem;
+	padding: 1.5rem;
 	transition: all 0.4s ease-in-out;
 
 	&:hover {
@@ -53,12 +54,10 @@ export const DetailItem = styled.li<{ active: boolean; isBlack: boolean }>`
 	}
 
 	h3 {
-		margin: 0;
-		margin-top: 0.3rem;
-		color: #fafafa;
+		color: var(--gray-50);
 		color: ${({ isBlack, active }) => (isBlack && active ? "#51e602" : active && "#22d3ee")};
-		font-size: 1.2rem;
-		font-weight: 700;
+		font-size: 1.8rem;
+		font-weight: 600;
 	}
 
 	div:last-child {
@@ -66,12 +65,12 @@ export const DetailItem = styled.li<{ active: boolean; isBlack: boolean }>`
 		justify-content: flex-start;
 		display: flex;
 		flex-direction: column;
-		gap: 0.1rem;
+		gap: 0.25rem;
 
 		p {
-			color: #fafafa;
+			color: var(--gray-50);
 			font-weight: 500;
-			font-size: 1rem;
+			font-size: 1.4rem;
 		}
 	}
 `;
@@ -81,10 +80,10 @@ export const NumberBall = styled.div<{ active: boolean; isBlack: boolean }>`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #1c1c1c;
-	width: 40px;
-	height: 40px;
-	font-size: 18px;
+	color: var(--black);
+	width: 4rem;
+	height: 4rem;
+	font-size: 1.8rem;
 	font-weight: 600;
 	align-self: flex-start;
 	z-index: 2;
@@ -97,7 +96,7 @@ export const NumberBall = styled.div<{ active: boolean; isBlack: boolean }>`
 		position: absolute;
 		content: "";
 		width: 40px;
-		background-color: #fafafa;
+		background-color: var(--gray-50);
 		background-color: ${({ isBlack, active }) =>
 			isBlack && active ? "#51e602" : active && "#22d3ee"};
 		height: 40px;

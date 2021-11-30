@@ -53,5 +53,37 @@
         "text": "Utilice los procedimientos en línea para organizar las listas de comprobación y las inspecciones. Centralice la rutina de su equipo y mejore las actividades de cada empleado mediante la automatización y las métricas."
       }
     }
+  },
+  "howItWorksSection": {
+    "title": "¿Cómo funciona?",
+    "subTitle": "Combine la supervisión y la gestión, elija:",
+    "onlineMonitoring": "Monitorización online",
+    "assetManagement": "Gestión de activos",
+    "sections": {
+      "shipSensors": {
+        "title": "Nosotros enviamos los sensores",
+        "text": "Los entregamos por correo a todo el país. Usted recibe el sensor en su local de trabajo. No es necesario conectarse al Wi-Fi industrial y ni siquiera hablar con la tecnología de la información."
+      },
+      "attachMachine": {
+        "title": "Colóquelo en sus máquinas",
+        "text": "Nuestro sensor es colocado en la máquina igual que un Band-Aid. Él será el responsable de transmitir los datos de vibración y de temperatura del equipo a la plataforma."
+      },
+      "getInsights": {
+        "title": "Reciba Insights valiosos",
+        "text": "Nuestro sistema centraliza la información precisa sobre sus máquinas, con insights y análisis, como el estado de salud del equipo, detección de anomalías y variación de espectros."
+      },
+      "sendAssets": {
+        "title": "Envíenos su lista de Activos, Lugares y Usuarios",
+        "text": "Dejamos la plataforma lista y organizada para usted, preparando su planta y activos siguiendo el esquema que nos han enviado, así como sus mantenedores registrados en la plataforma."
+      },
+      "automateWorkPlans": {
+        "title": "Automatice sus planes y órdenes de trabajo",
+        "text": "Utilice los procedimientos en línea para organizar las listas de comprobación y las inspecciones. Secuenciar y planificar las órdenes de trabajo de forma preventiva nunca ha sido tan fácil."
+      },
+      "replaceExcel": {
+        "title": "Reemplazar completamente a Excel",
+        "text": "La plataforma abrirá las Órdenes de Trabajo y las distribuirá según las automatizaciones configuradas, permitiendo que todo el equipo de mantenimiento se preocupe sólo de ejecutar sus actividades rutinarias."
+      }
+    }
   }
 }
