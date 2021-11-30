@@ -5,9 +5,9 @@ export const Container = styled.div`
 	align-items: flex-start;
 	justify-content: flex-start;
 	flex-direction: column;
-	gap: 1rem;
+	gap: 2rem;
 	width: 50%;
-	height: 30rem;
+	height: 100%;
 
 	@media (max-width: 1023px) {
 		width: 100%;
@@ -15,11 +15,10 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h4`
-	font-size: 1.5rem;
+	font-size: 2.4rem;
 	font-weight: 600;
-	margin: 0;
 `;
 
 export const Text = styled.p`
-	font-size: 1rem;
+	font-size: 1.6rem;
 `;

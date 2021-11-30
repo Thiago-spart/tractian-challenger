@@ -3,18 +3,18 @@ import styled from "styled-components";
 export const Container = styled.section`
 	width: 100%;
 	height: 100%;
-	margin: 2rem auto;
-	padding: 4rem 9rem;
+	margin: 4rem auto;
+	padding: 6rem 4rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	gap: 1rem;
-	background: #fafafa;
+	background: var(--gray-50);
 
 	@media (max-width: 1023px) {
 		flex-direction: column;
 		justify-content: center;
-		gap: 1.5rem;
+		gap: 2rem;
 	}
 `;
 
@@ -24,7 +24,11 @@ export const ContentContainer = styled.div`
 	align-items: flex-start;
 	justify-content: flex-start;
 	flex-direction: column;
-	gap: 0.5rem;
+	gap: 1.5rem;
+
+	& > button {
+		margin-top: 2rem;
+	}
 
 	@media (max-width: 1023px) {
 		width: 100%;
@@ -32,14 +36,15 @@ export const ContentContainer = styled.div`
 `;
 
 export const Title = styled.h3`
-	color: #2563eb;
-	font-size: 1.1rem;
+	color: var(--blue-700);
+	font-size: 1.8rem;
 	font-weight: 600;
 `;
 
 export const SubTitle = styled.h2`
-	color: #18181b;
-	font-size: 2.2rem;
+	color: var(--black);
+	font-size: 3.6rem;
+	font-weight: 500;
 	width: 75%;
 
 	span {
@@ -48,7 +53,7 @@ export const SubTitle = styled.h2`
 `;
 
 export const Options = styled.ul`
-	font-size: 1.1rem;
+	font-size: 2rem;
 	font-weight: 600;
 	list-style: none;
 	width: 100%;
@@ -56,7 +61,7 @@ export const Options = styled.ul`
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	gap: 1rem;
+	gap: 2rem;
 `;
 
 export const Option = styled.li<{ selected: boolean }>`
@@ -70,7 +75,7 @@ export const Option = styled.li<{ selected: boolean }>`
 	}
 
 	span {
-		color: ${({ selected }) => selected && "#2563eb"};
+		color: ${({ selected }) => selected && "var(--blue-700)"};
 		letter-spacing: 0.1rem;
 	}
 `;

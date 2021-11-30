@@ -28,5 +28,30 @@
         "text": "Automate processes, work orders, and have total control over your assets and staff."
       }
     }
+  },
+  "sensorSection": {
+    "title": "EFFORTLESS PREDICTIVE MAINTENANCE",
+    "subTitle": "Keep your team and machines",
+    "subTitleHighlight": "performing at their best",
+    "buttonMessage": "Schedule a demo",
+    "options": {
+      "plugPlay": "Plug & Play Sensor",
+      "onlineMonitoring": "Online Monitoring",
+      "assetManagement": "Asset Management"
+    },
+    "sections": {
+      "plugPlaySensor": {
+        "title": "Advanced IoT technology to connect your assets",
+        "text": "Our sensors send data about your machine via a 3g / 4g network with no need of tons of gateways. Just attach the sensor to the location to be monitored and everything is ready: monitor the condition of your machine in real time."
+      },
+      "onlineMonitoring": {
+        "title": "Platform working for you",
+        "text": "Automatic insights, mechanical backlash detection, misalignment, uncoupling, and Tractian's unique AI models for each type of machine."
+      },
+      "assetManagement": {
+        "title": "Work Orders Automation",
+        "text": "Use online procedures to organize checklists and inspections. Centralize your team's routine and leverage the activities of each employee through automation and metrics."
+      }
+    }
   }
 }
