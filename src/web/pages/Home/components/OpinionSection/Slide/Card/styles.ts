@@ -3,28 +3,29 @@ import styled from "styled-components";
 export const Container = styled.div`
 	position: relative;
 	border-top: 4px solid #67e8f9;
-	background: #ffffff;
+	background: var(--white);
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	gap: 1rem !important;
-	padding: 1rem;
-	padding-bottom: 8rem;
+	gap: 1.5rem !important;
+	padding: 1.5rem;
+	width: 40rem;
+	padding-bottom: 12rem;
 	cursor: default;
 
 	p {
-		font-size: 1rem;
+		font-size: 1.6rem;
 	}
 `;
 
 export const QuoteContainer = styled.div`
 	color: #1e40af;
 	width: 100%;
-	height: 3rem;
+	height: 4rem;
 
 	svg {
-		font-size: 3rem;
+		font-size: 4.5rem;
 	}
 `;
 
@@ -32,9 +33,9 @@ export const ReviewerStars = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	gap: 0.1rem !important;
+	gap: 0.25rem !important;
 	color: #1e40af;
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 `;
 
 export const ReviewerProfile = styled.div`
@@ -44,7 +45,7 @@ export const ReviewerProfile = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 1rem !important;
+	gap: 1.5rem !important;
 
 	&:first-child {
 		width: 40%;
@@ -55,14 +56,13 @@ export const ReviewerProfile = styled.div`
 		flex-direction: column;
 
 		h2 {
-			margin: 0;
-			font-size: 0.9rem;
+			font-size: 1.4rem;
 			font-weight: 600;
 		}
 
 		p {
 			margin: 0;
-			font-size: 0.8rem;
+			font-size: 1.2rem;
 		}
 	}
 `;

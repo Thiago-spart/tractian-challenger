@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-	height: 30rem;
+	height: 100%;
 	width: 60%;
 
 	.carousel div {
 		display: flex;
-		gap: 2rem;
+		gap: 3rem;
 	}
 `;
