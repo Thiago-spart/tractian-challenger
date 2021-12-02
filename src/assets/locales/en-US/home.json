@@ -135,5 +135,19 @@
         "quote": "\"A child can install the Tractian sensor, and the platform is as easy to use as a social network. Every system is very simple and reliable.\""
       }
     }
+  },
+  "inviteSection": {
+    "blog": {
+      "title": "Blog news",
+      "firstBlog": "Maintenance software (CMMS): ultimate guide [2021]",
+      "secondBlog": "Demystifying vibration analysis in machines",
+      "thirdBlog": "TPM: Total Productive Maintenance, turning maintenance into profit",
+      "inviteLink": "Go to blog"
+    },
+    "makePart": {
+      "title": "JOIN THE TEAM!",
+      "subTitle": "Check out the open positions and be part of a high performance team",
+      "inviteLink": "See our career opportunities!"
+    }
   }
 }

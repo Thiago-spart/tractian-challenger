@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.section`
 	display: flex;
-	gap: 2rem;
+	gap: 2.5rem;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #fafafa;
+	background-color: var(--gray-50);
 	width: 100%;
 	height: 100%;
-	padding: 4rem;
+	padding: 6rem;
 
 	@media (max-width: 1023px) {
 		flex-direction: column;
@@ -19,38 +19,36 @@ export const Card = styled.div`
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 2.5rem;
 	align-items: flex-start;
 	justify-content: flex-start;
 	background-color: #ffffff;
 	width: 50%;
-	height: 36rem;
+	height: 55rem;
 	padding: 4rem;
-	border-radius: 0.25rem;
+	border-radius: 0.8rem;
 	box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgba(0, 0, 0, 0.1),
 		0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
 	@media (max-width: 1023px) {
 		width: 100%;
-		gap: 2rem;
 	}
 
 	h2 {
-		font-size: 1.9rem;
-		font-weight: 700;
+		font-size: 3rem;
+		font-weight: 600;
 		color: #1e40af;
-		margin: 0;
 	}
 
 	& > p {
-		font-size: 1.2rem;
+		font-size: 1.8rem;
 		color: #52525b;
 	}
 
 	& > a {
 		color: #1e40af;
-		font-weight: 700;
-		font-size: 1.1rem;
+		font-weight: 600;
+		font-size: 1.8rem;
 		transition: all 0.4s ease-in-out;
 
 		p {
@@ -72,7 +70,7 @@ export const BlogList = styled.ul`
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	gap: 1rem;
+	gap: 1.5rem;
 	align-items: flex-start;
 	justify-content: flex-start;
 	width: 100%;
@@ -81,13 +79,14 @@ export const BlogList = styled.ul`
 	li {
 		position: relative;
 		width: 100%;
-		height: 5rem;
-		padding-right: 4rem;
-		border-radius: 0.5rem;
+		height: 6rem;
+		padding-right: 5rem;
+		border-radius: 0.8rem;
 		transition: all 0.4s ease-in-out;
+		cursor: pointer;
 
 		a {
-			font-size: 1.2rem;
+			font-size: 2rem;
 			color: #52525b;
 		}
 
@@ -113,8 +112,18 @@ export const ImgContainer = styled.div`
 	left: 12%;
 	width: 400px;
 	height: 300px;
-
 	@media (max-width: 1023px) {
 		left: 24%;
+	}
+
+	@media (max-width: 768px) {
+		left: 24%;
+		bottom: 9.8%;
+		width: 300px;
+		height: 175px;
+	}
+
+	@media (max-width: 400px) {
+		display: none;
 	}
 `;

@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
 import { HiArrowRight } from "react-icons/hi";
@@ -6,42 +7,40 @@ import { NextLink } from "web/components/Link";
 
 import { Card, Container, BlogList, ImgContainer } from "./styles";
 
-export const InviteSection = () => {
+export const InviteSection: React.FC = () => {
+	const { t } = useTranslation("home");
+
 	return (
 		<Container>
 			<Card>
-				<h2>Novidades no Blog</h2>
+				<h2>{t("inviteSection.blog.title")}</h2>
 
 				<BlogList>
 					<li>
-						<NextLink href="#">Como selecionar os ativos para o monitoramento online?</NextLink>
+						<NextLink href="#">{t("inviteSection.blog.firstBlog")}</NextLink>
 					</li>
 					<li>
-						<NextLink href="#">
-							Saiba como a Ahlstrom Munksjo mudou sua rotina de manutenção
-						</NextLink>
+						<NextLink href="#">{t("inviteSection.blog.secondBlog")}</NextLink>
 					</li>
 					<li>
-						<NextLink href="#">
-							TRACTIAN é nomeada solução favorita de CMMS e OEE no ranking da Capterra 2021
-						</NextLink>
+						<NextLink href="#">{t("inviteSection.blog.thirdBlog")}</NextLink>
 					</li>
 				</BlogList>
 
 				<NextLink href="#">
 					<p>
-						Ir para o blog <HiArrowRight />
+						{t("inviteSection.blog.inviteLink")} <HiArrowRight />
 					</p>
 				</NextLink>
 			</Card>
 			<Card>
-				<h2>Faça parte do time! 🧢</h2>
+				<h2>{t("inviteSection.makePart.title")} 🧢</h2>
 
-				<p>Confira as posições abertas e venha fazer parte de um time de alta performance</p>
+				<p>{t("inviteSection.makePart.subTitle")}</p>
 
 				<NextLink href="#">
 					<p>
-						Veja nossas vagas <HiArrowRight />
+						{t("inviteSection.makePart.inviteLink")} <HiArrowRight />
 					</p>
 				</NextLink>
 
