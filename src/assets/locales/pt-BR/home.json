@@ -85,5 +85,16 @@
         "text": "A plataforma vai abrir as Ordens de serviços e distribui-las conforme as automações configuradas, permitindo que toda a equipe de manutenção se preocupe apenas em executar suas atividades de rotina."
       }
     }
+  },
+  "planSection": {
+    "tracOS": {
+      "title": "TracOS ™",
+      "subTitle": "O CMMS revolucionário para planejar, acompanhar métricas e conectar-se com sua equipe."
+    },
+    "smartTrac": {
+      "title": "Smart Trac",
+      "subTitle": "O sistema preditivo mais completo do mercado. Mais visibilidade, segurança e controle de forma simples e inteligente."
+    },
+    "buttonMessage": "Conheça o"
   }
 }

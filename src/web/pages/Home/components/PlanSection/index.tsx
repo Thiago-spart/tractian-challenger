@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
 import { Primary } from "web/components/Button/Primary";
@@ -6,9 +7,26 @@ import { NextLink } from "web/components/Link";
 
 import { Card, Container, Title, SubTitle } from "./styles";
 
-import { Content } from "./Content";
-
 export const PlanSection = () => {
+	const { t } = useTranslation("home");
+
+	const Content = [
+		{
+			black: true,
+			title: t("planSection.tracOS.title"),
+			subTitle: t("planSection.tracOS.subTitle"),
+			href: "https://tractian.com/tracos",
+			imgSrc: "/plan/cmms-presentation.png",
+		},
+		{
+			black: false,
+			title: t("planSection.smartTrac.title"),
+			subTitle: t("planSection.smartTrac.subTitle"),
+			href: "https://tractian.com/sensor-inteligente",
+			imgSrc: "/plan/sensor-plataforma-celular-tablet.png",
+		},
+	];
+
 	return (
 		<Container>
 			{Content.map(card => (
@@ -20,7 +38,7 @@ export const PlanSection = () => {
 						height="48"
 						objectFit="contain"
 					/>
-					<Title>{card.title}</Title>
+					<Title>{card.title.toUpperCase()}</Title>
 					{card.black && (
 						<Image
 							src="/plan/green-line.png"
@@ -41,11 +59,13 @@ export const PlanSection = () => {
 						/>
 					)}
 
-					<Image src={card.imgSrc} alt={card.imgAlt} width="480" height="366" objectFit="contain" />
+					<Image src={card.imgSrc} alt={card.title} width="480" height="366" objectFit="contain" />
 					<SubTitle>{card.subTitle}</SubTitle>
 					<NextLink href={card.href} target="_blank">
-						{card.black && <Secondary message="Ver mais" />}
-						{!card.black && <Primary message="Ver mais" />}
+						{card.black && (
+							<Secondary message={`${t("planSection.buttonMessage")} ${card.title}`} />
+						)}
+						{!card.black && <Primary message={`${t("planSection.buttonMessage")} ${card.title}`} />}
 					</NextLink>
 				</Card>
 			))}
