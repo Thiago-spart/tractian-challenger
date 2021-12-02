@@ -108,5 +108,32 @@
     "thirdCard": {
       "message": "REDUCE LOS IMPREVISTOS DE ÚLTIMA HORA EN EL MANTENIMIENTO."
     }
+  },
+  "OpinionSection": {
+    "title": "Lo que dicen nuestros clientes:",
+    "subTitle": "Nombrada solución de CMMS y OEE favorita en la clasificación de Capterra 2021",
+    "buttonMessage": "Agendar una Demo",
+    "quotes": {
+      "tiagoJunqueira": {
+        "name": "Tiago Junqueira",
+        "job": "Supervisor de Mantenimiento General - AmstedMaxion",
+        "quote": "\"Antes de Tractian, el fracaso se producía sin que tuviéramos oportunidad de reaccionar. Ahora podemos identificar cualquier anomalía fuera de lo normal y esto nos permite intervenir antes de que se produzca la avería.\""
+      },
+      "gustavoRibeiro": {
+        "name": "Gustavo Ribeiro",
+        "job": "Director Industrial - Industria Gestión de Residuos",
+        "quote": "\"Con Tractian optimizamos tiempo, reducimos costos con averías porque la plataforma nos anticipa los fallos. Su tecnología es una grán herramienta en la supervisión y gestión de nuestros activos que hacen parte del patrimonio de la empresa.\""
+      },
+      "eduardaBuaiz": {
+        "name": "Eduarda Buaiz",
+        "job": "Directora General - Industria Alimenticia",
+        "quote": "\"El dispositivo le da más confiabilidad al proceso, agilizando el análisis de la información y evitando paradas de producción, lo que impacta positivamente en la productividad.\""
+      },
+      "reneSantos": {
+        "name": "Renê Santos",
+        "job": "Técnico Mecánico - Industria Cervecera",
+        "quote": "\"Hasta un niño puede instalar el sensor de Tractian y la plataforma es tan fácil de usar como una red social. Todo el sistema es muy sencillo y confiable.\""
+      }
+    }
   }
 }

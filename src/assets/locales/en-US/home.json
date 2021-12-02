@@ -108,5 +108,32 @@
     "thirdCard": {
       "message": "REDUCTION OF LAST-MINUTE MAINTENANCE OCCURRENCES."
     }
+  },
+  "OpinionSection": {
+    "title": "What our customers say about us:",
+    "subTitle": "Named favorite CMMS and OEE solution in Capterra 2021 ranking",
+    "buttonMessage": "Request a Demo",
+    "quotes": {
+      "tiagoJunqueira": {
+        "name": "Tiago Junqueira",
+        "job": "General Maintenance Supervisor - AmstedMaxion",
+        "quote": "\"Before Tractian, failure happened without us having any chance to react. Now we are able to identify any unusual anomaly and this allows us to intervene before the breakdown happens.\""
+      },
+      "gustavoRibeiro": {
+        "name": "Gustavo Ribeiro",
+        "job": "Industrial Director - Waste Management Industry",
+        "quote": "\"With the Tractian solution we optimize time, reduce costs with failures anticipated by the solution. Their technology is a great tool for monitoring and managing our assets.\""
+      },
+      "eduardaBuaiz": {
+        "name": "Eduarda Buaiz",
+        "job": "General Director - Food industry",
+        "quote": "\"The device brings more reliability to the process, speeding up the analysis of information and avoiding production stops, which positively impacts productivity.\""
+      },
+      "reneSantos": {
+        "name": "Renê Santos",
+        "job": "Mechanical Technician - Brewing Industry",
+        "quote": "\"A child can install the Tractian sensor, and the platform is as easy to use as a social network. Every system is very simple and reliable.\""
+      }
+    }
   }
 }

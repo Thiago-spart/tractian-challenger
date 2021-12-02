@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
 import { Primary } from "web/components/Button/Primary";
@@ -6,10 +7,12 @@ import { Container, Title, CapterraDiv, Content } from "./styles";
 
 import { Slide } from "./Slide";
 
-export const OpinionSection = () => {
+export const OpinionSection: React.FC = () => {
+	const { t } = useTranslation("home");
+
 	return (
 		<Container>
-			<Title>O que os nossos clientes dizem:</Title>
+			<Title>{t("OpinionSection.title")}</Title>
 
 			<Content>
 				<CapterraDiv>
@@ -20,8 +23,8 @@ export const OpinionSection = () => {
 						height="180"
 						objectFit="contain"
 					/>
-					<p>Nomeada solução favorita de CMMS e OEE no ranking da Capterra 2021</p>
-					<Primary message="Agendar Demo" />
+					<p>{t("OpinionSection.subTitle")}</p>
+					<Primary message={t("OpinionSection.buttonMessage")} />
 				</CapterraDiv>
 
 				<Slide />
