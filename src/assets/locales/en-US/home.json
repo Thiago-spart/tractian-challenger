@@ -85,5 +85,16 @@
         "text": "The platform will open the Work Orders and distribute them according to the configured automations, allowing the entire maintenance team to worry only about performing their routine activities."
       }
     }
+  },
+  "planSection": {
+    "tracOS": {
+      "title": "TracOS ™",
+      "subTitle": "The revolutionary CMMS for planning, tracking metrics, and connecting with your team."
+    },
+    "smartTrac": {
+      "title": "Smart Trac",
+      "subTitle": "The most complete predictive system on the market. More visibility, security and control in a simple and intelligent way."
+    },
+    "buttonMessage": "Meet"
   }
 }

@@ -4,9 +4,9 @@ export const Container = styled.section`
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
-	gap: 2rem;
-	margin: 2rem auto;
-	padding: 4rem 9rem;
+	gap: 3rem;
+	margin: 4rem auto;
+	padding: 6rem;
 
 	@media (max-width: 1023px) {
 		flex-direction: column;
@@ -18,13 +18,13 @@ export const Card = styled.div<{ black?: boolean }>`
 	align-items: baseline;
 	justify-content: flex-start;
 	flex-direction: column;
-	border-radius: 0.5rem;
-	gap: 1rem;
-	background-color: ${({ black }) => (black ? "#1c1c1c" : "#081e3d")};
-	color: #ffffff;
+	border-radius: 0.8rem;
+	gap: 2rem;
+	background-color: ${({ black }) => (black ? "var(--black)" : "#081e3d")};
+	color: var(--white);
 	width: 50%;
-	height: 44.5rem;
-	padding: 1.6rem 1.4rem;
+	height: 100%;
+	padding: 2.4rem 2rem;
 
 	a {
 		align-self: center;
@@ -41,7 +41,7 @@ export const Card = styled.div<{ black?: boolean }>`
 `;
 
 export const Title = styled.h2`
-	color: #ffffff;
+	color: var(--white);
 	font-size: 2.2rem;
 	font-weight: 600;
 	margin: 0;

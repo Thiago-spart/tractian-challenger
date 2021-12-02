@@ -85,5 +85,16 @@
         "text": "La plataforma abrirá las Órdenes de Trabajo y las distribuirá según las automatizaciones configuradas, permitiendo que todo el equipo de mantenimiento se preocupe sólo de ejecutar sus actividades rutinarias."
       }
     }
+  },
+  "planSection": {
+    "tracOS": {
+      "title": "TracOS ™",
+      "subTitle": "La revolucionaria CMMS para la planificación, el seguimiento de las métricas y la conexión con su equipo."
+    },
+    "smartTrac": {
+      "title": "Smart Trac",
+      "subTitle": "El sistema de predicción más completo del mercado. Más visibilidad, seguridad y control de forma sencilla e inteligente."
+    },
+    "buttonMessage": "Conoce"
   }
 }
