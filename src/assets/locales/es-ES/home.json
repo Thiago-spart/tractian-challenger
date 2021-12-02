@@ -135,5 +135,19 @@
         "quote": "\"Hasta un niño puede instalar el sensor de Tractian y la plataforma es tan fácil de usar como una red social. Todo el sistema es muy sencillo y confiable.\""
       }
     }
+  },
+  "inviteSection": {
+    "blog": {
+      "title": "Novedades en el Blog",
+      "firstBlog": "Todo sobre la matriz de criticidad",
+      "secondBlog": "TRACTIAN es la solución de CMMS y OEE favorita en el ranking de Capterra 2021",
+      "thirdBlog": "Cómo identificar las 7 principales causas de pérdida de producción",
+      "inviteLink": "Ir al blog"
+    },
+    "makePart": {
+      "title": "¡HAGA PARTE DE NUESTRO EQUIPO!",
+      "subTitle": "Vea las ofertas actuales de trabajo y venga a hacer parte de un equipo de alto rendiento",
+      "inviteLink": "¡Vea nuestras ofertas de empleo!"
+    }
   }
 }
