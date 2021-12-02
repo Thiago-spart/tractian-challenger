@@ -176,5 +176,12 @@
       "fourthOption": "More than 50"
     },
     "buttonMessage": "Send"
+  },
+  "qualitySection": {
+    "title": "Superpowers for your maintenance",
+    "firstCard": "Misalignment Detected",
+    "secondCard": "Unbalance Detected",
+    "thirdCard": "Loseness Detected",
+    "fourthCard": "Anomalous Temperature Detected"
   }
 }

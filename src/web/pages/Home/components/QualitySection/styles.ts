@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-	margin: 2rem auto;
+	margin: 2.5rem auto;
 	width: 100%;
-	height: 16rem;
+	height: 30rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	gap: 2rem;
+	gap: 2.5rem;
+	font-size: 1.6rem;
 `;
 
 export const TitleContainer = styled.div`
@@ -16,16 +17,15 @@ export const TitleContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 2rem;
+	gap: 2.5rem;
 
 	p {
-		font-size: 1.18rem;
 		font-weight: 700;
 	}
 `;
 
 export const SlideStyle = styled.div`
-	height: 9rem;
+	height: 13rem;
 	position: relative;
 	overflow: hidden;
 	width: 100%;
@@ -42,7 +42,7 @@ export const Slides = styled.ul`
 	flex: row;
 	flex-wrap: no-wrap;
 	height: 110%;
-	gap: 1rem;
+	gap: 1.5rem;
 
 	animation: moveSlideshow 50s linear infinite;
 
@@ -53,7 +53,7 @@ export const Slides = styled.ul`
 	}
 
 	li {
-		margin-top: 0.5rem;
+		margin-top: 1rem;
 		box-sizing: border-box;
 		width: 322px;
 		height: 110px;
@@ -79,7 +79,7 @@ export const CirclePulse = styled.div`
 	height: 75px;
 	border-radius: 50%;
 	background: linear-gradient(to left, rgb(38, 99, 235), rgb(31, 59, 139));
-	animation: pulse 2s infinite;
+	animation: primaryPulse 2s infinite;
 
 	&::after {
 		content: "";
@@ -106,6 +106,18 @@ export const CirclePulse = styled.div`
 	}
 
 	@keyframes pulse {
+		0% {
+			transform: scale(0.4);
+		}
+		50% {
+			transform: scale(1);
+		}
+		100% {
+			transform: scale(0.4);
+		}
+	}
+
+	@keyframes primaryPulse {
 		0% {
 			transform: scale(0.4);
 		}

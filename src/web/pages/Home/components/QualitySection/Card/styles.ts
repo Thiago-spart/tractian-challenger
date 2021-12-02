@@ -5,19 +5,18 @@ export const Container = styled.div<{ colorOne: string; colorTwo: string }>`
 	align-items: center;
 	justify-content: center;
 	background: linear-gradient(to left, ${({ colorOne, colorTwo }) => `${colorOne}, ${colorTwo}`});
-	gap: 1.5rem;
+	gap: 2rem;
 	transition: all 0.3s ease-in-out;
 	width: 322px;
 	height: 110px;
 	border-radius: 0.8rem;
-	/* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); */
-	font-size: 1rem;
-	color: #ffffff;
+	font-size: 1.6rem;
+	color: var(--white);
 	font-weight: 600;
 
 	span {
 		display: block;
-		width: 45%;
+		width: 50%;
 	}
 `;
 
@@ -28,5 +27,5 @@ export const ImgContainer = styled.div`
 	width: 57px;
 	height: 57px;
 	border-radius: 50%;
-	background: #ffffff;
+	background: var(--white);
 `;
