@@ -1,3 +1,5 @@
+import { useTranslation } from "next-i18next";
+
 import {
 	SlideContainer,
 	Slides,
@@ -8,16 +10,44 @@ import {
 } from "./styles";
 
 import { Card } from "./Card";
-import { CardContent } from "./CardContent";
 
-const newContent = [...CardContent, ...CardContent];
+export const QualitySection: React.FC = () => {
+	const { t } = useTranslation("home");
 
-export const QualitySection = () => {
+	const CardContent = [
+		{
+			src: "/icons/exclamation.svg",
+			message: t("qualitySection.firstCard"),
+			colorOne: "#24cbef",
+			colorTwo: "#3693f4",
+		},
+		{
+			src: "/icons/exclamation-circle.svg",
+			message: t("qualitySection.secondCard"),
+			colorOne: "#a157f6",
+			colorTwo: "#7062f1",
+		},
+		{
+			src: "/icons/minus-circle.svg",
+			message: t("qualitySection.thirdCard"),
+			colorOne: "#fab715",
+			colorTwo: "#f98916",
+		},
+		{
+			src: "/icons/fire.svg",
+			message: t("qualitySection.fourthCard"),
+			colorOne: "#f1724e",
+			colorTwo: "#e13a6d",
+		},
+	];
+
+	const newContent = [...CardContent, ...CardContent];
+
 	return (
 		<Container>
 			<TitleContainer>
 				<CirclePulse />
-				<p>Superpoderes para a sua manutenção</p>
+				<p>{t("qualitySection.title")}</p>
 			</TitleContainer>
 
 			<SlideStyle>

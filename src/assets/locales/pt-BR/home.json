@@ -176,5 +176,12 @@
       "fourthOption": "Mais de 50"
     },
     "buttonMessage": "Enviar"
+  },
+  "qualitySection": {
+    "title": "Superpoderes para a sua manutenção",
+    "firstCard": "Desalinhamento Detectado",
+    "secondCard": "Desbalanceamento Detectado",
+    "thirdCard": "Folga Mecânica Detectada",
+    "fourthCard": "Temperatura Anormal Detectada"
   }
 }
