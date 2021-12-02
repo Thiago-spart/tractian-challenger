@@ -149,5 +149,32 @@
       "subTitle": "Vea las ofertas actuales de trabajo y venga a hacer parte de un equipo de alto rendiento",
       "inviteLink": "¡Vea nuestras ofertas de empleo!"
     }
+  },
+  "homeForm": {
+    "title": "Mejore sus procesos de mantenimiento",
+    "subTitle": "Llene el formulario para una demostración.",
+    "nameLabel": {
+      "name": "Nombre",
+      "placeholder": "Escriba su nombre"
+    },
+    "ruleLabel": {
+      "name": "Cargo",
+      "placeholder": "Escriba su cargo"
+    },
+    "emailLabel": {
+      "name": "E-mail profesional",
+      "placeholder": "Escriba su e-mail profesional"
+    },
+    "phoneLabel": {
+      "name": "Teléfono"
+    },
+    "monitorAmountLabel": {
+      "description": "Cantidad de puntos monitorizados:",
+      "firstOption": "de 10 a 20",
+      "secondOption": "de 21 a 30",
+      "thirdOption": "de 31 a 50",
+      "fourthOption": "Mas de 50"
+    },
+    "buttonMessage": "Enviar"
   }
 }

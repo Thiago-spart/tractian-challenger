@@ -4,39 +4,37 @@ export const Container = styled.section`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 2rem;
+	gap: 2.5rem;
 	flex-direction: column;
-	padding: 4rem;
-	background-color: #ffffff;
-
+	padding: 6rem;
+	background-color: var(--white);
+	font-size: 1.6rem;
 	p {
 		color: #52525b;
-		font-size: 1rem;
 	}
 `;
 
 export const Title = styled.h2`
-	font-size: 2.2rem;
+	font-size: 3.6rem;
 	font-weight: 500;
-	margin: 0;
 `;
 
 export const FormContainer = styled.form`
 	background: linear-gradient(to left, #2663eb, #1f3b8b);
 	width: 50%;
-	border-radius: 0.5rem;
+	border-radius: 0.8rem;
 	height: 100%;
-	padding: 1rem;
+	padding: 1.5rem;
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
-	gap: 0.5rem;
+	gap: 1rem;
 	flex-direction: column;
 
 	button {
 		width: 80%;
 		align-self: center;
-		margin-top: 1rem;
+		margin-top: 1.5rem;
 	}
 
 	@media (max-width: 1023px) {
@@ -45,21 +43,21 @@ export const FormContainer = styled.form`
 `;
 
 export const FormGroup = styled.div`
-	font-size: 1rem;
+	font-size: 1.6rem;
 	width: 100%;
-	color: #ffffff;
+	color: var(--white);
 
 	&:nth-child(5) {
 		span {
 			display: block;
-			margin-bottom: 0.5rem;
+			margin-bottom: 1rem;
 		}
 
 		label {
 			display: inline;
 
 			& + input {
-				margin-left: 4rem;
+				margin-left: 5rem;
 			}
 
 			input {
@@ -67,9 +65,9 @@ export const FormGroup = styled.div`
 		}
 	}
 	input[type="checkbox"] {
-		margin-right: 0.15rem;
-		width: 1.1em;
-		height: 1.1em;
+		margin-right: 0.25rem;
+		width: 1.8rem;
+		height: 1.8rem;
 		background-color: white;
 		border-radius: 50%;
 		vertical-align: middle;
@@ -87,12 +85,13 @@ export const FormGroup = styled.div`
 	label {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
+		gap: 1rem;
 
 		input {
 			border: none;
-			border-radius: 0.5rem;
-			padding: 0.5rem;
+			border-radius: 0.8rem;
+			padding: 1rem;
+			background: var(--white);
 		}
 	}
 `;

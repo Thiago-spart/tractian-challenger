@@ -149,5 +149,32 @@
       "subTitle": "Confira as posições abertas e venha fazer parte de um time de alta performance",
       "inviteLink": "Veja nossas vagas"
     }
+  },
+  "homeForm": {
+    "title": "Melhore os seus processos de manutenção",
+    "subTitle": "Preencha o formulário para uma demonstração.",
+    "nameLabel": {
+      "name": "Nome",
+      "placeholder": "Insira seu nome"
+    },
+    "ruleLabel": {
+      "name": "Cargo",
+      "placeholder": "Insira seu cargo"
+    },
+    "emailLabel": {
+      "name": "E-mail profissional",
+      "placeholder": "Insira seu e-mail profissional"
+    },
+    "phoneLabel": {
+      "name": "Telefone"
+    },
+    "monitorAmountLabel": {
+      "description": "Quantidade de pontos monitorados:",
+      "firstOption": "10 a 20",
+      "secondOption": "21 a 30",
+      "thirdOption": "31 a 50",
+      "fourthOption": "Mais de 50"
+    },
+    "buttonMessage": "Enviar"
   }
 }
