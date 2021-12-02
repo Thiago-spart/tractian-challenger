@@ -149,5 +149,32 @@
       "subTitle": "Check out the open positions and be part of a high performance team",
       "inviteLink": "See our career opportunities!"
     }
+  },
+  "homeForm": {
+    "title": "Improve your maintenance processes",
+    "subTitle": "Request a demo to understand more!",
+    "nameLabel": {
+      "name": "Name",
+      "placeholder": "Your name here"
+    },
+    "ruleLabel": {
+      "name": "Job Title",
+      "placeholder": "Job Title here"
+    },
+    "emailLabel": {
+      "name": "Corporate Email",
+      "placeholder": "Your corporate email"
+    },
+    "phoneLabel": {
+      "name": "Phone Number"
+    },
+    "monitorAmountLabel": {
+      "description": "How many machines do you want to monitor?",
+      "firstOption": "10 to 20",
+      "secondOption": "21 to 30",
+      "thirdOption": "31 to 50",
+      "fourthOption": "More than 50"
+    },
+    "buttonMessage": "Send"
   }
 }

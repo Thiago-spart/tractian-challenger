@@ -1,39 +1,43 @@
+import { useTranslation } from "next-i18next";
+
 import { Primary } from "../../../../components/Button/Primary";
 
 import { Container, Title, FormContainer, FormGroup } from "./styles";
 
-export const HomeForm = () => {
+export const HomeForm: React.FC = () => {
+	const { t } = useTranslation("home");
+
 	return (
 		<Container>
-			<Title>Melhore os seus processos de manutenção</Title>
+			<Title>{t("homeForm.title")}</Title>
 
-			<p>Preencha o formulário para uma demonstração.</p>
+			<p>{t("homeForm.subTitle")}</p>
 
 			<FormContainer>
 				<FormGroup>
 					<label htmlFor="name">
-						Nome
-						<input name="name" type="text" placeholder="Insira seu nome" />
+						{t("homeForm.nameLabel.name")}
+						<input name="name" type="text" placeholder={t("homeForm.nameLabel.placeholder")} />
 					</label>
 				</FormGroup>
 
 				<FormGroup>
 					<label htmlFor="position">
-						Cargo
-						<input type="text" name="position" placeholder="Insira seu cargo" />
+						{t("homeForm.ruleLabel.name")}
+						<input type="text" name="position" placeholder={t("homeForm.ruleLabel.placeholder")} />
 					</label>
 				</FormGroup>
 
 				<FormGroup>
 					<label htmlFor="email">
-						E-mail profissional
-						<input type="email" name="email" placeholder="Insira seu e-mail profissional" />
+						{t("homeForm.emailLabel.name")}
+						<input type="email" name="email" placeholder={t("homeForm.emailLabel.placeholder")} />
 					</label>
 				</FormGroup>
 
 				<FormGroup>
 					<label htmlFor="clientPhone">
-						Telefone
+						{t("homeForm.phoneLabel.name")}
 						<input
 							type="tel"
 							name="phone"
@@ -44,21 +48,25 @@ export const HomeForm = () => {
 				</FormGroup>
 
 				<FormGroup>
-					<span>Quantidade de pontos monitorados:</span>
+					<span>{t("homeForm.monitorAmountLabel.description")}</span>
 					<input type="checkbox" name="ten-to-twenty" />
-					<label htmlFor="ten-to-twenty"> 10 a 20</label>
+					<label htmlFor="ten-to-twenty"> {t("homeForm.monitorAmountLabel.firstOption")}</label>
 
 					<input type="checkbox" name="twenty-one-to-thirty" />
-					<label htmlFor="twenty-one-to-thirty"> 21 a 30</label>
+					<label htmlFor="twenty-one-to-thirty">
+						{t("homeForm.monitorAmountLabel.secondOption")}
+					</label>
 
 					<input type="checkbox" name="thirty-one-to-fifth" />
-					<label htmlFor="thirty-one-to-fifth"> 31 a 50</label>
+					<label htmlFor="thirty-one-to-fifth">
+						{t("homeForm.monitorAmountLabel.thirdOption")}
+					</label>
 
 					<input type="checkbox" name="more-than-fifth" />
-					<label htmlFor="more-than-fifth"> Mais de 50</label>
+					<label htmlFor="more-than-fifth"> {t("homeForm.monitorAmountLabel.fourthOption")}</label>
 				</FormGroup>
 
-				<Primary message="Enviar" />
+				<Primary message={t("homeForm.buttonMessage")} />
 			</FormContainer>
 		</Container>
 	);
