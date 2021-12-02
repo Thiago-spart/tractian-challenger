@@ -96,5 +96,17 @@
       "subTitle": "El sistema de predicción más completo del mercado. Más visibilidad, seguridad y control de forma sencilla e inteligente."
     },
     "buttonMessage": "Conoce"
+  },
+  "percentageSection": {
+    "title": "Sus máquinas más seguras.",
+    "firstCard": {
+      "message": "DE ACIERTO DE LOS INSIGHTS GENERADOS POR LA PLATAFORMA."
+    },
+    "secondCard": {
+      "message": "AUMENTO DE LA CONFIABILIDAD DE LAS MÁQUINAS CON EL SISTEMA TRACTIAN."
+    },
+    "thirdCard": {
+      "message": "REDUCE LOS IMPREVISTOS DE ÚLTIMA HORA EN EL MANTENIMIENTO."
+    }
   }
 }

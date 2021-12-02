@@ -7,7 +7,7 @@ import { NextLink } from "web/components/Link";
 
 import { Card, Container, Title, SubTitle } from "./styles";
 
-export const PlanSection = () => {
+export const PlanSection: React.FC = () => {
 	const { t } = useTranslation("home");
 
 	const Content = [
