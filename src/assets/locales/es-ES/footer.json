@@ -1,0 +1,39 @@
+{
+  "about": {
+    "title": "SOBRE TRACTIAN",
+    "workWithUs": "Trabaja con nosotros",
+    "meetUs": "Conoce a Tractian",
+    "successHistories": "Historias de Éxito",
+    "press": "Prensa",
+    "privacyPolicy": "Política de privacidad"
+  },
+  "product": {
+    "title": "PRODUCTO",
+    "sensor": "Sensor Tractian",
+    "platform": "Plataforma",
+    "functionality": "Funcionalidades",
+    "plans": "Planes",
+    "recommendation": "Recomienda y Gana"
+  },
+  "material": {
+    "title": "MATERIALES",
+    "intesivao": "Intensivo",
+    "calculator": "Calculadora",
+    "checklist": "Listas de comprobación",
+    "guideAndEbooks": "Manuales y E-books"
+  },
+  "contactUs": {
+    "title": "HABLE CON NOSOTROS",
+    "contact": "Contacto"
+  },
+  "investor": {
+    "title": "INVERTIDO POR"
+  },
+  "recognition": {
+    "title": "RECONOCIMIENTO"
+  },
+  "connectWithUs": {
+    "title": "CONÉCTESE CON TRACTIAN"
+  },
+  "copyRight": "© Tractian Tecnologia Ltda"
+}

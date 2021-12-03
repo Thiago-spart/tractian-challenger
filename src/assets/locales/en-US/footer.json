@@ -1,0 +1,39 @@
+{
+  "about": {
+    "title": "ABOUT TRACTIAN",
+    "workWithUs": "Careers",
+    "meetUs": "Meet Tractian",
+    "successHistories": "Success Cases",
+    "press": "Press",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "product": {
+    "title": "PRODUCT",
+    "sensor": "Tractian Sensor",
+    "platform": "Platform",
+    "functionality": "Features",
+    "plans": "Plans",
+    "recommendation": "Refer and Win"
+  },
+  "material": {
+    "title": "CONTENT",
+    "intesivao": "Intensive",
+    "calculator": "ROI Calculator",
+    "checklist": "Checklists",
+    "guideAndEbooks": "Guides and Ebooks"
+  },
+  "contactUs": {
+    "title": "CONTACT US",
+    "contact": "Contact"
+  },
+  "investor": {
+    "title": "INVESTED BY"
+  },
+  "recognition": {
+    "title": "RECOGNITION"
+  },
+  "connectWithUs": {
+    "title": "CONNECT WITH TRACTIAN"
+  },
+  "copyRight": "© Tractian Tecnologia Ltda"
+}
