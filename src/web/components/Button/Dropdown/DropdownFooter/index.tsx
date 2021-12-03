@@ -9,7 +9,7 @@ interface DropdownFooterProps {
 	type?: string;
 }
 
-export const DropdownFooter = ({ handleSelect, message, icon, type }: DropdownFooterProps) => {
+export const DropdownFooter = ({ handleSelect, message, icon }: DropdownFooterProps) => {
 	return (
 		<Container onClick={handleSelect}>
 			<p>
