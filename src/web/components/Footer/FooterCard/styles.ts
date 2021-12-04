@@ -50,6 +50,14 @@ export const LinkContainer = styled.div`
 	white-space: nowrap;
 	gap: 0.5rem;
 
+	div {
+		display: inline;
+	}
+
+	a {
+		display: block;
+	}
+
 	a {
 		color: var(--white);
 		font-size: 1.2rem;

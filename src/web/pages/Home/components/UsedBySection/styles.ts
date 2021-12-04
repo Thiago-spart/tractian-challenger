@@ -14,7 +14,7 @@ export const Container = styled.section`
 		height: 100px;
 		position: absolute;
 		width: 200px;
-		z-index: 2;
+		z-index: 1;
 	}
 
 	&::after {
@@ -23,7 +23,7 @@ export const Container = styled.section`
 		height: 100px;
 		position: absolute;
 		width: 200px;
-		z-index: 2;
+		z-index: 1;
 		right: 0;
 		top: 0;
 		transform: rotate(180deg);

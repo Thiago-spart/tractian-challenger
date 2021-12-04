@@ -20,6 +20,10 @@ export const Container = styled.div<{ isBlack: boolean }>`
 			width: 100%;
 		}
 	}
+
+	@media (max-width: 700px) {
+		padding: 3rem 0;
+	}
 `;
 
 export const DetailList = styled.ul`
@@ -77,32 +81,31 @@ export const DetailItem = styled.li<{ active: boolean; isBlack: boolean }>`
 
 export const NumberBall = styled.div<{ active: boolean; isBlack: boolean }>`
 	position: relative;
+	border: 1px solid red;
+	width: 7rem;
+	height: 4rem;
+	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--black);
-	width: 4rem;
-	height: 4rem;
-	font-size: 1.8rem;
-	font-weight: 600;
-	align-self: flex-start;
-	z-index: 2;
+	font-size: 1.6rem;
+	background-color: var(--gray-50);
+	background-color: ${({ isBlack, active }) =>
+		isBlack && active ? "#51e602" : active && "#22d3ee"};
 
 	span {
+		color: var(--black);
+		position: absolute;
+		top: 25%;
+		left: 43%;
 		z-index: 1;
 	}
 
-	&::before {
-		position: absolute;
-		content: "";
-		width: 40px;
-		background-color: var(--gray-50);
-		background-color: ${({ isBlack, active }) =>
-			isBlack && active ? "#51e602" : active && "#22d3ee"};
-		height: 40px;
-		z-index: 1;
-		border-radius: 50%;
-		bottom: 1%;
-		left: -46%;
+	@media (min-width: 1000px) {
+		width: 10rem;
+	}
+
+	@media (max-width: 600px) {
+		width: 11rem;
 	}
 `;

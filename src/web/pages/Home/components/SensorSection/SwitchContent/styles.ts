@@ -11,6 +11,8 @@ export const Container = styled.div`
 
 	@media (max-width: 1023px) {
 		width: 100%;
+		align-items: center;
+		justify-content: center;
 	}
 `;
 
