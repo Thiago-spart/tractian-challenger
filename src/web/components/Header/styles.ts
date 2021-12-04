@@ -11,14 +11,13 @@ export const Container = styled.header<{ scroll: boolean }>`
 	align-items: center;
 	justify-content: space-between;
 	font-size: 1.6rem;
+	z-index: 2;
 
 	button {
 		font-size: 1.6rem;
 	}
 
 	@media (max-width: 1023px) {
-		z-index: 1;
-
 		& > button,
 		& > nav {
 			display: none;

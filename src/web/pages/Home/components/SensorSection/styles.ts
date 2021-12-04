@@ -16,6 +16,10 @@ export const Container = styled.section`
 		justify-content: center;
 		gap: 2rem;
 	}
+
+	@media (max-width: 700px) {
+		padding: 3rem 2rem;
+	}
 `;
 
 export const ContentContainer = styled.div`
@@ -32,6 +36,10 @@ export const ContentContainer = styled.div`
 
 	@media (max-width: 1023px) {
 		width: 100%;
+
+		& > button {
+			align-self: center;
+		}
 	}
 `;
 

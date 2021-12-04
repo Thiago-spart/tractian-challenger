@@ -16,6 +16,10 @@ export const Title = styled.h2`
 
 export const SubTitle = styled.h3`
 	font-size: 1.8rem;
+
+	@media (max-width: 700px) {
+		margin-left: 0.5rem;
+	}
 `;
 
 export const Switch = styled.div`

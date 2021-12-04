@@ -117,7 +117,7 @@ export const Footer: FC = () => {
 		},
 		{
 			type: "img",
-			title: t("investor.recognition"),
+			title: t("investor.title"),
 			images: [
 				{
 					urlPath: "/logo-gptw.png",

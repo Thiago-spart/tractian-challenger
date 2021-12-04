@@ -24,7 +24,7 @@ export const WelcomeSection: React.FC = () => {
 			</ContentContainer>
 
 			<GifContainer>
-				<span>gif</span>
+				<span>GIF</span>
 			</GifContainer>
 
 			<WaveContainer>
