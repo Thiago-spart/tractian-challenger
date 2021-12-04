@@ -1,47 +1,69 @@
-<h1 align="center">
-   Nextjs-TS-Antd-Redux-Storybook-Jest-Starter
-</h1>
-
-<h4 align="center">
-  A starter project for Next.js applications for faster build
-</h4>
-
-<div align="center">
-
-[![Build Status](https://travis-ci.com/Jacky-Summer/nextjs-ts-antd-redux-storybook-starter.svg?branch=master)](https://travis-ci.com/Jacky-Summer/nextjs-ts-antd-redux-storybook-starter) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier) ![](https://img.shields.io/github/license/Jacky-Summer/nextjs-ts-antd-redux-storybook-starter)
-
+<div align="center" id="top"> 
+  <img src="./public/logotractianazul.svg" alt="Tractian's logo" />
 </div>
 
-<div align="center">
-  <a href="https://github.com/Jacky-Summer/nextjs-ts-antd-redux-storybook-starter/blob/master/README_CN.md" target="_self">[中文版 README]</a>
+<hr/>
+<br>
+
+## About
+
+This application is my challenge for tractian's company.
+
+## Screenshots
+
+<div align="center" id="top"> 
+  <img src="./.github/page-example.png" alt="Tractian" />
 </div>
+<br/>
 
-## Status
+## Deploy
 
-🚧 Maintaining...
+To see this code running in production access [here](https://tractian-challenger-thiago-nqaj2s5zd-thiago-spart.vercel.app/pt-BR)
 
-## Tech Stack
+## Features
 
-- [Next.js 10.x](https://nextjs.org/)
-- [React 17.x](https://reactjs.org/)
-- [TypeScript 4.x](https://www.typescriptlang.org/)
-- [Ant Design 4.x](https://ant.design/index-cn)
-- [Styled-components 5.x](https://styled-components.com/)
-- [Storybook 6.x](https://storybook.js.org/)
-- [Redux 4.x](https://redux.js.org/)
-- [Redux-saga 1.x](https://redux-saga.js.org/)
-- [Jest 26.x](https://styled-components.com/)
-- [Enzyme 3.x](https://enzymejs.github.io/enzyme/)
+- Multiple languages.
+- Responsive.
+- Easy to understand and change.
 
-## Usage
+## Technologies
 
-↗️ **Click the green "Use this template" button in the top right corner.**
+The following tools were used in this project:
 
-```
-yarn install
-yarn dev
+- [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://typescriptlang.org/)
+- [Next](https://nextjs.org)
+- [I18Next](https://i18next.com)
+- [Styled components](https://styled-components.com/)
+
+## Requirements
+
+Before starting 🏁, you need to have [Git](https://git-scm.com), [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com) installed.
+
+## Starting
+
+```bash
+# Clone this project
+$ git clone https://github.com/Thiago-spart/tractian-challenger
+
+# Access
+$ cd tractian-challenger
+
+# Install dependencies
+$ yarn
+
+# Run the project in developer mode
+$ yarn dev
+
+# The server will initialize in the <http://localhost:3000>
 ```
 
 ## License
 
-Copyright (c) 2020-present JackySummer. See [LICENSE](./LICENSE) for details.
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md).
+
+Made with ❤️ and ☕ by <a href="https://github.com/Thiago-spart" target="_blank">Thiago Moraes</a>
+
+&#xa0;
+
+<a href="#top">Back to top</a>
