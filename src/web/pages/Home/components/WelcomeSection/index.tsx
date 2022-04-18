@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useTranslation } from "next-i18next";
 
 import { Primary } from "web/components/Button/Primary";
@@ -24,7 +25,7 @@ export const WelcomeSection: React.FC = () => {
 			</ContentContainer>
 
 			<GifContainer>
-				<span>GIF</span>
+				<img src="/painelAnimation.svg" alt="motor gif" />
 			</GifContainer>
 
 			<WaveContainer>
