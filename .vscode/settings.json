@@ -77,8 +77,17 @@
 
   // TODO Tree
   "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "[ ]"],
-  "todo-tree.tree.showScanModeButton": false,
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 
-  "cSpell.words": ["Tractian", "capterra", "CMMS"]
+  "cSpell.words": [
+    "tractian",
+    "capterra",
+    "CMMS",
+    "nextjs",
+    "antd",
+    "stylelint",
+    "commitlint",
+    "commitlintrc",
+    "techmmunity"
+  ]
 }

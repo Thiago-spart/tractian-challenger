@@ -66,10 +66,13 @@ export const ContentContainer = styled.div`
 export const GifContainer = styled.div`
 	height: 31.2rem;
 	width: 50%;
-	border: 1px solid var(--black);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	img {
+		width: 100%;
+	}
 
 	@media (max-width: 1023px) {
 		width: 80%;
