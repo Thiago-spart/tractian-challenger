@@ -1,6 +1,6 @@
 import Link, { LinkProps as NextLinkProps } from "next/link";
 
-import React, { FC, MouseEvent, AnchorHTMLAttributes } from "react";
+import React, { FC, MouseEvent, AnchorHTMLAttributes, ReactNode } from "react";
 
 import { isExternalLink } from "utils/isExternalLink";
 
@@ -11,6 +11,7 @@ export interface Props
 	title?: string;
 	onClick?: (e: MouseEvent) => void;
 	className?: string;
+  children: ReactNode;
 }
 
 export const NextLink: FC<Props> = ({
