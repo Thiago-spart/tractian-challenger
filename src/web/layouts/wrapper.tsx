@@ -1,26 +1,32 @@
+import type { ReactNode } from "react";
+
 import { LayoutsEnum } from "../../types/enums/layout";
 
-import { DefaultLayout } from "./default";
-import { ErrorLayout } from "./error";
+import type { Layout } from "../../types/interfaces/layout";
 
-const getLayout = (layout?: LayoutsEnum): React.FC => {
+import { DefaultLayout } from "./default";
+import { NoneLayout } from "./none";
+
+interface Props {
+	children: ReactNode & { type: Layout };
+}
+
+interface PropsWithChildren {
+	children: ReactNode;
+}
+
+const getLayout = (layout?: LayoutsEnum): React.FC<PropsWithChildren> => {
 	switch (layout) {
-		case LayoutsEnum.ERROR:
-			return ErrorLayout;
 		case LayoutsEnum.NONE:
-			return ({ children }) => <>{children}</>;
+			return NoneLayout;
 		case LayoutsEnum.DEFAULT:
 		default:
 			return DefaultLayout;
 	}
 };
 
-export const LayoutWrapper: React.FC = ({ children }) => {
-	const Layout = getLayout((children as any).type.layout);
+export const LayoutWrapper: React.FC<Props> = ({ children }) => {
+	const LayoutComponent = getLayout(children.type.layout);
 
-	return (
-		<Layout>
-			<main>{children}</main>
-		</Layout>
-	);
+	return <LayoutComponent>{children}</LayoutComponent>;
 };

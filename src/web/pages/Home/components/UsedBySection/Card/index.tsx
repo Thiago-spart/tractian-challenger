@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { Container } from "./styles";
 
 interface CardProps {
@@ -10,7 +8,7 @@ interface CardProps {
 export const Card = ({ alt, src }: CardProps) => {
 	return (
 		<Container>
-			<Image src={src} alt={alt} width="auto" height="100" objectFit="contain" />
+			<img src={src} alt={alt} />
 		</Container>
 	);
 };

@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+/* eslint-disable @next/next/no-img-element */
 import { ReactNode } from "react";
 
 import { NextLink } from "web/components/Link";
@@ -15,8 +14,6 @@ interface ImgProps {
 	alt: string;
 	linkPath: string;
 	urlPath: string;
-	width: number;
-	height: number;
 }
 
 interface SocialMediaProps {
@@ -45,12 +42,7 @@ export const FooterCard = ({ title, images, links, copyRight, socialMedia }: Foo
 				<div className="img-container">
 					{images.map(image => (
 						<NextLink key={image.alt} href={image.urlPath}>
-							<Image
-								alt={image.alt}
-								src={image.urlPath}
-								width={image.width}
-								height={image.height}
-							/>
+							<img alt={image.alt} src={image.urlPath} />
 						</NextLink>
 					))}
 				</div>

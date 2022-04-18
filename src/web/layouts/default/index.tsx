@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 
 import { Footer } from "web/components/Footer";
 import { Header } from "web/components/Header";
@@ -6,7 +6,11 @@ import { MobileMenu } from "web/components/MobileMenu";
 
 import { Main } from "./styles";
 
-export const DefaultLayout: React.FC = ({ children }) => {
+interface Props {
+	children: ReactNode;
+}
+
+export const DefaultLayout: React.FC<Props> = ({children}) => {
 	const [isOpenModal, setIsOpenModal] = useState(false);
 
 	const openModal = () => {
