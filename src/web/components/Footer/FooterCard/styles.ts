@@ -6,11 +6,13 @@ export const Card = styled.div`
 	align-items: flex-start;
 	justify-content: flex-start;
 	gap: 0.8rem;
+	width: 50%;
 
 	.img-container {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
+		width: 100%;
 		gap: 0.8rem;
 
 		a {
@@ -19,6 +21,11 @@ export const Card = styled.div`
 			&:hover {
 				filter: brightness(0.8);
 			}
+		}
+
+		img {
+			min-width: 6rem;
+			max-width: 1.2rem;
 		}
 	}
 
@@ -79,6 +86,7 @@ export const SocialContainer = styled.div`
 	align-items: center;
 	justify-content: flex-start;
 	gap: 0.5rem;
+	width: 100%;
 
 	a {
 		width: 3rem;
