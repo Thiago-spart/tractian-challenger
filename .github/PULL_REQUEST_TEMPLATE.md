@@ -1,6 +1,12 @@
-## What this PR introduces?
+# PR Description
 
-<!-- Please, includes a description of this pull request -->
+## Old behavior?
+
+<!-- here -->
+
+## New behavior?
+
+<!-- here -->
 
 ## PR Checklist
 
@@ -16,7 +22,7 @@ Please check if your PR fulfills the following requirements:
 
 What kind of change does this PR introduce?
 
-```
+```md
 [ ] Hotfix
 [ ] Bugfix
 [ ] Feature
@@ -28,11 +34,7 @@ What kind of change does this PR introduce?
 
 ## Does this PR introduce a breaking change?
 
-```
 [ ] Yes
 [ ] No
-```
-
-<!-- If this PR contains a breaking change, please describe the impact and migration path for existing applications below. -->
 
 ## Other information (Prints, details, etc)
