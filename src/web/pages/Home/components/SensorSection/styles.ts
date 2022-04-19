@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
+import { SIZES } from "styles/sizes";
+
 export const Container = styled.section`
 	width: 100%;
 	height: 100%;
-	margin: 4rem auto;
-	padding: 6rem 4rem;
+	/* margin: 4rem auto; */
+	padding: auto 4rem;
+	${SIZES.verticalPadding}
+	${SIZES.horizontalPadding}
+
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -15,10 +20,6 @@ export const Container = styled.section`
 		flex-direction: column;
 		justify-content: center;
 		gap: 2rem;
-	}
-
-	@media (max-width: 700px) {
-		padding: 3rem 2rem;
 	}
 `;
 
