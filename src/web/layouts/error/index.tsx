@@ -1,1 +1,7 @@
-export const ErrorLayout: React.FC = ({ children }) => <div>{children}</div>;
+import { ReactNode } from "react";
+
+interface Props {
+	children: ReactNode;
+}
+
+export const ErrorLayout: React.FC<Props> = ({ children }) => <div>{children}</div>;

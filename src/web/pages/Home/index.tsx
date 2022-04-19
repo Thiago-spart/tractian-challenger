@@ -16,7 +16,7 @@ import { UsedBySection } from "./components/UsedBySection";
 import { WelcomeSection } from "./components/WelcomeSection";
 import { WhyChoose } from "./components/WhyChoose";
 
-import { FCWithLayout } from "types/layout";
+import type { FCWithLayout } from "types/layout";
 
 export const Home: FCWithLayout = () => {
 	const [isOpenModal, setIsOpenModal] = useState(false);

@@ -8,6 +8,10 @@ export const Container = styled.div`
 	transition: all 0.4s ease-in-out;
 	height: 100%;
 
+  img {
+    width: 15rem;
+  }
+
 	&:hover {
 		filter: none;
 	}
