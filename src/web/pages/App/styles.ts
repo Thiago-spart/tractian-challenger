@@ -1,22 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
+import { COLORS } from "styles/colors";
+
 export const GlobalBaseStyle = createGlobalStyle`
 
   :root {
-    --white: #ffffff;
-    --gray-50: #fafafa;
-    --gray-200: #d9d9d9;
-    --gray-400: #c1c4ca;
-    --gray-600: #a1a1aa;
-    --gray-800: #878787;
-    --black: #010101;
-    --light-blue-500: #7ce7f2;
-    --blue-300: #2551b5;
-    --blue-700: #1d4ed8;
-    --blue-750: #1f40af;
-    --blue-800: #1e3a8a;
-    --green-200: #49dc80;
-    --green-600: #22c55e;
+    ${COLORS.root}
   }
 
   *, *::before, *::after {
@@ -92,7 +81,7 @@ export const GlobalBaseStyle = createGlobalStyle`
 
   .react-modal-overlay {
     z-index: 2;
-		background: #ffffff;
+		background: var(--white);
 
 		position: fixed;
 		bottom: 0;
@@ -109,7 +98,7 @@ export const GlobalBaseStyle = createGlobalStyle`
 	.react-modal-content {
 		width: 100%;
     height: 100%;
-    background: #ffffff;
+    background: var(--white);
 		padding: 1rem;
 		position: relative;
 		border-radius: 0.25rem;

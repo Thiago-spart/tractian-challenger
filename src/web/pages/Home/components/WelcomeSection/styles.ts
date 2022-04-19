@@ -1,21 +1,24 @@
 import styled from "styled-components";
 
+import { SIZES } from "styles/sizes";
+
 export const Container = styled.section`
 	height: 100%;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 11rem 2rem;
+	padding-top: 11rem;
+	padding-bottom: 11rem;
 	font-size: 1.6rem;
 	background: linear-gradient(to left, #2663eb, #1f3b8b);
 	position: relative;
+	${SIZES.horizontalPadding}
 
 	@media (max-width: 1023px) {
 		flex-direction: column;
 		justify-content: center;
 		gap: 2rem;
-		padding: 11rem 2rem;
 	}
 `;
 
