@@ -3,10 +3,14 @@ import styled from "styled-components";
 export const Container = styled.section`
 	position: relative;
 	margin: 3rem auto;
-	width: 80%;
+	width: 95%;
 	height: 10rem;
 	position: relative;
 	overflow: hidden;
+
+	@media screen and (min-width: 1023px) {
+		width: 80%;
+	}
 
 	&::before {
 		background: linear-gradient(90deg, #fff 5%, hsla(0, 0%, 100%, 0));
