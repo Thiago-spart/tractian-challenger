@@ -4,7 +4,13 @@ import { useTranslation } from "next-i18next";
 import { Primary } from "web/components/Button/Primary";
 import { NextLink } from "web/components/Link";
 
-import { Container, GifContainer, ContentContainer, WaveContainer } from "./styles";
+import {
+	Container,
+	GifContainer,
+	ContentContainer,
+	WaveContainer,
+	ReviewContainer,
+} from "./styles";
 
 export const WelcomeSection: React.FC = () => {
 	const { t } = useTranslation("home");
@@ -13,9 +19,10 @@ export const WelcomeSection: React.FC = () => {
 		<Container>
 			<ContentContainer>
 				<h1>{t("welcomeSection.title")}</h1>
-				<div>
-					<p>google and capterra</p>
-				</div>
+				<ReviewContainer>
+					<img src="/capterra-review.svg" alt="capterra review" />
+					<img src="/google-review.svg" alt="google review" />
+				</ReviewContainer>
 				<h4>{t("welcomeSection.subTitle")}</h4>
 				<Primary message={t("welcomeSection.buttonMessage")} />
 				<p>

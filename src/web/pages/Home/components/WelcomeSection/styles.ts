@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { FONTS } from "styles/fonts";
 import { SIZES } from "styles/sizes";
 
 export const Container = styled.section`
@@ -8,16 +9,26 @@ export const Container = styled.section`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 11rem;
-	padding-bottom: 11rem;
 	font-size: 1.6rem;
 	background: linear-gradient(to left, #2663eb, #1f3b8b);
 	position: relative;
 	${SIZES.horizontalPadding}
+	flex-direction: column;
+	padding-top: 6rem;
+	padding-bottom: 4rem;
+	gap: 4rem;
 
-	@media (max-width: 1023px) {
-		flex-direction: column;
-		justify-content: center;
+	@media screen and (min-width: 720px) {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+		gap: 6rem;
+	}
+
+	@media screen and (min-width: 1023px) {
+		flex-direction: row;
+		justify-content: space-between;
+		padding-top: 11rem;
+		padding-bottom: 11rem;
 		gap: 2rem;
 	}
 `;
@@ -30,21 +41,18 @@ export const ContentContainer = styled.div`
 	justify-content: flex-start;
 	gap: 2rem;
 	color: var(--white);
+	${FONTS.text1}
 
 	@media (max-width: 1023px) {
 		width: 95%;
 	}
 
 	h1 {
-		color: var(--white);
-		font-size: 3.6rem;
-		font-weight: 600;
+		${FONTS.title1}
 	}
 
 	h4 {
-		color: var(--white);
-		font-size: 1.8rem;
-		font-weight: 400;
+		${FONTS.text1}
 	}
 
 	div {
@@ -55,10 +63,10 @@ export const ContentContainer = styled.div`
 	}
 
 	a {
+		margin-left: 0.5rem;
 		font-weight: 600;
-		font-size: 1.6rem;
-		color: var(--white);
 		transition: all 0.4s ease-out;
+		color: var(--white);
 
 		&:hover {
 			filter: brightness(0.8);
@@ -68,17 +76,18 @@ export const ContentContainer = styled.div`
 
 export const GifContainer = styled.div`
 	height: 31.2rem;
-	width: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	${SIZES.horizontalPadding}
+	width: 100%;
 
 	img {
 		width: 100%;
 	}
 
-	@media (max-width: 1023px) {
-		width: 80%;
+	@media screen and (min-width: 1023px) {
+		width: 50%;
 	}
 `;
 
@@ -157,6 +166,21 @@ export const WaveContainer = styled.div`
 
 		h1 {
 			font-size: 24px;
+		}
+	}
+`;
+
+export const ReviewContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+
+	img {
+		width: 13rem;
+
+		&:last-child {
+			width: 10rem;
 		}
 	}
 `;
