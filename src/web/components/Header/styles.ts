@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
+import { SIZES } from "styles/sizes";
+
 export const Container = styled.header<{ scroll: boolean }>`
-	position: fixed;
-	padding: 0.7rem;
+	position: absolute;
+	padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+	${SIZES.horizontalPadding}
 	width: 100%;
 	background-color: ${({ scroll }) => (scroll ? "var(--blue-800)" : "transparent")};
 	z-index: 5;
@@ -13,11 +17,15 @@ export const Container = styled.header<{ scroll: boolean }>`
 	font-size: 1.6rem;
 	z-index: 2;
 
+	@media screen and (min-width: 720px) {
+		position: fixed;
+	}
+
 	button {
 		font-size: 1.6rem;
 	}
 
-	@media (max-width: 1023px) {
+	@media screen and (max-width: 1023px) {
 		& > button,
 		& > nav {
 			display: none;
@@ -40,7 +48,7 @@ export const MobileMenu = styled.div`
 	border-radius: 0.8rem;
 	border: none;
 
-	transition: 0.6s all ease-out;
+	transition: 0.4s all ease-out;
 
 	&:hover {
 		filter: brightness(0.8);
@@ -51,7 +59,7 @@ export const ImgContainer = styled.div`
 	width: 100%;
 	height: 100%;
 	width: 10rem;
-	transition: 0.6s filter ease-out;
+	transition: 0.4s filter ease-out;
 
 	&:hover {
 		filter: brightness(0.8);
