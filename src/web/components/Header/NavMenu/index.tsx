@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 
-import React, { FC } from "react";
+import type { FC } from "react";
+import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { GrAppsRounded } from "react-icons/gr";
 import {
