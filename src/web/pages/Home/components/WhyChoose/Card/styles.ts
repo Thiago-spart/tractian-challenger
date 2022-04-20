@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
+import { FONTS } from "styles/fonts";
+
 export const Container = styled.div`
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
 	flex-direction: column;
 	gap: 0.8rem;
-	height: 28rem;
+	height: 30rem;
 	width: 100%;
 	border-radius: 0.8rem;
 	border: 1px solid #60a5fa;
@@ -14,7 +16,10 @@ export const Container = styled.div`
 	transform: scale(1);
 	transition: all 0.5s ease-in-out;
 	cursor: default;
-	font-size: 1.4rem;
+
+	p {
+		${FONTS.text3}
+	}
 
 	&:hover {
 		transform: scale(1.05);
@@ -29,6 +34,6 @@ export const ImgContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-	font-weight: 600;
-	font-size: 1.8rem;
+	${FONTS.title5}
+	font-weight: 700;
 `;
