@@ -11,7 +11,7 @@ export const Menu = styled.ul`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 3rem;
+	gap: 1.5rem;
 	margin: 0;
 
 	@media (max-width: 1023px) {
