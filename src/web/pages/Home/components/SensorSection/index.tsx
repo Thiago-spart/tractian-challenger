@@ -2,8 +2,6 @@ import { useTranslation } from "next-i18next";
 
 import { useState } from "react";
 
-import { Primary } from "web/components/Button/Primary";
-
 import { Container, Options, SubTitle, Title, ContentContainer, Option } from "./styles";
 
 import { SwitchContent } from "./SwitchContent";
@@ -54,8 +52,6 @@ export const SensorSection: React.FC = () => {
 						</p>
 					</Option>
 				</Options>
-
-				<Primary message={t("sensorSection.buttonMessage")} />
 			</ContentContainer>
 
 			{Content.map((item, index) => {
@@ -69,6 +65,7 @@ export const SensorSection: React.FC = () => {
 							text={item.text}
 							title={item.title}
 							key={item.title}
+							buttonMessage={t("sensorSection.buttonMessage")}
 						/>
 					)
 				);
