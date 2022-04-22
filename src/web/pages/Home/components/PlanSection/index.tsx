@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
@@ -59,7 +60,7 @@ export const PlanSection: React.FC = () => {
 						/>
 					)}
 
-					<Image src={card.imgSrc} alt={card.title} width="480" height="366" objectFit="contain" />
+					<img src={card.imgSrc} alt={card.title} width="480" height="366" />
 					<SubTitle>{card.subTitle}</SubTitle>
 					<NextLink href={card.href} target="_blank">
 						{card.black && (
