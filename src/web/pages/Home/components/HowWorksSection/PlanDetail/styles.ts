@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { SIZES } from "styles/sizes";
+
 export const Container = styled.div<{ isBlack: boolean }>`
 	display: flex;
 	align-items: center;
@@ -8,7 +10,8 @@ export const Container = styled.div<{ isBlack: boolean }>`
 	color: ${({ isBlack }) => (isBlack ? "#51e602" : "#22d3ee")};
 	width: 100%;
 	height: 100%;
-	padding: 6rem 0;
+	${SIZES.horizontalPadding}
+	${SIZES.verticalPadding}
 
 	@media (max-width: 1023px) {
 		flex-direction: column;
@@ -80,12 +83,12 @@ export const DetailItem = styled.li<{ active: boolean; isBlack: boolean }>`
 `;
 
 export const NumberBall = styled.div<{ active: boolean; isBlack: boolean }>`
+	display: none;
 	position: relative;
 	border: 1px solid red;
 	width: 7rem;
 	height: 4rem;
 	border-radius: 50%;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 1.6rem;
@@ -101,11 +104,11 @@ export const NumberBall = styled.div<{ active: boolean; isBlack: boolean }>`
 		z-index: 1;
 	}
 
-	@media (min-width: 1000px) {
-		width: 10rem;
+	@media screen and (min-width: 720px) {
+		display: flex;
 	}
 
-	@media (max-width: 600px) {
-		width: 11rem;
+	@media screen and (min-width: 1023px) {
+		width: 10rem;
 	}
 `;

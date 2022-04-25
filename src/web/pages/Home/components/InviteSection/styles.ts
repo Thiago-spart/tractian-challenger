@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { SIZES } from "styles/sizes";
+
 export const Container = styled.section`
 	display: flex;
 	gap: 2.5rem;
@@ -8,7 +10,8 @@ export const Container = styled.section`
 	background-color: var(--gray-50);
 	width: 100%;
 	height: 100%;
-	padding: 6rem;
+	${SIZES.horizontalPadding}
+	${SIZES.verticalPadding}
 
 	@media (max-width: 1023px) {
 		flex-direction: column;
@@ -35,13 +38,20 @@ export const Card = styled.div`
 	}
 
 	h2 {
-		font-size: 3rem;
+		font-size: 2.4rem;
+		line-height: 3.2rem;
 		font-weight: 600;
 		color: #1e40af;
+
+		@media (min-width: 640px) {
+			line-height: 4rem;
+			font-size: 3rem;
+		}
 	}
 
 	& > p {
 		font-size: 1.8rem;
+		line-height: 2.8rem;
 		color: #52525b;
 	}
 
@@ -79,14 +89,14 @@ export const BlogList = styled.ul`
 	li {
 		position: relative;
 		width: 100%;
-		height: 6rem;
-		padding-right: 5rem;
+		height: 50%;
 		border-radius: 0.8rem;
 		transition: all 0.4s ease-in-out;
 		cursor: pointer;
 
 		a {
-			font-size: 2rem;
+			font-size: 1.8rem;
+			line-height: 2.8rem;
 			color: #52525b;
 		}
 
@@ -97,7 +107,7 @@ export const BlogList = styled.ul`
 		&::before {
 			position: absolute;
 			content: "";
-			width: 60%;
+			width: 100%;
 			height: 2px;
 			background-color: #4c6bc8;
 			bottom: 0;

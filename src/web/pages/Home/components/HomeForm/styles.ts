@@ -1,22 +1,33 @@
 import styled from "styled-components";
 
+import { SIZES } from "styles/sizes";
+
 export const Container = styled.section`
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 2.5rem;
 	flex-direction: column;
-	padding: 6rem;
 	background-color: var(--white);
 	font-size: 1.6rem;
+
+	${SIZES.horizontalPadding}
+	${SIZES.verticalPadding}
+
 	p {
 		color: #52525b;
 	}
 `;
 
 export const Title = styled.h2`
-	font-size: 3.6rem;
+	font-size: 3rem;
+	line-height: 3.6rem;
 	font-weight: 500;
+
+	@media screen and (min-width: 640px) {
+		font-size: 3.6rem;
+		line-height: 4rem;
+	}
 `;
 
 export const FormContainer = styled.form`
