@@ -18,17 +18,26 @@ export const TitleContainer = styled.div`
 	align-items: center;
 	justify-content: center;
 	gap: 2.5rem;
+	flex-direction: column;
 
 	p {
-		font-weight: 700;
+		font-weight: 600;
+	}
+
+	@media screen and (min-width: 640px) {
+		flex-direction: row;
 	}
 `;
 
 export const SlideStyle = styled.div`
-	height: 13rem;
 	position: relative;
 	overflow: hidden;
 	width: 100%;
+	height: 22rem;
+
+	@media screen and (min-width: 360px) {
+		height: 18rem;
+	}
 `;
 
 export const SlideContainer = styled.div`
