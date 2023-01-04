@@ -13,7 +13,7 @@ export const Card = ({ alt, src, message, colorOne, colorTwo }: CardProps) => {
 	return (
 		<Container colorOne={colorOne} colorTwo={colorTwo}>
 			<ImgContainer>
-				<Image src={src} alt={alt} width="32.5" height="32.5" objectFit="fill" />
+				<Image src={src} alt={alt} width="32" height="32" />
 			</ImgContainer>
 
 			<span>{message}</span>

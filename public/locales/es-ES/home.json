@@ -1,0 +1,187 @@
+{
+  "welcomeSection": {
+    "title": "Monitorización y gestión de activos online en un solo lugar",
+    "subTitle": "Evite fallos en sus máquinas y convierta el tiempo de parada en una cosa del pasado con el sistema predictivo TRACTIAN",
+    "clienteInvite": "¿Ya es cliente?",
+    "paragraphLink": "Acceso clientes",
+    "buttonMessage": "Demostración"
+  },
+  "whyChoose": {
+    "title": "¿Por qué escoger",
+    "companyName": "Tractian",
+    "buttonMessage": "¡Comience ahora!",
+    "cards": {
+      "predictiveMaintenance": {
+        "title": "Mantenimiento Predictivo",
+        "text": "Detección automático de fallos, estado de salud del activo en tiempo real, confiabilidad e insights automaticos."
+      },
+      "onlineMonitoring": {
+        "title": "Monitoreo On-line",
+        "text": "El Sensor Tractian recopila datos de la Vibración, la Temperatura, el Horómetro y el consumo de enería en tiempo real."
+      },
+      "instantSetup": {
+        "title": "Setup Instantáneo",
+        "text": "Solución Plug & Play, sin necesidad de gateways o modens, comunicación por 2g/3g de forma independiente."
+      },
+      "integratedCMMS": {
+        "title": "CMMS Integrado",
+        "text": "Automatice los procesos, las órdenes de trabajo y tenga un control total sobre sus activos y su personal."
+      }
+    }
+  },
+  "sensorSection": {
+    "title": "MANTENIMIENTO PREDICTIVO SIN COMPLICACIONES",
+    "subTitle": "Mantenga a su equipo y a sus activos en su",
+    "subTitleHighlight": "mejor momento.",
+    "buttonMessage": "Programe una demo",
+    "options": {
+      "plugPlay": "Sensor Plug & Play",
+      "onlineMonitoring": "Monitorización Online",
+      "assetManagement": "Gestión de Activos"
+    },
+    "sections": {
+      "plugPlaySensor": {
+        "title": "Tecnología IoT avanzada para conectar sus activos",
+        "text": "Nuestros sensores envían los datos de su equipo a través de la red 3g/4g. Sólo tiene que fijar el sensor en el lugar a vigilar y ya está: siga el estado de su máquina en tiempo real."
+      },
+      "onlineMonitoring": {
+        "title": "La Plataforma que trabaja por usted",
+        "text": "La plataforma ofrece una visión amplia de la condición de su máquina. Insights automáticos, detección de holguras mecánicas, desalineamiento, desacoplamiento y modelos de IA exclusivos de Tractian para cada tipo de máquina."
+      },
+      "assetManagement": {
+        "title": "El software de mantenimiento de sus sueños",
+        "text": "Utilice los procedimientos en línea para organizar las listas de comprobación y las inspecciones. Centralice la rutina de su equipo y mejore las actividades de cada empleado mediante la automatización y las métricas."
+      }
+    }
+  },
+  "howItWorksSection": {
+    "title": "¿Cómo funciona?",
+    "subTitle": "Combine la supervisión y la gestión, elija:",
+    "onlineMonitoring": "Monitorización online",
+    "assetManagement": "Gestión de activos",
+    "sections": {
+      "shipSensors": {
+        "title": "Nosotros enviamos los sensores",
+        "text": "Los entregamos por correo a todo el país. Usted recibe el sensor en su local de trabajo. No es necesario conectarse al Wi-Fi industrial y ni siquiera hablar con la tecnología de la información."
+      },
+      "attachMachine": {
+        "title": "Colóquelo en sus máquinas",
+        "text": "Nuestro sensor es colocado en la máquina igual que un Band-Aid. Él será el responsable de transmitir los datos de vibración y de temperatura del equipo a la plataforma."
+      },
+      "getInsights": {
+        "title": "Reciba Insights valiosos",
+        "text": "Nuestro sistema centraliza la información precisa sobre sus máquinas, con insights y análisis, como el estado de salud del equipo, detección de anomalías y variación de espectros."
+      },
+      "sendAssets": {
+        "title": "Envíenos su lista de Activos, Lugares y Usuarios",
+        "text": "Dejamos la plataforma lista y organizada para usted, preparando su planta y activos siguiendo el esquema que nos han enviado, así como sus mantenedores registrados en la plataforma."
+      },
+      "automateWorkPlans": {
+        "title": "Automatice sus planes y órdenes de trabajo",
+        "text": "Utilice los procedimientos en línea para organizar las listas de comprobación y las inspecciones. Secuenciar y planificar las órdenes de trabajo de forma preventiva nunca ha sido tan fácil."
+      },
+      "replaceExcel": {
+        "title": "Reemplazar completamente a Excel",
+        "text": "La plataforma abrirá las Órdenes de Trabajo y las distribuirá según las automatizaciones configuradas, permitiendo que todo el equipo de mantenimiento se preocupe sólo de ejecutar sus actividades rutinarias."
+      }
+    }
+  },
+  "planSection": {
+    "tracOS": {
+      "title": "TracOS ™",
+      "subTitle": "La revolucionaria CMMS para la planificación, el seguimiento de las métricas y la conexión con su equipo."
+    },
+    "smartTrac": {
+      "title": "Smart Trac",
+      "subTitle": "El sistema de predicción más completo del mercado. Más visibilidad, seguridad y control de forma sencilla e inteligente."
+    },
+    "buttonMessage": "Conoce"
+  },
+  "percentageSection": {
+    "title": "Sus máquinas más seguras.",
+    "firstCard": {
+      "message": "DE ACIERTO DE LOS INSIGHTS GENERADOS POR LA PLATAFORMA."
+    },
+    "secondCard": {
+      "message": "AUMENTO DE LA CONFIABILIDAD DE LAS MÁQUINAS CON EL SISTEMA TRACTIAN."
+    },
+    "thirdCard": {
+      "message": "REDUCE LOS IMPREVISTOS DE ÚLTIMA HORA EN EL MANTENIMIENTO."
+    }
+  },
+  "OpinionSection": {
+    "title": "Lo que dicen nuestros clientes:",
+    "subTitle": "Nombrada solución de CMMS y OEE favorita en la clasificación de Capterra 2021",
+    "buttonMessage": "Agendar una Demo",
+    "quotes": {
+      "tiagoJunqueira": {
+        "name": "Tiago Junqueira",
+        "job": "Supervisor de Mantenimiento General - AmstedMaxion",
+        "quote": "\"Antes de Tractian, el fracaso se producía sin que tuviéramos oportunidad de reaccionar. Ahora podemos identificar cualquier anomalía fuera de lo normal y esto nos permite intervenir antes de que se produzca la avería.\""
+      },
+      "gustavoRibeiro": {
+        "name": "Gustavo Ribeiro",
+        "job": "Director Industrial - Industria Gestión de Residuos",
+        "quote": "\"Con Tractian optimizamos tiempo, reducimos costos con averías porque la plataforma nos anticipa los fallos. Su tecnología es una grán herramienta en la supervisión y gestión de nuestros activos que hacen parte del patrimonio de la empresa.\""
+      },
+      "eduardaBuaiz": {
+        "name": "Eduarda Buaiz",
+        "job": "Directora General - Industria Alimenticia",
+        "quote": "\"El dispositivo le da más confiabilidad al proceso, agilizando el análisis de la información y evitando paradas de producción, lo que impacta positivamente en la productividad.\""
+      },
+      "reneSantos": {
+        "name": "Renê Santos",
+        "job": "Técnico Mecánico - Industria Cervecera",
+        "quote": "\"Hasta un niño puede instalar el sensor de Tractian y la plataforma es tan fácil de usar como una red social. Todo el sistema es muy sencillo y confiable.\""
+      }
+    }
+  },
+  "inviteSection": {
+    "blog": {
+      "title": "Novedades en el Blog",
+      "firstBlog": "Todo sobre la matriz de criticidad",
+      "secondBlog": "TRACTIAN es la solución de CMMS y OEE favorita en el ranking de Capterra 2021",
+      "thirdBlog": "Cómo identificar las 7 principales causas de pérdida de producción",
+      "inviteLink": "Ir al blog"
+    },
+    "makePart": {
+      "title": "¡HAGA PARTE DE NUESTRO EQUIPO!",
+      "subTitle": "Vea las ofertas actuales de trabajo y venga a hacer parte de un equipo de alto rendiento",
+      "inviteLink": "¡Vea nuestras ofertas de empleo!"
+    }
+  },
+  "homeForm": {
+    "title": "Mejore sus procesos de mantenimiento",
+    "subTitle": "Llene el formulario para una demostración.",
+    "nameLabel": {
+      "name": "Nombre",
+      "placeholder": "Escriba su nombre"
+    },
+    "ruleLabel": {
+      "name": "Cargo",
+      "placeholder": "Escriba su cargo"
+    },
+    "emailLabel": {
+      "name": "E-mail profesional",
+      "placeholder": "Escriba su e-mail profesional"
+    },
+    "phoneLabel": {
+      "name": "Teléfono"
+    },
+    "monitorAmountLabel": {
+      "description": "Cantidad de puntos monitorizados:",
+      "firstOption": "de 10 a 20",
+      "secondOption": "de 21 a 30",
+      "thirdOption": "de 31 a 50",
+      "fourthOption": "Mas de 50"
+    },
+    "buttonMessage": "Enviar"
+  },
+  "qualitySection": {
+    "title": "Superpoderes para su mantenimiento",
+    "firstCard": "Desalineación Detectada",
+    "secondCard": "Desbalanceo Detectado",
+    "thirdCard": "Holgura Mecánica detectada",
+    "fourthCard": "Temperatura Anormal Detectada"
+  }
+}

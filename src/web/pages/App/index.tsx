@@ -3,8 +3,6 @@ import { Router } from "next/router";
 
 import React, { useEffect } from "react";
 
-import { Head } from "./components/Head";
-
 import { setGtmPageView } from "utils/gtm";
 
 import { LayoutWrapper } from "web/layouts/wrapper";
@@ -24,7 +22,6 @@ export const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
 	return (
 		<>
-			<Head />
 			<LayoutWrapper>
 				<Component {...pageProps} />
 			</LayoutWrapper>

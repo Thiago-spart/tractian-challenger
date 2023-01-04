@@ -1,0 +1,83 @@
+{
+  "buttonMessage": "Schedule a demo",
+  "navbar": {
+    "product": {
+      "name": "Product",
+      "sensorPage": {
+        "title": "Sensor",
+        "subTitle": "Vibration and Temperature analysis in real time"
+      },
+      "Platform": {
+        "title": "Platform",
+        "subTitle": "Monitor the condition of your machines from anywhere."
+      },
+      "functionality": {
+        "title": "Features",
+        "subTitle": "Asset health score, Work Orders Automation, Alerts, Insights and more"
+      },
+      "plans": {
+        "title": "Pricing",
+        "subTitle": "Check out how to get our solution"
+      },
+      "scheduleADemo": {
+        "title": "Schedule a demo"
+      }
+    },
+    "aboutUs": {
+      "name": "About us",
+      "meetTractian": {
+        "title": "Get to know us",
+        "subTitle": "Find out more about the team behind Tractian, our history and open positions."
+      },
+      "successHistories": {
+        "title": "Success Cases",
+        "subTitle": "Learn how our solution improves the day-to-day maintenance professionals life."
+      },
+      "contact": {
+        "title": "Contact us",
+        "subTitle": "Ask questions, understand more about our solution and give us suggestions."
+      },
+      "workForUs": {
+        "title": "Careers",
+        "subTitle": "Work in the fastest growing Indtech in Brazil."
+      },
+      "media": {
+        "title": "Press",
+        "subTitle": "See what the major newspapers say about Tractian."
+      }
+    },
+    "freeMaterial": {
+      "name": "Resources",
+      "guides": {
+        "title": "Guides",
+        "subTitle": "Download the best maintenance guides for free."
+      },
+      "checkList": {
+        "title": "Checklists",
+        "subTitle": "Download our free checklists and avoid problems with your maintenance team."
+      },
+      "roiCalculator": {
+        "title": "ROI Calculator",
+        "subTitle": "What is the cost of your machine in your budget? See if Tractian's solution is worth using."
+      },
+      "recentMaterial": {
+        "title": "Latest Content"
+      },
+      "lookingForZeroDowntime": {
+        "title": "Unlimited Machine Uptime"
+      },
+      "completeGuide": {
+        "title": "Complete Guide to Maintenance KPIs"
+      },
+      "seeAll": {
+        "title": "See all"
+      }
+    },
+    "blog": {
+      "name": "Blog"
+    },
+    "clientArea": {
+      "name": "Customer Area"
+    }
+  }
+}

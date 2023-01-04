@@ -6,6 +6,6 @@ interface HeadTitleProps {
 
 export const HeadTitle = ({ title }: HeadTitleProps) => (
 	<Head>
-		<title>{title} | Tractian</title>
+		<title>TRACTIAN | {title}</title>
 	</Head>
 );
