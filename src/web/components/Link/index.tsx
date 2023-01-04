@@ -49,8 +49,8 @@ export const NextLink: FC<Props> = ({
 	}
 
 	return (
-		<Link href={href} {...restProps}>
-			<a onClick={handleClick}>{children}</a>
+        <Link href={href} {...restProps} onClick={handleClick}>
+			{children}
 		</Link>
-	);
+    );
 };

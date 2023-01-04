@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 
-import React, { FC } from "react";
+import type { FC } from "react";
+import React from "react";
 import { FaLinkedinIn, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 import { Container } from "./styles";

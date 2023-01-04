@@ -5,3 +5,5 @@
 /coverage
 /.github
 _document.tsx
+babel.config.js
+next-i18next.config.js

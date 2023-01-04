@@ -4,10 +4,6 @@
   "extends": [
     "@techmmunity/eslint-config/common",
     "@techmmunity/eslint-config/jest",
-    "@techmmunity/eslint-config/react",
-    "@techmmunity/eslint-config/nextjs",
-    "@techmmunity/eslint-config/typescript",
-    "@techmmunity/eslint-config/ts-react",
     "@techmmunity/eslint-config/ts-nextjs"
   ],
   "parserOptions": {
