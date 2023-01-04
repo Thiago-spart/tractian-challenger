@@ -4,20 +4,6 @@
   "description": "A challenger maid by Thiago",
   "title": "Tractian's challenger",
   "author": "ThiagoSpart",
-  "keywords": [
-    "react",
-    "nextjs",
-    "nextjs-starter",
-    "nextjs-template",
-    "typescript",
-    "redux",
-    "redux-saga",
-    "ant-design",
-    "styled-components",
-    "storybook",
-    "jest",
-    "enzyme"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Thiago-spart/tractian-challenger"

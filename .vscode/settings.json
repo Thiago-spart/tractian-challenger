@@ -19,11 +19,6 @@
     "source.fixAll.eslint": true
   },
 
-  // Color of Comments
-  "editor.tokenColorCustomizations": {
-    "comments": "#00a0eb"
-  },
-
   // Make VSCode understand this files as files of this languages
   "files.associations": {
     ".lintstagedrc": "json",
@@ -33,17 +28,14 @@
   // ================ Languages General Config ====================
 
   // TypeScript
-  "typescript.suggest.autoImports": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "typescript.tsserver.log": "verbose",
-  "[typescript]": {
-    "editor.defaultFormatter": null
-  },
+  // "[typescript]": {
+  // 	"editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
 
-  // TypeScript With React
-  "[typescriptreact]": {
-    "editor.defaultFormatter": null
-  },
+  // // TypeScript With React
+  // "[typescriptreact]": {
+  // 	"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  // },
 
   // JavaScript
   "javascript.suggest.autoImports": true,
@@ -65,20 +57,10 @@
   "gitlens.codeLens.recentChange.enabled": false,
 
   // Eslint
-  "eslint.packageManager": "yarn",
+  "eslint.packageManager": "npm",
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
 
-  // Material Icon Theme
-  "material-icon-theme.folders.associations": {
-    "types": "typescript",
-    "enums": "typescript",
-    "interfaces": "typescript"
-  },
-
-  // TODO Tree
-  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "[ ]"],
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-
+  "cSpell.language": "en,pt,pt_BR",
   "cSpell.words": [
     "tractian",
     "capterra",
