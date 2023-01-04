@@ -1,0 +1,12 @@
+{
+  "system": {
+    "lang": "es-ES",
+    "ogLocale": "es_ES"
+  },
+  "head": {
+    "metas": {
+      "description": "Techmmunity is a community of people who help each other to learn and spread knowledge about programming, graphic design, sound design, robotic engineering and management.",
+      "ogLocale": "en_US"
+    }
+  }
+}

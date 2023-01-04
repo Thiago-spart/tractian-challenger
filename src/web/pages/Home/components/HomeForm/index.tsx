@@ -17,21 +17,33 @@ export const HomeForm: React.FC = () => {
 				<FormGroup>
 					<label htmlFor="name">
 						{t("homeForm.nameLabel.name")}
-						<input name="name" type="text" placeholder={t("homeForm.nameLabel.placeholder")} />
+						<input
+							name="name"
+							type="text"
+							placeholder={String(t("homeForm.nameLabel.placeholder"))}
+						/>
 					</label>
 				</FormGroup>
 
 				<FormGroup>
 					<label htmlFor="position">
 						{t("homeForm.ruleLabel.name")}
-						<input type="text" name="position" placeholder={t("homeForm.ruleLabel.placeholder")} />
+						<input
+							type="text"
+							name="position"
+							placeholder={String(t("homeForm.ruleLabel.placeholder"))}
+						/>
 					</label>
 				</FormGroup>
 
 				<FormGroup>
 					<label htmlFor="email">
 						{t("homeForm.emailLabel.name")}
-						<input type="email" name="email" placeholder={t("homeForm.emailLabel.placeholder")} />
+						<input
+							type="email"
+							name="email"
+							placeholder={String(t("homeForm.emailLabel.placeholder"))}
+						/>
 					</label>
 				</FormGroup>
 
