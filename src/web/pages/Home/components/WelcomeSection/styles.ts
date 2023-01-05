@@ -34,7 +34,7 @@ export const Container = styled.section`
 `;
 
 export const ContentContainer = styled.div`
-	width: 50%;
+	width: 95%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -43,8 +43,8 @@ export const ContentContainer = styled.div`
 	color: var(--white);
 	${FONTS.text1}
 
-	@media (max-width: 1023px) {
-		width: 95%;
+	@media (min-width: 1023px) {
+		width: 50%;
 	}
 
 	h1 {
@@ -75,7 +75,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const GifContainer = styled.div`
-	height: 31.2rem;
+	max-height: 41.2rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -84,6 +84,7 @@ export const GifContainer = styled.div`
 
 	img {
 		width: 100%;
+		object-fit: contain;
 	}
 
 	@media screen and (min-width: 1023px) {

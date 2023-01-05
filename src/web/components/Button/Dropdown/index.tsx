@@ -1,4 +1,5 @@
-import { ReactNode, useState } from "react";
+import type { ReactNode } from "react";
+import { useState } from "react";
 import ClickAwayListener from "react-click-away-listener";
 import { AiOutlineDown } from "react-icons/ai";
 

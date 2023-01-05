@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styled from "styled-components";
 
 import { SIZES } from "styles/sizes";
@@ -55,11 +57,10 @@ export const MobileMenu = styled.div`
 	}
 `;
 
-export const ImgContainer = styled.div`
-	width: 100%;
+export const LogoImg = styled(Image)`
 	height: 100%;
 	width: 10rem;
-	transition: 0.4s filter ease-out;
+	transition: 0.2s;
 
 	&:hover {
 		filter: brightness(0.8);

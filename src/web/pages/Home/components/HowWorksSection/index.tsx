@@ -58,6 +58,7 @@ export const HowWorksSection: React.FC = () => {
 		<Container>
 			<Title>{t("howItWorksSection.title")}</Title>
 			<SubTitle>{t("howItWorksSection.subTitle")}</SubTitle>
+
 			<Switch>
 				<Button type="button" onClick={() => setSelected("1")} active={selected === "1"}>
 					{t("howItWorksSection.onlineMonitoring")}

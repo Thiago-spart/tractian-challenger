@@ -15,7 +15,7 @@ export const ButtonStyle = styled.button<ButtonStyleProps>`
 	${({ schema }) => (schema ? themeVariations[schema] : themeVariations.primary)}
 
 	color: var(--white);
-	padding: 1.7rem ${({ isFullWidth }) => (isFullWidth ? "0" : "0.5rem")};
+	padding: 1.1rem ${({ isFullWidth }) => (isFullWidth ? "0" : "0.5rem")};
 	font-weight: 600;
 	font-size: 1.6rem;
 

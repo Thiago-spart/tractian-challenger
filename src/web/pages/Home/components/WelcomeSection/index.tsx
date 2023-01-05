@@ -1,41 +1,35 @@
 /* eslint-disable @next/next/no-img-element */
 import { useTranslation } from "next-i18next";
 
-import { Primary } from "web/components/Button/Primary";
-import { NextLink } from "web/components/Link";
+import { Button } from "@components/Button";
+import { NextLink } from "@components/Link";
 
-import {
-	Container,
-	GifContainer,
-	ContentContainer,
-	WaveContainer,
-	ReviewContainer,
-} from "./styles";
+import * as S from "./styles";
 
 export const WelcomeSection: React.FC = () => {
 	const { t } = useTranslation("home");
 
 	return (
-		<Container>
-			<ContentContainer>
+		<S.Container>
+			<S.ContentContainer>
 				<h1>{t("welcomeSection.title")}</h1>
-				<ReviewContainer>
+				<S.ReviewContainer>
 					<img src="/capterra-review.svg" alt="capterra review" />
 					<img src="/google-review.svg" alt="google review" />
-				</ReviewContainer>
+				</S.ReviewContainer>
 				<h4>{t("welcomeSection.subTitle")}</h4>
-				<Primary message={t("welcomeSection.buttonMessage")} />
+				<Button>{t("welcomeSection.buttonMessage")}</Button>
 				<p>
 					{t("welcomeSection.clienteInvite")}
 					<NextLink href="https://app.tractian.com">{t("welcomeSection.paragraphLink")}</NextLink>
 				</p>
-			</ContentContainer>
+			</S.ContentContainer>
 
-			<GifContainer>
+			<S.GifContainer>
 				<img src="/painelAnimation.svg" alt="motor gif" />
-			</GifContainer>
+			</S.GifContainer>
 
-			<WaveContainer>
+			<S.WaveContainer>
 				<svg
 					className="waves"
 					xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +51,7 @@ export const WelcomeSection: React.FC = () => {
 						<use xlinkHref="#gentle-wave" x="48" y="7" fill="#ffffff" />
 					</g>
 				</svg>
-			</WaveContainer>
-		</Container>
+			</S.WaveContainer>
+		</S.Container>
 	);
 };

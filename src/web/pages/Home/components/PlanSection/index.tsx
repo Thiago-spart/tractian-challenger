@@ -1,12 +1,13 @@
+/* eslint-disable multiline-ternary */
 /* eslint-disable @next/next/no-img-element */
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
-import { Primary } from "web/components/Button/Primary";
-import { Secondary } from "web/components/Button/Secondary";
 import { NextLink } from "web/components/Link";
 
-import { Card, Container, Title, SubTitle } from "./styles";
+import { Button } from "@components/Button";
+
+import * as S from "./styles";
 
 export const PlanSection: React.FC = () => {
 	const { t } = useTranslation("home");
@@ -29,47 +30,39 @@ export const PlanSection: React.FC = () => {
 	];
 
 	return (
-		<Container>
+		<S.Container>
 			{Content.map(card => (
-				<Card black={typeof card.black !== undefined} key={card.title}>
-					<Image
-						src="/Logo-Tractian.svg"
-						alt="Tractian logo"
-						width="230"
-						height="48"
-						objectFit="contain"
-					/>
-					<Title>{card.title.toUpperCase()}</Title>
-					{card.black && (
-						<Image
+				<S.Card isDark={typeof card.black !== undefined} key={card.title}>
+					<Image src="/Logo-Tractian.svg" alt="Tractian logo" width="230" height="48" />
+
+					<h2>{card.title.toUpperCase()}</h2>
+					{card.black ? (
+						<S.CustomImageDivider
 							src="/plan/green-line.png"
 							alt="Green line"
 							width="360"
 							height="10"
-							objectFit="contain"
 						/>
-					)}
-
-					{!card.black && (
-						<Image
+					) : (
+						<S.CustomImageDivider
 							src="/plan/blue-line.png"
 							alt="Blue line"
 							width="360"
 							height="10"
-							objectFit="contain"
 						/>
 					)}
 
-					<img src={card.imgSrc} alt={card.title} width="480" height="366" />
-					<SubTitle>{card.subTitle}</SubTitle>
+					<S.ProductBannerImage src={card.imgSrc} alt={card.title} width="480" height="366" />
+
+					<p>{card.subTitle}</p>
+
 					<NextLink href={card.href} target="_blank">
-						{card.black && (
-							<Secondary message={`${t("planSection.buttonMessage")} ${card.title}`} />
-						)}
-						{!card.black && <Primary message={`${t("planSection.buttonMessage")} ${card.title}`} />}
+						<Button schema={card.black ? "secondary" : "primary"} isFullWidth>
+							{`${t("planSection.buttonMessage")} ${card.title}`}
+						</Button>
 					</NextLink>
-				</Card>
+				</S.Card>
 			))}
-		</Container>
+		</S.Container>
 	);
 };

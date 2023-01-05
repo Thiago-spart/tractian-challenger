@@ -19,6 +19,7 @@ export const Container = styled.section`
 		position: absolute;
 		width: 200px;
 		z-index: 1;
+		pointer-events: none;
 	}
 
 	&::after {
@@ -31,6 +32,7 @@ export const Container = styled.section`
 		right: 0;
 		top: 0;
 		transform: rotate(180deg);
+		pointer-events: none;
 	}
 `;
 
@@ -61,7 +63,7 @@ export const Slides = styled.ul`
 
 	li {
 		box-sizing: border-box;
-		width: 200px;
+		width: 20rem;
 		height: 100%;
 		display: flex;
 		align-items: center;

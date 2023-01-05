@@ -1,23 +1,14 @@
-import Image from "next/image";
+import type { CardProps } from "./types";
 
-import { Container, ImgContainer, Title } from "./styles";
-
-interface CardProps {
-	title: string;
-	text: string;
-	imgSrc: string;
-	imgAlt: string;
-}
+import * as S from "./styles";
 
 export const Card = ({ imgAlt, imgSrc, text, title }: CardProps) => {
 	return (
-		<Container>
-			<ImgContainer>
-				<Image alt={imgAlt} src={imgSrc} width="70" height="80" />
-			</ImgContainer>
+		<S.Container>
+			<S.ImgContainer alt={imgAlt} src={imgSrc} width="70" height="80" />
 
-			<Title>{title}</Title>
+			<h4>{title}</h4>
 			<p>{text}</p>
-		</Container>
+		</S.Container>
 	);
 };

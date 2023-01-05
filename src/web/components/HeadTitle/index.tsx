@@ -1,8 +1,6 @@
 import Head from "next/head";
 
-interface HeadTitleProps {
-	title: string;
-}
+import type { HeadTitleProps } from "./types";
 
 export const HeadTitle = ({ title }: HeadTitleProps) => (
 	<Head>

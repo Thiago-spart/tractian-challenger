@@ -4,13 +4,15 @@ export const Container = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	filter: grayscale(100%);
-	transition: all 0.4s ease-in-out;
+
 	height: 100%;
 
-  img {
-    width: 15rem;
-  }
+	filter: grayscale(100%);
+	transition: 0.2s;
+
+	img {
+		width: 15rem;
+	}
 
 	&:hover {
 		filter: none;

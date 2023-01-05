@@ -2,7 +2,7 @@ import { useTranslation } from "next-i18next";
 
 import { useState } from "react";
 
-import { Container, Options, SubTitle, Title, ContentContainer, Option } from "./styles";
+import * as S from "./styles";
 
 import { SwitchContent } from "./SwitchContent";
 
@@ -29,30 +29,31 @@ export const SensorSection: React.FC = () => {
 	];
 
 	return (
-		<Container>
-			<ContentContainer>
-				<Title>{t("sensorSection.title")}</Title>
-				<SubTitle>
+		<S.Container>
+			<S.ContentContainer>
+				<h3>{t("sensorSection.title")}</h3>
+				<p>
 					{t("sensorSection.subTitle")} <span>{t("sensorSection.subTitleHighlight")}</span>
-				</SubTitle>
-				<Options>
-					<Option onClick={() => setSelectedOption("1")} selected={selectedOption === "1"}>
+				</p>
+
+				<S.OptionsList>
+					<S.OptionItem onClick={() => setSelectedOption("1")} selected={selectedOption === "1"}>
 						<p>
 							<span>01</span> {t("sensorSection.options.plugPlay")}
 						</p>
-					</Option>
-					<Option onClick={() => setSelectedOption("2")} selected={selectedOption === "2"}>
+					</S.OptionItem>
+					<S.OptionItem onClick={() => setSelectedOption("2")} selected={selectedOption === "2"}>
 						<p>
 							<span>02</span> {t("sensorSection.options.onlineMonitoring")}
 						</p>
-					</Option>
-					<Option onClick={() => setSelectedOption("3")} selected={selectedOption === "3"}>
+					</S.OptionItem>
+					<S.OptionItem onClick={() => setSelectedOption("3")} selected={selectedOption === "3"}>
 						<p>
 							<span>03</span> {t("sensorSection.options.assetManagement")}
 						</p>
-					</Option>
-				</Options>
-			</ContentContainer>
+					</S.OptionItem>
+				</S.OptionsList>
+			</S.ContentContainer>
 
 			{Content.map((item, index) => {
 				const equal = 1;
@@ -60,7 +61,7 @@ export const SensorSection: React.FC = () => {
 				return (
 					index + equal === Number(selectedOption) && (
 						<SwitchContent
-							imgAlt={item.title.toLowerCase()}
+							imgAlt={item.title}
 							imgSrc={item.imgSrc}
 							text={item.text}
 							title={item.title}
@@ -70,6 +71,6 @@ export const SensorSection: React.FC = () => {
 					)
 				);
 			})}
-		</Container>
+		</S.Container>
 	);
 };

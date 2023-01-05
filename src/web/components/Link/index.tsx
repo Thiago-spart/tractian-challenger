@@ -1,6 +1,8 @@
-import Link, { LinkProps as NextLinkProps } from "next/link";
+import type { LinkProps as NextLinkProps } from "next/link";
+import Link from "next/link";
 
-import React, { FC, MouseEvent, AnchorHTMLAttributes, ReactNode } from "react";
+import type { FC, MouseEvent, AnchorHTMLAttributes, ReactNode } from "react";
+import React from "react";
 
 import { isExternalLink } from "utils/isExternalLink";
 
@@ -11,7 +13,7 @@ export interface Props
 	title?: string;
 	onClick?: (e: MouseEvent) => void;
 	className?: string;
-  children: ReactNode;
+	children: ReactNode;
 }
 
 export const NextLink: FC<Props> = ({
@@ -49,8 +51,8 @@ export const NextLink: FC<Props> = ({
 	}
 
 	return (
-        <Link href={href} {...restProps} onClick={handleClick}>
+		<Link href={href} {...restProps} onClick={handleClick}>
 			{children}
 		</Link>
-    );
+	);
 };

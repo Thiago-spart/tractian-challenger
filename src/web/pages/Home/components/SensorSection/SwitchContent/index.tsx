@@ -1,7 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
+
 import { Primary } from "web/components/Button/Primary";
 
-import { Container, Title, Text } from "./styles";
+import * as S from "./styles";
 
 interface SwitchContentProps {
 	imgSrc: string;
@@ -19,12 +20,12 @@ export const SwitchContent = ({
 	buttonMessage,
 }: SwitchContentProps) => {
 	return (
-		<Container>
-			<img src={imgSrc} alt={imgAlt} />
-			<Title>{title}</Title>
-			<Text>{text}</Text>
+		<S.Container>
+			<Image src={imgSrc} alt={imgAlt} width={200} height={150} />
+			<h4>{title}</h4>
+			<p>{text}</p>
 
 			<Primary message={buttonMessage} />
-		</Container>
+		</S.Container>
 	);
 };
