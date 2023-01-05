@@ -1,8 +1,8 @@
 import { useTranslation } from "next-i18next";
 
-import { Primary } from "web/components/Button/Primary";
+import { Button } from "@components/Button";
 
-import { Container, Title, CardContainer } from "./styles";
+import * as S from "./styles";
 
 import { Card } from "./Card";
 
@@ -33,24 +33,24 @@ export const WhyChoose = () => {
 	];
 
 	return (
-		<Container>
-			<Title>
+		<S.Container>
+			<h2>
 				{t("whyChoose.title")} <span>{t("whyChoose.companyName")}</span>?
-			</Title>
+			</h2>
 
-			<CardContainer>
+			<S.CardContainer>
 				{CardContent.map(card => (
 					<Card
 						key={card.title}
-						imgAlt={card.title.toLowerCase()}
+						imgAlt={card.title}
 						imgSrc={card.imgSrc}
 						text={card.text}
 						title={card.title}
 					/>
 				))}
-			</CardContainer>
+			</S.CardContainer>
 
-			<Primary message={t("whyChoose.buttonMessage")} />
-		</Container>
+			<Button>{t("whyChoose.buttonMessage")}</Button>
+		</S.Container>
 	);
 };

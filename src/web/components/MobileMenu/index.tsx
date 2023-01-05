@@ -3,9 +3,10 @@ import Image from "next/image";
 import { MdClose } from "react-icons/md";
 import Modal from "react-modal";
 
+import { Button } from "@components/Button";
+
 import { Container, ImgContainer, InviteBlock, SeparatorLine } from "./styles";
 
-import { Secondary } from "../Button/Secondary";
 import { NavMenu } from "../Header/NavMenu";
 
 interface MobileMenuProps {
@@ -31,7 +32,9 @@ export const MobileMenu = ({ isOpen, onRequestClose }: MobileMenuProps) => {
 				<NavMenu />
 				<SeparatorLine />
 
-				<Secondary message="Demonstração" allWidth />
+				<Button isFullWidth schema="secondary">
+					Demonstração
+				</Button>
 
 				<InviteBlock>
 					<p>

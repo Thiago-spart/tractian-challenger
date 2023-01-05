@@ -22,7 +22,7 @@ import {
 import { Primary } from "web/components/Button/Primary";
 import { SwitchLanguageButton } from "web/components/Button/SwitchLanguageButton";
 
-import { NavContainer, Menu, MenuItem } from "./styles";
+import { NavContainer, Menu } from "./styles";
 
 import { Dropdown } from "../../Button/Dropdown";
 
@@ -170,27 +170,27 @@ export const NavMenu: FC = () => {
 				{Items.map(item => {
 					if (item.type === "dropdown") {
 						return (
-							<MenuItem key={item.placeholder}>
+							<li key={item.placeholder}>
 								<Dropdown
 									placeholder={item.placeholder}
 									actions={item.actions}
 									footer={item.footer}
 									width={121}
 								/>
-							</MenuItem>
+							</li>
 						);
 					}
 
 					return (
-						<MenuItem key={item.placeholder}>
+						<li key={item.placeholder}>
 							<Primary message={item.placeholder} noBackground />
-						</MenuItem>
+						</li>
 					);
 				})}
 
-				<MenuItem>
+				<li>
 					<SwitchLanguageButton />
-				</MenuItem>
+				</li>
 			</Menu>
 		</NavContainer>
 	);

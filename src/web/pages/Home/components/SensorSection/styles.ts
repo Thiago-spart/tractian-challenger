@@ -36,29 +36,29 @@ export const ContentContainer = styled.div`
 		align-self: center;
 	}
 
+	h3 {
+		color: var(--blue-700);
+		${FONTS.title5}
+		font-weight: 600;
+	}
+
+	p {
+		color: var(--black);
+		line-height: 4rem;
+		font-size: 3.6rem;
+		font-weight: 500;
+
+		span {
+			font-weight: 600;
+		}
+	}
+
 	@media screen and (min-width: 1023px) {
 		width: 50%;
 	}
 `;
 
-export const Title = styled.h3`
-	color: var(--blue-700);
-	${FONTS.title5}
-	font-weight: 600;
-`;
-
-export const SubTitle = styled.h2`
-	color: var(--black);
-	line-height: 4rem;
-	font-size: 3.6rem;
-	font-weight: 500;
-
-	span {
-		font-weight: 600;
-	}
-`;
-
-export const Options = styled.ul`
+export const OptionsList = styled.ul`
 	font-weight: 600;
 	list-style: none;
 	font-size: 2rem;
@@ -71,7 +71,7 @@ export const Options = styled.ul`
 	gap: 2rem;
 `;
 
-export const Option = styled.li<{ selected: boolean }>`
+export const OptionItem = styled.li<{ selected: boolean }>`
 	opacity: ${({ selected }) => (selected ? "none" : "0.5")};
 	transition: all 0.4s ease-in-out;
 	width: 100%;

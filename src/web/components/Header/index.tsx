@@ -1,14 +1,14 @@
 import { useTranslation } from "next-i18next";
-import Image from "next/image";
 import { useRouter } from "next/router";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { MdMenu } from "react-icons/md";
 
-import { Container, ImgContainer, MobileMenu } from "./styles";
+import { Button } from "@components/Button";
+import { NextLink } from "@components/Link";
 
-import { Primary } from "../Button/Primary";
-import { NextLink } from "../Link";
+import * as S from "./styles";
+
 import { NavMenu } from "./NavMenu";
 
 interface HeaderProps {
@@ -17,38 +17,32 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ isModalOpen }) => {
 	const { t } = useTranslation("header");
-	const [scroll, setScroll] = useState(false);
-	const scrollDown = 50;
+	const [scroll, setScroll] = React.useState(false);
 	const { push } = useRouter();
 
-	useEffect(() => {
+	const isScrollingDown = 50;
+
+	React.useEffect(() => {
 		window.onscroll = () => {
 			setScroll(
-				document.body.scrollTop > scrollDown || document.documentElement.scrollTop > scrollDown,
+				document.body.scrollTop > isScrollingDown ||
+					document.documentElement.scrollTop > isScrollingDown,
 			);
 		};
 	}, [push]);
 
 	return (
-		<Container scroll={scroll}>
+		<S.Container scroll={scroll}>
 			<NextLink href="/">
-				<ImgContainer>
-					<Image
-						src="/Logo-Tractian.svg"
-						alt="company logo"
-						width="170"
-						height="60"
-						objectFit="fill"
-					/>
-				</ImgContainer>
+				<S.LogoImg src="/Logo-Tractian.svg" alt="Tractian" width="170" height="60" />
 			</NextLink>
 			<NavMenu />
 
-			<Primary message={t("buttonMessage")} />
+			<Button>{String(t("buttonMessage"))}</Button>
 
-			<MobileMenu onClick={isModalOpen}>
+			<S.MobileMenu onClick={isModalOpen}>
 				<MdMenu />
-			</MobileMenu>
-		</Container>
+			</S.MobileMenu>
+		</S.Container>
 	);
 };

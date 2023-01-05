@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styled from "styled-components";
 
 import { SIZES } from "styles/sizes";
@@ -16,32 +18,34 @@ export const Container = styled.section`
 	}
 `;
 
-export const Card = styled.div<{ black?: boolean }>`
+export const Card = styled.div<{ isDark?: boolean }>`
 	display: flex;
 	align-items: baseline;
 	justify-content: flex-start;
 	flex-direction: column;
 	border-radius: 0.8rem;
-	background-color: ${({ black }) => (black ? "var(--black)" : "#081e3d")};
+	background-color: ${({ isDark }) => (isDark ? "var(--black)" : "#081e3d")};
 	color: var(--white);
 	width: 100%;
-	min-height: 100%;
 	gap: 2rem;
 	padding: 2rem 1.6rem;
 
-	img {
-		width: 48rem;
-		height: 100%;
-		object-fit: contain;
-		align-self: center;
+	h2 {
+		color: var(--white);
+		font-size: 2.2rem;
+		font-weight: 600;
+	}
+
+	p {
+		font-size: 2rem;
+		line-height: 2.8rem;
+		font-weight: 500;
+		text-align: center;
 	}
 
 	a {
+		width: 100%;
 		align-self: center;
-
-		button {
-			width: 20rem;
-		}
 	}
 
 	@media screen and (min-width: 720px) {
@@ -56,15 +60,18 @@ export const Card = styled.div<{ black?: boolean }>`
 	}
 `;
 
-export const Title = styled.h2`
-	color: var(--white);
-	font-size: 2.2rem;
-	font-weight: 600;
+export const ProductBannerImage = styled(Image)`
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+
+	@media screen and (min-width: 720px) {
+		max-height: 36.6rem;
+	}
 `;
 
-export const SubTitle = styled.p`
-	font-size: 2rem;
-	line-height: 2.8rem;
-	font-weight: 500;
-	text-align: center;
+export const CustomImageDivider = styled(Image)`
+	width: 48rem;
+	height: 100%;
+	object-fit: contain;
 `;

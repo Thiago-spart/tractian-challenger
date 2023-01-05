@@ -1,14 +1,13 @@
+import Image from "next/image";
+
+import type { CardProps } from "./types";
+
 import { Container } from "./styles";
 
-interface CardProps {
-	alt: string;
-	src: string;
-}
-// Layout="fill" objectFit="initial"
 export const Card = ({ alt, src }: CardProps) => {
 	return (
 		<Container>
-			<img src={src} alt={alt} />
+			<Image src={src} alt={alt} width={100} height={80} />
 		</Container>
 	);
 };
