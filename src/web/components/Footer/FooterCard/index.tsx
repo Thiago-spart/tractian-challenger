@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 import { NextLink } from "web/components/Link";
 

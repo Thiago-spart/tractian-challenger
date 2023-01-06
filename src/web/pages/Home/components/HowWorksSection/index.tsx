@@ -70,7 +70,7 @@ export const HowWorksSection: React.FC = () => {
 
 			{selected === "1" && <PlanDetail content={Plans[onlineMonitoring].content} />}
 
-			{selected === "2" && <PlanDetail content={Plans[assetManagement].content} isBlack />}
+			{selected === "2" && <PlanDetail content={Plans[assetManagement].content} isDark />}
 		</Container>
 	);
 };

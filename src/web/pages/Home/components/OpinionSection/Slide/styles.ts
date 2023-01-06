@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 	height: 100%;
-	width: 60%;
+	width: 100%;
+	background-color: transparent;
 
-	.carousel div {
-		display: flex;
-		gap: 3rem;
+	@media screen and (min-width: 720px) {
+		width: 60%;
 	}
 `;

@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { useTranslation } from "next-i18next";
 
-import { Carousel } from "@trendyol-js/react-carousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 import { Container } from "./styles";
 
@@ -38,26 +41,44 @@ export const Slide: React.FC = () => {
 
 	return (
 		<Container>
-			<Carousel
-				show={2.5}
-				slide={1}
-				swiping
-				transition={1}
-				className="carousel"
-				dynamic
-				rightArrow={<span style={{ display: "none" }}></span>}
-				leftArrow={<span style={{ display: "none" }}></span>}
+			<Swiper
+				modules={[Navigation, Pagination, Scrollbar, A11y]}
+				slidesPerView="auto"
+				breakpoints={{
+					270: {
+						slidesPerView: 1.2,
+					},
+					420: {
+						slidesPerView: 1.6,
+					},
+					768: {
+						slidesPerView: 1.8,
+					},
+					1024: {
+						slidesPerView: 2.2,
+					},
+					1280: {
+						slidesPerView: 2.5,
+					},
+				}}
+				loop
+				spaceBetween={40}
+				navigation
+				pagination={false}
+				scrollbar={{ draggable: true }}
+				speed={800}
 			>
-				{Content.map(item => (
-					<Card
-						imgSrc={item.imgSrc}
-						profileJob={item.profileJob}
-						profileName={item.profileName}
-						quote={item.quote}
-						key={item.profileName}
-					/>
+				{Content.map(sliderItem => (
+					<SwiperSlide key={sliderItem.profileName}>
+						<Card
+							imgSrc={sliderItem.imgSrc}
+							profileJob={sliderItem.profileJob}
+							profileName={sliderItem.profileName}
+							quote={sliderItem.quote}
+						/>
+					</SwiperSlide>
 				))}
-			</Carousel>
+			</Swiper>
 		</Container>
 	);
 };

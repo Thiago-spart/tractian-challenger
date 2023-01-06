@@ -1,31 +1,36 @@
+import Image from "next/image";
+
 import styled from "styled-components";
 
 import { SIZES } from "styles/sizes";
 
-export const Container = styled.div<{ isBlack: boolean }>`
+export const Container = styled.div<{ isDark: boolean }>`
+	padding: 3rem 0;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	justify-content: space-between;
-	background-color: ${({ isBlack }) => (isBlack ? "#1c1c1c" : "#224eba")};
-	color: ${({ isBlack }) => (isBlack ? "#51e602" : "#22d3ee")};
+	gap: 2rem;
+
+	background-color: ${({ isDark }) => (isDark ? "#1c1c1c" : "#224eba")};
+	color: ${({ isDark }) => (isDark ? "#51e602" : "#22d3ee")};
+
 	width: 100%;
 	height: 100%;
-	${SIZES.horizontalPadding}
-	${SIZES.verticalPadding}
 
-	@media (max-width: 1023px) {
-		flex-direction: column;
-		justify-content: center;
-		gap: 2rem;
-
-		&:last-child {
-			height: 100%;
-			width: 100%;
-		}
+	&:last-child {
+		height: 100%;
+		width: 100%;
 	}
 
-	@media (max-width: 700px) {
-		padding: 3rem 0;
+	@media screen and (min-width: 700px) {
+		${SIZES.horizontalPadding}
+		${SIZES.verticalPadding}
+	}
+
+	@media screen and (min-width: 1023px) {
+		flex-direction: row;
+		justify-content: space-between;
 	}
 `;
 
@@ -35,26 +40,31 @@ export const DetailList = styled.ul`
 	align-items: flex-start;
 	justify-content: flex-start;
 	gap: 2rem;
-	width: 48%;
-	padding: 0 1.5rem;
 
-	@media (max-width: 1023px) {
-		margin-top: 2.5rem;
-		width: 100%;
+	padding: 0 1.5rem;
+	width: 100%;
+	margin-top: 2.5rem;
+
+	@media screen and (min-width: 1023px) {
+		margin-top: 0;
+		width: 48%;
 	}
 `;
 
-export const DetailItem = styled.li<{ active: boolean; isBlack: boolean }>`
-	width: 100%;
-	height: 12rem;
+export const DetailItem = styled.li<{ active: boolean; isDark: boolean }>`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	gap: 2rem;
+
+	padding: 1.5rem;
+	width: 100%;
+	height: 12rem;
+
 	background-color: ${({ active }) => (active ? "rgba(255, 255, 255, 0.1)" : "transparent")};
 	border-radius: 0.8rem;
-	padding: 1.5rem;
-	transition: all 0.4s ease-in-out;
+
+	transition: 0.2s;
 
 	&:hover {
 		background-color: rgba(255, 255, 255, 0.1);
@@ -62,16 +72,17 @@ export const DetailItem = styled.li<{ active: boolean; isBlack: boolean }>`
 
 	h3 {
 		color: var(--gray-50);
-		color: ${({ isBlack, active }) => (isBlack && active ? "#51e602" : active && "#22d3ee")};
+		color: ${({ isDark, active }) => (isDark && active ? "#51e602" : active && "#22d3ee")};
+
 		font-size: 1.8rem;
 		font-weight: 600;
 	}
 
 	div:last-child {
-		align-items: flex-start;
-		justify-content: flex-start;
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
 		gap: 0.25rem;
 
 		p {
@@ -82,7 +93,7 @@ export const DetailItem = styled.li<{ active: boolean; isBlack: boolean }>`
 	}
 `;
 
-export const NumberBall = styled.div<{ active: boolean; isBlack: boolean }>`
+export const NumberBall = styled.div<{ active: boolean; isDark: boolean }>`
 	display: none;
 	position: relative;
 	border: 1px solid red;
@@ -93,8 +104,7 @@ export const NumberBall = styled.div<{ active: boolean; isBlack: boolean }>`
 	justify-content: center;
 	font-size: 1.6rem;
 	background-color: var(--gray-50);
-	background-color: ${({ isBlack, active }) =>
-		isBlack && active ? "#51e602" : active && "#22d3ee"};
+	background-color: ${({ isDark, active }) => (isDark && active ? "#51e602" : active && "#22d3ee")};
 
 	span {
 		color: var(--black);
@@ -111,4 +121,8 @@ export const NumberBall = styled.div<{ active: boolean; isBlack: boolean }>`
 	@media screen and (min-width: 1023px) {
 		width: 10rem;
 	}
+`;
+
+export const ProductImage = styled(Image)`
+	object-fit: contain;
 `;

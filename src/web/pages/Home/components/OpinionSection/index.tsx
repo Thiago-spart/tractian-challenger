@@ -1,9 +1,9 @@
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
-import { Primary } from "web/components/Button/Primary";
+import { Button } from "@components/Button";
 
-import { Container, Title, CapterraDiv, Content } from "./styles";
+import * as S from "./styles";
 
 import { Slide } from "./Slide";
 
@@ -11,24 +11,20 @@ export const OpinionSection: React.FC = () => {
 	const { t } = useTranslation("home");
 
 	return (
-		<Container>
-			<Title>{t("OpinionSection.title")}</Title>
+		<S.Container>
+			<h2>{t("OpinionSection.title")}</h2>
 
-			<Content>
-				<CapterraDiv>
-					<Image
-						src="/capterra-badge.png"
-						alt="Capterra Logo"
-						width="180"
-						height="180"
-						objectFit="contain"
-					/>
+			<S.Content>
+				<S.CapterraDiv>
+					<Image src="/capterra-badge.png" alt="Capterra Logo" width="180" height="180" />
+
 					<p>{t("OpinionSection.subTitle")}</p>
-					<Primary message={t("OpinionSection.buttonMessage")} />
-				</CapterraDiv>
+
+					<Button>{t("OpinionSection.buttonMessage")}</Button>
+				</S.CapterraDiv>
 
 				<Slide />
-			</Content>
-		</Container>
+			</S.Content>
+		</S.Container>
 	);
 };
