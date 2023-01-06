@@ -1,85 +1,142 @@
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/naming-convention */
 import { useTranslation } from "next-i18next";
 
-import { Primary } from "../../../../components/Button/Primary";
+import { useForm } from "react-hook-form";
+import type { SubmitHandler } from "react-hook-form";
+import { toast } from "react-toastify";
 
-import { Container, Title, FormContainer, FormGroup } from "./styles";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+import { Button } from "@components/Button";
+
+import type { FormDataProps } from "./types";
+
+import * as S from "./styles";
+
+const schema = yup.object().shape({
+	name: yup.string().required(),
+	email: yup.string().email().required(),
+	jobTitle: yup.string().required(),
+	phoneNumber: yup.string().required(),
+	machinesAmount: yup.string().required(),
+});
 
 export const HomeForm: React.FC = () => {
 	const { t } = useTranslation("home");
+	const { register, handleSubmit, reset } = useForm<FormDataProps>({
+		resolver: yupResolver(schema),
+	});
+
+	const handleSendData: SubmitHandler<FormDataProps> = values => {
+		console.log(values);
+
+		reset();
+
+		return toast("Formulário enviado com sucesso", { type: "success" });
+	};
 
 	return (
-		<Container>
-			<Title>{t("homeForm.title")}</Title>
+		<S.Container>
+			<h2>{t("homeForm.title")}</h2>
 
 			<p>{t("homeForm.subTitle")}</p>
 
-			<FormContainer>
-				<FormGroup>
-					<label htmlFor="name">
-						{t("homeForm.nameLabel.name")}
-						<input
-							name="name"
-							type="text"
-							placeholder={String(t("homeForm.nameLabel.placeholder"))}
-						/>
-					</label>
-				</FormGroup>
+			<S.FormContainer onSubmit={handleSubmit(handleSendData)}>
+				<S.FormGroup>
+					<label htmlFor="name">{t("homeForm.nameLabel.name")}</label>
+					<input
+						{...register("name")}
+						id="name"
+						placeholder={String(t("homeForm.nameLabel.placeholder"))}
+					/>
+				</S.FormGroup>
 
-				<FormGroup>
-					<label htmlFor="position">
-						{t("homeForm.ruleLabel.name")}
-						<input
-							type="text"
-							name="position"
-							placeholder={String(t("homeForm.ruleLabel.placeholder"))}
-						/>
-					</label>
-				</FormGroup>
+				<S.FormGroup>
+					<label htmlFor="jobTitle">{t("homeForm.ruleLabel.name")}</label>
+					<input
+						{...register("jobTitle")}
+						id="jobTitle"
+						placeholder={String(t("homeForm.ruleLabel.placeholder"))}
+					/>
+				</S.FormGroup>
 
-				<FormGroup>
-					<label htmlFor="email">
-						{t("homeForm.emailLabel.name")}
-						<input
-							type="email"
-							name="email"
-							placeholder={String(t("homeForm.emailLabel.placeholder"))}
-						/>
-					</label>
-				</FormGroup>
+				<S.FormGroup>
+					<label htmlFor="email">{t("homeForm.emailLabel.name")}</label>
+					<input
+						{...register("email")}
+						id="email"
+						placeholder={String(t("homeForm.emailLabel.placeholder"))}
+					/>
+				</S.FormGroup>
 
-				<FormGroup>
-					<label htmlFor="clientPhone">
-						{t("homeForm.phoneLabel.name")}
-						<input
-							type="tel"
-							name="phone"
-							placeholder="(XXX) XXXX-XXXX"
-							pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-						/>
-					</label>
-				</FormGroup>
+				<S.FormGroup>
+					<label htmlFor="phoneNumber">{t("homeForm.phoneLabel.name")}</label>
+					<input
+						{...register("phoneNumber", { pattern: /[0-9]{3}-[0-9]{2}-[0-9]{3}/g })}
+						id="phoneNumber"
+						type="tel"
+						placeholder="(XXX) XXXX-XXXX"
+					/>
+				</S.FormGroup>
 
-				<FormGroup>
+				<S.RadioFormGroup>
 					<span>{t("homeForm.monitorAmountLabel.description")}</span>
-					<input type="checkbox" name="ten-to-twenty" />
-					<label htmlFor="ten-to-twenty"> {t("homeForm.monitorAmountLabel.firstOption")}</label>
+					<div>
+						<input
+							{...register("machinesAmount")}
+							type="radio"
+							id="ten-to-twenty"
+							name="machinesAmount"
+							value="ten-to-twenty"
+						/>
+						<label htmlFor="ten-to-twenty"> {t("homeForm.monitorAmountLabel.firstOption")}</label>
+					</div>
 
-					<input type="checkbox" name="twenty-one-to-thirty" />
-					<label htmlFor="twenty-one-to-thirty">
-						{t("homeForm.monitorAmountLabel.secondOption")}
-					</label>
+					<div>
+						<input
+							{...register("machinesAmount")}
+							type="radio"
+							id="twenty-one-to-thirty"
+							name="machinesAmount"
+							value="twenty-one-to-thirty"
+						/>
+						<label htmlFor="twenty-one-to-thirty">
+							{t("homeForm.monitorAmountLabel.secondOption")}
+						</label>
+					</div>
 
-					<input type="checkbox" name="thirty-one-to-fifth" />
-					<label htmlFor="thirty-one-to-fifth">
-						{t("homeForm.monitorAmountLabel.thirdOption")}
-					</label>
+					<div>
+						<input
+							{...register("machinesAmount")}
+							type="radio"
+							id="thirty-one-to-fifth"
+							name="machinesAmount"
+							value="thirty-one-to-fifth"
+						/>
+						<label htmlFor="thirty-one-to-fifth">
+							{t("homeForm.monitorAmountLabel.thirdOption")}
+						</label>
+					</div>
 
-					<input type="checkbox" name="more-than-fifth" />
-					<label htmlFor="more-than-fifth"> {t("homeForm.monitorAmountLabel.fourthOption")}</label>
-				</FormGroup>
+					<div>
+						<input
+							{...register("machinesAmount")}
+							type="radio"
+							id="more-than-fifth"
+							name="machinesAmount"
+							value="more-than-fifth"
+						/>
+						<label htmlFor="more-than-fifth">
+							{" "}
+							{t("homeForm.monitorAmountLabel.fourthOption")}
+						</label>
+					</div>
+				</S.RadioFormGroup>
 
-				<Primary message={t("homeForm.buttonMessage")} />
-			</FormContainer>
-		</Container>
+				<Button type="submit">{t("homeForm.buttonMessage")}</Button>
+			</S.FormContainer>
+		</S.Container>
 	);
 };

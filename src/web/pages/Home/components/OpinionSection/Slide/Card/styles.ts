@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.figure`
 	position: relative;
 	border-top: 4px solid #67e8f9;
 	background: var(--white);
@@ -8,14 +8,13 @@ export const Container = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	gap: 1.5rem !important;
+	gap: 1.5rem;
 	padding: 1.5rem;
-	width: 40rem;
 	padding-bottom: 12rem;
-	cursor: default;
+	min-height: 40rem;
 
-	p {
-		font-size: 1.6rem;
+	q {
+		font-size: 1.8rem;
 	}
 `;
 
@@ -33,7 +32,7 @@ export const ReviewerStars = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	gap: 0.25rem !important;
+	gap: 0.25rem;
 	color: #1e40af;
 	font-size: 1.8rem;
 `;
@@ -45,7 +44,7 @@ export const ReviewerProfile = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 1.5rem !important;
+	gap: 1.5rem;
 
 	&:first-child {
 		width: 40%;
@@ -55,13 +54,13 @@ export const ReviewerProfile = styled.div`
 		display: flex;
 		flex-direction: column;
 
-		h2 {
+		cite {
 			font-size: 1.4rem;
 			font-weight: 600;
+			font-style: normal;
 		}
 
 		p {
-			margin: 0;
 			font-size: 1.2rem;
 		}
 	}

@@ -10,15 +10,25 @@ export const Container = styled.section`
 	gap: 2rem;
 	background: linear-gradient(to left, #2663eb, #1f3b8b);
 	${SIZES.verticalPadding}
-	${SIZES.horizontalPadding}
-`;
 
-export const Title = styled.h2`
-	color: var(--gray-50);
-	font-size: 3rem;
-	line-height: 3.6rem;
-	letter-spacing: 0.4rem;
-	font-weight: 500;
+	h2 {
+		color: var(--gray-50);
+		font-size: 3rem;
+		line-height: 3.6rem;
+		letter-spacing: 0.4rem;
+		font-weight: 500;
+		padding: 0 2rem;
+	}
+
+	@media screen and (min-width: 720px) {
+		h2 {
+			padding: 0;
+		}
+	}
+
+	@media screen and (min-width: 1023px) {
+		padding-left: 3.5rem;
+	}
 `;
 
 export const Content = styled.div`
@@ -46,15 +56,19 @@ export const CapterraDiv = styled.div`
 		font-size: 2rem;
 		line-height: 2.8rem;
 		text-align: center;
+	}
 
-		@media screen and (min-width: 1023px) {
-			text-align: left;
-			font-size: 2.4rem;
-			line-height: 3.2rem;
-		}
+	img {
+		object-fit: contain;
 	}
 
 	@media screen and (min-width: 1023px) {
 		align-items: flex-start;
+
+		p {
+			text-align: left;
+			font-size: 2.4rem;
+			line-height: 3.2rem;
+		}
 	}
 `;

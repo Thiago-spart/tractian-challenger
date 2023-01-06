@@ -14,37 +14,31 @@ export const Container = styled.section`
 	${SIZES.horizontalPadding}
 	${SIZES.verticalPadding}
 
-  @media (min-width: 1023px) {
+  h2 {
+		font-size: 3rem;
+		line-height: 3.6rem;
+		font-weight: 500;
+		letter-spacing: 0.04rem;
+		text-align: center;
+		position: relative;
+	}
+
+	@media (min-width: 1023px) {
 		gap: 6rem;
 	}
 `;
 
-export const Title = styled.h2`
-	font-size: 3rem;
-	line-height: 3.6rem;
-	font-weight: 500;
-	letter-spacing: 0.04rem;
-	text-align: center;
-	position: relative;
-`;
-
-export const CardContainer = styled.div`
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-
-	@media (min-width: 768px) {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	@media (min-width: 1023px) {
-		grid-gap: 2rem;
-		grid-template-columns: repeat(3, 1fr);
-	}
+export const GridContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2rem;
 `;
 
 export const Card = styled.div`
 	position: relative;
-	width: calc(3 / 100%);
+	width: calc(3 / 80%);
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -73,22 +67,6 @@ export const Card = styled.div`
 
 		@media screen and (min-width: 1023px) {
 			font-size: 4.8rem;
-		}
-	}
-
-	&:nth-child(2)::before {
-		content: "";
-		position: absolute;
-		top: -25%;
-		left: 20%;
-		width: 200px;
-		height: 5px;
-		background-color: #4e76d9;
-		border-radius: 5px 5px 0px 0px;
-		display: none;
-
-		@media (min-width: 1023px) {
-			display: block;
 		}
 	}
 

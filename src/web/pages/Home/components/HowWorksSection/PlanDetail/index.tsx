@@ -1,54 +1,43 @@
-import Image from "next/image";
-
 import { useState } from "react";
 
-import { Container, DetailList, DetailItem, NumberBall } from "./styles";
+import type { PlanDetailProps } from "./types";
 
-interface TextProps {
-	title: string;
-	subTitle: string;
-	imgSrc: string;
-}
+import * as S from "./styles";
 
-interface PlanDetailProps {
-	content: Array<TextProps>;
-	isBlack?: boolean;
-}
-
-export const PlanDetail = ({ content, isBlack = false }: PlanDetailProps) => {
+export const PlanDetail = ({ content, isDark = false }: PlanDetailProps) => {
 	const [selected, setSelected] = useState("1");
+
 	const equal = 1;
 
 	return (
-		<Container isBlack={isBlack}>
-			<DetailList>
+		<S.Container isDark={isDark}>
+			<S.DetailList>
 				{content.map((item, index) => {
 					return (
-						<DetailItem
-							isBlack={isBlack}
+						<S.DetailItem
+							isDark={isDark}
 							active={Number(selected) - equal === index}
 							key={item.title}
 							onClick={() => setSelected(String(index + equal))}
 						>
-							<NumberBall isBlack={isBlack} active={Number(selected) - equal === index}>
+							<S.NumberBall isDark={isDark} active={Number(selected) - equal === index}>
 								<span>{index + equal}</span>
-							</NumberBall>
+							</S.NumberBall>
 							<div>
 								<h3>{item.title}</h3>
 								<p>{item.subTitle}</p>
 							</div>
-						</DetailItem>
+						</S.DetailItem>
 					);
 				})}
-			</DetailList>
+			</S.DetailList>
 
-			<Image
+			<S.ProductImage
 				src={content[Number(selected) - equal].imgSrc}
 				alt={content[Number(selected) - equal].title}
 				width="700"
 				height="500"
-				objectFit="contain"
 			/>
-		</Container>
+		</S.Container>
 	);
 };

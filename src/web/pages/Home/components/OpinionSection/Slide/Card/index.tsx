@@ -3,37 +3,35 @@ import Image from "next/image";
 import { MdStarRate } from "react-icons/md";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
-import { Container, QuoteContainer, ReviewerStars, ReviewerProfile } from "./styles";
+import type { CardProps } from "./types";
 
-interface CardProps {
-	quote: string;
-	imgSrc: string;
-	profileName: string;
-	profileJob: string;
-}
+import * as S from "./styles";
 
 export const Card = ({ imgSrc, profileJob, profileName, quote }: CardProps) => {
 	return (
-		<Container>
-			<QuoteContainer>
+		<S.Container>
+			<S.QuoteContainer>
 				<RiDoubleQuotesL />
-			</QuoteContainer>
-			<p>{quote}</p>
-			<ReviewerStars>
-				<MdStarRate />
-				<MdStarRate />
-				<MdStarRate />
-				<MdStarRate />
-				<MdStarRate />
-			</ReviewerStars>
+			</S.QuoteContainer>
 
-			<ReviewerProfile>
+			<q>{quote}</q>
+
+			<S.ReviewerStars>
+				<MdStarRate />
+				<MdStarRate />
+				<MdStarRate />
+				<MdStarRate />
+				<MdStarRate />
+			</S.ReviewerStars>
+
+			<S.ReviewerProfile>
 				<Image src={imgSrc} alt={profileName} width="50" height="50" objectFit="cover" />
+
 				<span>
-					<h2>{profileName}</h2>
+					<cite>{profileName}</cite>
 					<p>{profileJob}</p>
 				</span>
-			</ReviewerProfile>
-		</Container>
+			</S.ReviewerProfile>
+		</S.Container>
 	);
 };

@@ -1,28 +1,28 @@
 import { useTranslation } from "next-i18next";
 
-import { Card, Container, Title, CardContainer } from "./styles";
+import * as S from "./styles";
 
 export const Percentage: React.FC = () => {
 	const { t } = useTranslation("home");
 
 	return (
-		<Container>
-			<Title>{t("percentageSection.title")}</Title>
+		<S.Container>
+			<h2>{t("percentageSection.title")}</h2>
 
-			<CardContainer>
-				<Card>
+			<S.GridContainer>
+				<S.Card>
 					<h6>90%</h6>
 					<p>{t("percentageSection.firstCard.message")}</p>
-				</Card>
-				<Card>
+				</S.Card>
+				<S.Card>
 					<h6>45%</h6>
 					<p>{t("percentageSection.secondCard.message")}</p>
-				</Card>
-				<Card>
+				</S.Card>
+				<S.Card>
 					<h6>30%</h6>
 					<p>{t("percentageSection.thirdCard.message")}</p>
-				</Card>
-			</CardContainer>
-		</Container>
+				</S.Card>
+			</S.GridContainer>
+		</S.Container>
 	);
 };

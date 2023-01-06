@@ -14,33 +14,35 @@ export const Container = styled.section`
 	${SIZES.horizontalPadding}
 	${SIZES.verticalPadding}
 
+  h2 {
+		font-size: 3rem;
+		line-height: 3.6rem;
+		font-weight: 500;
+
+		@media screen and (min-width: 640px) {
+			font-size: 3.6rem;
+			line-height: 4rem;
+		}
+	}
+
 	p {
 		color: #52525b;
 	}
 `;
 
-export const Title = styled.h2`
-	font-size: 3rem;
-	line-height: 3.6rem;
-	font-weight: 500;
-
-	@media screen and (min-width: 640px) {
-		font-size: 3.6rem;
-		line-height: 4rem;
-	}
-`;
-
 export const FormContainer = styled.form`
-	background: linear-gradient(to left, #2663eb, #1f3b8b);
-	width: 50%;
-	border-radius: 0.8rem;
-	height: 100%;
-	padding: 1.5rem;
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
-	gap: 1rem;
 	flex-direction: column;
+	gap: 1rem;
+
+	background: linear-gradient(to left, #2663eb, #1f3b8b);
+	border-radius: 0.8rem;
+
+	padding: 1.5rem;
+	width: 100%;
+	height: 100%;
 
 	button {
 		width: 80%;
@@ -48,33 +50,23 @@ export const FormContainer = styled.form`
 		margin-top: 1.5rem;
 	}
 
-	@media (max-width: 1023px) {
-		width: 100%;
+	@media screen and (min-width: 1023px) {
+		flex-direction: column;
+		width: 50%;
 	}
 `;
 
 export const FormGroup = styled.div`
-	font-size: 1.6rem;
 	width: 100%;
+	display: flex;
+	justify-items: flex-start;
+	flex-direction: column;
+	gap: 0.5rem;
+
 	color: var(--white);
 
-	&:nth-child(5) {
-		span {
-			display: block;
-			margin-bottom: 1rem;
-		}
+	font-size: 1.6rem;
 
-		label {
-			display: inline;
-
-			& + input {
-				margin-left: 5rem;
-			}
-
-			input {
-			}
-		}
-	}
 	input[type="checkbox"] {
 		margin-right: 0.25rem;
 		width: 1.8rem;
@@ -97,12 +89,40 @@ export const FormGroup = styled.div`
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+	}
 
-		input {
-			border: none;
-			border-radius: 0.8rem;
-			padding: 1rem;
-			background: var(--white);
-		}
+	input {
+		width: 100%;
+		border: none;
+		border-radius: 0.8rem;
+		padding: 1rem;
+		background: var(--white);
+	}
+`;
+
+export const RadioFormGroup = styled.div`
+	display: flex;
+	justify-items: flex-start;
+	gap: 2rem;
+	flex-wrap: wrap;
+
+	color: var(--white);
+
+	font-size: 1.6rem;
+
+	span {
+		width: 100%;
+		display: block;
+	}
+
+	div {
+		display: flex;
+		justify-items: center;
+		gap: 0.5rem;
+		flex-basis: 12rem;
+	}
+
+	@media screen and (min-width: 740px) {
+		justify-content: space-between;
 	}
 `;
